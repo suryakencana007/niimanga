@@ -41,10 +41,15 @@ from requests.packages.urllib3.connection import ConnectionError
 from requests_futures.sessions import FuturesSession
 from sqlalchemy.exc import IntegrityError
 import transaction
+from pyramid_celery import celery_app as app
+
+from niimanga.sites.batoto import Batoto
+
+
+site = Batoto()
 
 INI = load_ini()
 initialize_sql(INI)
-
 
 def _chapter_slug(str_, slug_manga):
     name = str_
@@ -53,6 +58,15 @@ def _chapter_slug(str_, slug_manga):
     # print(no)
     return no, utils.slugist('{1}-chapter-{0}'.format(no.zfill(3), slug_manga))
 
+@app.task
+def build_from_latest_batoto(*args, **kwargs):
+    try:
+        for i, source in enumerate(site.search_latest()):
+            # LOG.info(source)
+            print(source)
+            build_from_latest(site, source)
+    except Exception as e:
+        print(e.message);
 
 def build_from_latest(site, source):
     try:
