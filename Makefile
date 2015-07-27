@@ -19,7 +19,7 @@ run_app:
 	$(GUNICORN) --paster $(PROD_INI) --reload
 .PHONY: run_celery
 run_celery:
-	$(CELERY) worker -A pyramid_celery.celery_app --ini $(DEV_INI) -B
+	$(CELERY) worker -A pyramid_celery.celery_app --ini $(DEV_INI) -B &
 .PHONY: run
 run: run_celery run_app
 
