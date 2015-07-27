@@ -1,6 +1,6 @@
 
 from pyramid_celery import celery_app as app
-from niimanga.tasks.batoto import build_from_latest
+from niimanga.ctasks.batoto import build_from_latest
 from niimanga.sites.batoto import Batoto
 
 

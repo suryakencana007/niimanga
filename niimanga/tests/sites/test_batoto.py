@@ -3,7 +3,7 @@ import logging
 from unittest import TestCase, main
 
 from niimanga.sites.batoto import Batoto
-from niimanga.tasks.batoto import build_from_latest
+from niimanga.ctasks.batoto import build_from_latest
 
 
 site = Batoto()
