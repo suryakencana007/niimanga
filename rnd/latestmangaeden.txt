@@ -1,0 +1,1449 @@
+<ul id="news" class="thumbNews">
+<li id="news4e70ea1dc092255ef7004d5c624839" onclick="document.location = '/en-manga/fairy-tail/';" class="
+         topMangaHome fetch624839 toUnveil toResize  hotTopMangaHome
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/d5/d5d504279e9f99ac5270b098696a203535f55008064142c4fb321405.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/d5/d5d504279e9f99ac5270b098696a203535f55008064142c4fb321405.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/fairy-tail/" class="mangaUrl">Fairy Tail</a>
+<div class="chapterDate">Yesterday 10:43 AM</div>
+<a class="flagContainer" href="/en-manga/fairy-tail/440/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">440</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news5099a865c092254a2000daf4624839" onclick="document.location = '/en-manga/nanatsu-no-taizai/';" class="
+         topMangaHome fetch624839 toUnveil toResize  hotTopMangaHome
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/a0/a02faf1f72781587d0a050a10ff240eed7fb41c5df08f81291e8774e.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/a0/a02faf1f72781587d0a050a10ff240eed7fb41c5df08f81291e8774e.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/nanatsu-no-taizai/" class="mangaUrl">Nanatsu no Taizai</a>
+<div class="chapterDate">Yesterday 3:54 PM</div>
+<a class="flagContainer" href="/en-manga/nanatsu-no-taizai/128/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">128</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news53723a3b45b9ef5a0b1d243c624839" onclick="document.location = '/en-manga/monster-x-monster/';" class="
+         topMangaHome fetch624839 toUnveil toResize  hotTopMangaHome
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/b1/b1e19f573de90743de689d519db48e1a5bbc898f34b941bfaf55aeac.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/b1/b1e19f573de90743de689d519db48e1a5bbc898f34b941bfaf55aeac.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/monster-x-monster/" class="mangaUrl">Monster X Monster</a>
+<div class="chapterDate">Yesterday 11:45 PM</div>
+<a class="flagContainer" href="/en-manga/monster-x-monster/11/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">11</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70ea03c092255ef70046ea624839" onclick="document.location = '/en-manga/noblesse/';" class="
+         topMangaHome fetch624839 toUnveil toResize  hotTopMangaHome
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/88/8842939865bfa44764100ccc1bce2ecaa2a02f6587c57a4d97b91a57.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/88/8842939865bfa44764100ccc1bce2ecaa2a02f6587c57a4d97b91a57.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/noblesse/" class="mangaUrl">Noblesse</a>
+<div class="chapterDate">Yesterday 9:05 PM</div>
+<a class="flagContainer" href="/en-manga/noblesse/358/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">358</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news5377396045b9ef059cd66d97624839" onclick="document.location = '/en-manga/combat-continent/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize  hotTopMangaHome
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/7a/7a6060e56a60fec72c9f51a4af220d07c7eab772e1ed308c23cfb32a.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/7a/7a6060e56a60fec72c9f51a4af220d07c7eab772e1ed308c23cfb32a.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/combat-continent/" class="mangaUrl">Combat Continent</a>
+<div class="chapterDate">Yesterday 10:38 AM</div>
+<div class="flagContainer" style="margin-left: -10px; width: 118px;
+            background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;"><a style="padding-left: 0px !important;" href="/en-manga/combat-continent/88/1/" class="chapterLink">88</a>
+<a style="margin-left: 20%;padding-left: 0px !important;" href="/en-manga/combat-continent/87/1/" class="chapterLink">87</a>
+</div>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news521e930145b9effb1e534bd0624839" onclick="document.location = '/en-manga/nijiiro-days/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/images/no_image.svg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/images/no_image.svg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/nijiiro-days/" class="mangaUrl">Nijiiro Days</a>
+<div class="chapterDate">Today 8:54 AM</div>
+<a class="flagContainer" href="/en-manga/nijiiro-days/19/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">19</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70e91ac092255ef70016d2624839" onclick="document.location = '/en-manga/kekkai-sensen/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/3b/3bc1ea44d2160e6d1467b5e5f19cb811d7bc43f2eb6e7e45df431500.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/3b/3bc1ea44d2160e6d1467b5e5f19cb811d7bc43f2eb6e7e45df431500.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/kekkai-sensen/" class="mangaUrl">Kekkai Sensen</a>
+<div class="chapterDate">Today 8:19 AM</div>
+<a class="flagContainer" href="/en-manga/kekkai-sensen/5/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">5</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news53c7a2f645b9ef813935d940624839" onclick="document.location = '/en-manga/ero-manga-sensei/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/69/69f91ffcc0252b1122046bcc08456911153fb7803b9f585deec36cb4.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/69/69f91ffcc0252b1122046bcc08456911153fb7803b9f585deec36cb4.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/ero-manga-sensei/" class="mangaUrl">Ero Manga Sensei</a>
+<div class="chapterDate">Today 7:40 AM</div>
+<a class="flagContainer" href="/en-manga/ero-manga-sensei/7/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">7</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news54430b9d45b9ef3a6d581828624839" onclick="document.location = '/en-manga/dorothy-wa-gokigen-naname/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/13/132a082929a36cb927c4a537533457ad16dd8a1a8b21e38f4e18090f.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/13/132a082929a36cb927c4a537533457ad16dd8a1a8b21e38f4e18090f.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/dorothy-wa-gokigen-naname/" class="mangaUrl">Dorothy wa Gokigen Naname?</a>
+<div class="chapterDate">Today 7:36 AM</div>
+<a class="flagContainer" href="/en-manga/dorothy-wa-gokigen-naname/2/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">2</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news54a9babc45b9ef06563255a3624839" onclick="document.location = '/en-manga/doonggule-tea/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/df/df148ee4bcfcd17c3b0159a33deab6d2398aba53955f198e872586e2.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/df/df148ee4bcfcd17c3b0159a33deab6d2398aba53955f198e872586e2.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/doonggule-tea/" class="mangaUrl">Doonggule Tea!</a>
+<div class="chapterDate">Today 7:35 AM</div>
+<a class="flagContainer" href="/en-manga/doonggule-tea/14/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">14</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news53cd2a7745b9efb488b549c9624839" onclick="document.location = '/en-manga/domestic-na-kanojo/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/c7/c702b3bde38844fc197a45bebbdfca27b29feb2d7894781286e1cdea.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/c7/c702b3bde38844fc197a45bebbdfca27b29feb2d7894781286e1cdea.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/domestic-na-kanojo/" class="mangaUrl">Domestic na Kanojo</a>
+<div class="chapterDate">Today 7:35 AM</div>
+<div class="flagContainer" style="margin-left: -10px; width: 118px;
+            background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;"><a style="padding-left: 0px !important;" href="/en-manga/domestic-na-kanojo/53/1/" class="chapterLink">53</a>
+<a style="margin-left: 20%;padding-left: 0px !important;" href="/en-manga/domestic-na-kanojo/52/1/" class="chapterLink">52</a>
+</div>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news54de4f16719a162eba1e904b624839" onclick="document.location = '/en-manga/denkigai-no-honya-san/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/b4/b4a4f4fc81f074f83601e602696008c05ec32c1e05cd21739d6f388a.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/b4/b4a4f4fc81f074f83601e602696008c05ec32c1e05cd21739d6f388a.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/denkigai-no-honya-san/" class="mangaUrl">Denkigai no Honya-san</a>
+<div class="chapterDate">Today 7:33 AM</div>
+<div class="flagContainer" style="margin-left: -10px; width: 118px;
+            background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;"><a style="padding-left: 0px !important;" href="/en-manga/denkigai-no-honya-san/51/1/" class="chapterLink">51</a>
+<a style="margin-left: 20%;padding-left: 0px !important;" href="/en-manga/denkigai-no-honya-san/50/1/" class="chapterLink">50</a>
+</div>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70ea0ac092255ef70048de624839" onclick="document.location = '/en-manga/diamond-no-ace/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/0e/0e424f708608f8be0950acda0d06b95e11154b171511824448835f52.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/0e/0e424f708608f8be0950acda0d06b95e11154b171511824448835f52.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/diamond-no-ace/" class="mangaUrl">Diamond no Ace</a>
+<div class="chapterDate">Today 7:33 AM</div>
+<div class="flagContainer" style="margin-left: -10px; width: 118px;
+            background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;"><a style="padding-left: 0px !important;" href="/en-manga/diamond-no-ace/273/1/" class="chapterLink">273</a>
+<a style="margin-left: 10%;padding-left: 0px !important;" href="/en-manga/diamond-no-ace/271/1/" class="chapterLink">271</a>
+</div>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news54b7f86245b9efc6c41fa811624839" onclick="document.location = '/en-manga/yukikaze---meiji-ishu-kakutouden/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/7c/7c981f5f9b91d5493ccfad4b0d161940b714d9d46c8747d572a051cc.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/7c/7c981f5f9b91d5493ccfad4b0d161940b714d9d46c8747d572a051cc.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/yukikaze---meiji-ishu-kakutouden/" class="mangaUrl">Yukikaze - Meiji Ishu Kakutouden</a>
+<div class="chapterDate">Today 6:11 AM</div>
+<a class="flagContainer" href="/en-manga/yukikaze---meiji-ishu-kakutouden/40/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">40</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news521f334345b9ef97721b2256624839" onclick="document.location = '/en-manga/red-storm/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/01/01bcdb08dee74b33f4772936140bc4bfca98b67716e20c429d804d0c.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/01/01bcdb08dee74b33f4772936140bc4bfca98b67716e20c429d804d0c.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/red-storm/" class="mangaUrl">Red Storm</a>
+<div class="chapterDate">Today 6:03 AM</div>
+<div class="flagContainer" style="margin-left: -10px; width: 118px;
+            background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;"><a style="padding-left: 0px !important;" href="/en-manga/red-storm/87/1/" class="chapterLink">87</a>
+<a style="margin-left: 20%;padding-left: 0px !important;" href="/en-manga/red-storm/86/1/" class="chapterLink">86</a>
+</div>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news537238ea45b9ef5a0b1d217b624839" onclick="document.location = '/en-manga/hatsu-haru/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/29/29c29898db3adb141a2f1e157607d10696287f1fdaa52fe35c04f667.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/29/29c29898db3adb141a2f1e157607d10696287f1fdaa52fe35c04f667.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/hatsu-haru/" class="mangaUrl">Hatsu Haru</a>
+<div class="chapterDate">Today 5:12 AM</div>
+<a class="flagContainer" href="/en-manga/hatsu-haru/4/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">4</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news517088dd45b9effe027bb0b3624839" onclick="document.location = '/en-manga/owari-no-seraph/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/59/5964890dd69b2ee4a08e6cdab76972b012c3d5ead0b95b93af5c3dd1.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/59/5964890dd69b2ee4a08e6cdab76972b012c3d5ead0b95b93af5c3dd1.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/owari-no-seraph/" class="mangaUrl">Owari no Seraph</a>
+<div class="chapterDate">Today 5:12 AM</div>
+<a class="flagContainer" href="/en-manga/owari-no-seraph/34/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">34</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news521e576045b9efc819f90d46624839" onclick="document.location = '/en-manga/birdmen/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/ab/ab20fdaa9951bea38e5f3b304f8246d080791a0150ea78470d9c6b2b.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/ab/ab20fdaa9951bea38e5f3b304f8246d080791a0150ea78470d9c6b2b.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/birdmen/" class="mangaUrl">Birdmen</a>
+<div class="chapterDate">Today 5:12 AM</div>
+<a class="flagContainer" href="/en-manga/birdmen/12/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">12</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news5372380045b9ef5a0b1d1f91624839" onclick="document.location = '/en-manga/battle-through-the-heavens/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/49/49d6f86e7b8ae9bf34fb4ca70acdcddd24c75ad7bb5d6e89b4752959.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/49/49d6f86e7b8ae9bf34fb4ca70acdcddd24c75ad7bb5d6e89b4752959.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/battle-through-the-heavens/" class="mangaUrl">Battle Through The Heavens</a>
+<div class="chapterDate">Today 5:12 AM</div>
+<div class="flagContainer" style="margin-left: -10px; width: 118px;
+            background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;"><a style="padding-left: 0px !important;" href="/en-manga/battle-through-the-heavens/29/1/" class="chapterLink">29</a>
+<a style="margin-left: 20%;padding-left: 0px !important;" href="/en-manga/battle-through-the-heavens/28/1/" class="chapterLink">28</a>
+</div>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news5218af4345b9ef8b837317dd624839" onclick="document.location = '/en-manga/divine-bells/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/8b/8ba595d3747442483683ae1288df4ad7bdce5bdf079bb35311d95a85.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/8b/8ba595d3747442483683ae1288df4ad7bdce5bdf079bb35311d95a85.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/divine-bells/" class="mangaUrl">Divine Bells</a>
+<div class="chapterDate">Today 5:12 AM</div>
+<a class="flagContainer" href="/en-manga/divine-bells/108/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">108</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70e9d1c092255ef70039ee624839" onclick="document.location = '/en-manga/over-drive/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/9c/9ce45501eb119f3702144c1b1b62276cfda9813e9926ced69d0b50c8.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/9c/9ce45501eb119f3702144c1b1b62276cfda9813e9926ced69d0b50c8.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/over-drive/" class="mangaUrl">Over Drive</a>
+<div class="chapterDate">Today 5:12 AM</div>
+<a class="flagContainer" href="/en-manga/over-drive/73/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">73</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news52d473be45b9efc5c8271650624839" onclick="document.location = '/en-manga/cry-like-wolves/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/03/03ea9ac833a27d41b2e675769780cbc95dd4132c5825d3570da65d61.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/03/03ea9ac833a27d41b2e675769780cbc95dd4132c5825d3570da65d61.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/cry-like-wolves/" class="mangaUrl">Cry Like Wolves</a>
+<div class="chapterDate">Today 5:12 AM</div>
+<a class="flagContainer" href="/en-manga/cry-like-wolves/40/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">40</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news544d294c45b9efd98ab65196624839" onclick="document.location = '/en-manga/take-care-of-my-cat/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/38/3885da30c3c756584538ed32a82f7ed8dcc26f8e6299f22ecf6a9271.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/38/3885da30c3c756584538ed32a82f7ed8dcc26f8e6299f22ecf6a9271.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/take-care-of-my-cat/" class="mangaUrl">Take Care of my Cat</a>
+<div class="chapterDate">Today 5:12 AM</div>
+<a class="flagContainer" href="/en-manga/take-care-of-my-cat/41/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">41</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news544acf7945b9ef3a654c22b5624839" onclick="document.location = '/en-manga/hetalia---world-stars/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/8c/8c0b1fa0a896f63707875b1d13a114665c7233f2fbc17aad18ca5a44.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/8c/8c0b1fa0a896f63707875b1d13a114665c7233f2fbc17aad18ca5a44.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/hetalia---world-stars/" class="mangaUrl">Hetalia - World Stars</a>
+<div class="chapterDate">Today 5:12 AM</div>
+<div class="flagContainer" style="margin-left: -10px; width: 118px;
+            background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;"><a style="padding-left: 0px !important;" href="/en-manga/hetalia---world-stars/75/1/" class="chapterLink">75</a>
+<a style="margin-left: 20%;padding-left: 0px !important;" href="/en-manga/hetalia---world-stars/74/1/" class="chapterLink">74</a>
+</div>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news55255bf3719a168d61e077a3624839" onclick="document.location = '/en-manga/remarina/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/ab/ab003ef216f8209fbfdfd1544df5c4f67ebc9a11bfe47b70d458cb9b.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/ab/ab003ef216f8209fbfdfd1544df5c4f67ebc9a11bfe47b70d458cb9b.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/remarina/" class="mangaUrl">Re:Marina</a>
+<div class="chapterDate">Today 12:51 AM</div>
+<a class="flagContainer" href="/en-manga/remarina/21/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">21</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news521e578c45b9efc819f90da0624839" onclick="document.location = '/en-manga/hinamatsuri/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/21/21ec1d77027f71cfbe23645f05954dd10e48ce68d61525c8adba3814.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/21/21ec1d77027f71cfbe23645f05954dd10e48ce68d61525c8adba3814.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/hinamatsuri/" class="mangaUrl">Hinamatsuri</a>
+<div class="chapterDate">Today 12:38 AM</div>
+<a class="flagContainer" href="/en-manga/hinamatsuri/45/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">45</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70ea7ac092255ef7006f9c624839" onclick="document.location = '/en-manga/kangoku-gakuen/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/a6/a6797a160d3299a1ffb6bec333a7665ef4df3176849f0aec9b92b6d2.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/a6/a6797a160d3299a1ffb6bec333a7665ef4df3176849f0aec9b92b6d2.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/kangoku-gakuen/" class="mangaUrl">Kangoku Gakuen</a>
+<div class="chapterDate">Today 12:06 AM</div>
+<a class="flagContainer" href="/en-manga/kangoku-gakuen/179/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">179</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news5218b0c645b9ef8b83731aa9624839" onclick="document.location = '/en-manga/naisho-no-jikan/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/c7/c766532efd9752f8b623f10acee56aa4814ea1923f4406d8113e26cf.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/c7/c766532efd9752f8b623f10acee56aa4814ea1923f4406d8113e26cf.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/naisho-no-jikan/" class="mangaUrl">Naisho no Jikan</a>
+<div class="chapterDate">Yesterday 11:50 PM</div>
+<div class="flagContainer" style="margin-left: -10px; width: 118px;
+            background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;"><a style="padding-left: 0px !important;" href="/en-manga/naisho-no-jikan/6/1/" class="chapterLink">6</a>
+<a style="margin-left: 30%;padding-left: 0px !important;" href="/en-manga/naisho-no-jikan/5/1/" class="chapterLink">5</a>
+</div>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news521e8c4145b9effb1e533bbd624839" onclick="document.location = '/en-manga/azumi/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/08/0866f1a94486eef20909e1a508489b1e6c239a95a5ec0b7bd0c2654a.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/08/0866f1a94486eef20909e1a508489b1e6c239a95a5ec0b7bd0c2654a.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/azumi/" class="mangaUrl">Azumi</a>
+<div class="chapterDate">Yesterday 10:14 PM</div>
+<a class="flagContainer" href="/en-manga/azumi/99/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">99</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news53723c1045b9ef5a0b1d282c624839" onclick="document.location = '/en-manga/wind-breaker/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/16/16ea4528d332a6361d4908269d126ca4686f8205a4f0b1bdab08d613.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/16/16ea4528d332a6361d4908269d126ca4686f8205a4f0b1bdab08d613.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/wind-breaker/" class="mangaUrl">Wind Breaker</a>
+<div class="chapterDate">Yesterday 9:13 PM</div>
+<a class="flagContainer" href="/en-manga/wind-breaker/24/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">24</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70ea06c092255ef70047d9624839" onclick="document.location = '/en-manga/sangokushi/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/86/86d7ab6a13bbb5efe0819e803fa315465a0796803430d68c6ae1adf6.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/86/86d7ab6a13bbb5efe0819e803fa315465a0796803430d68c6ae1adf6.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/sangokushi/" class="mangaUrl">Sangokushi</a>
+<div class="chapterDate">Yesterday 9:07 PM</div>
+<a class="flagContainer" href="/en-manga/sangokushi/327/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">327</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news5218b01a45b9ef8b8373195f624839" onclick="document.location = '/en-manga/joujuu-senjin-mushibugyo/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/9f/9fde4f5abe381d4a6c48463017de037a7750ef49840dd68a2eaa1339.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/9f/9fde4f5abe381d4a6c48463017de037a7750ef49840dd68a2eaa1339.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/joujuu-senjin-mushibugyo/" class="mangaUrl">Joujuu Senjin!! Mushibugyo</a>
+<div class="chapterDate">Yesterday 8:54 PM</div>
+<a class="flagContainer" href="/en-manga/joujuu-senjin-mushibugyo/51/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">51</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70ea14c092255ef7004bea624839" onclick="document.location = '/en-manga/giant-killing/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/7c/7c255c91c73c59ded669af14be8219ac2106efe8ac49745d2728bd55.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/7c/7c255c91c73c59ded669af14be8219ac2106efe8ac49745d2728bd55.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/giant-killing/" class="mangaUrl">Giant Killing</a>
+<div class="chapterDate">Yesterday 8:51 PM</div>
+<a class="flagContainer" href="/en-manga/giant-killing/175/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">175</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4fda423bc0922549e7000002624839" onclick="document.location = '/en-manga/ashita-no-kyouko-san/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/85/85540c50b30cde658b31a0f5f616579c4addbcc1ce42c2730c63633d.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/85/85540c50b30cde658b31a0f5f616579c4addbcc1ce42c2730c63633d.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/ashita-no-kyouko-san/" class="mangaUrl">Ashita no Kyouko-san</a>
+<div class="chapterDate">Yesterday 8:43 PM</div>
+<a class="flagContainer" href="/en-manga/ashita-no-kyouko-san/13/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">13</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news548ab59e45b9effee4d8dc9a624839" onclick="document.location = '/en-manga/aisopos/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/9d/9d90dd299cfd15d1fe3a44cfae0194f809d057a7f7f61d3de9d663b5.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/9d/9d90dd299cfd15d1fe3a44cfae0194f809d057a7f7f61d3de9d663b5.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/aisopos/" class="mangaUrl">Aisopos</a>
+<div class="chapterDate">Yesterday 8:42 PM</div>
+<a class="flagContainer" href="/en-manga/aisopos/54/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">54</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news55255bf0719a168d61e077a2624839" onclick="document.location = '/en-manga/kagemusha---tokugawa-ieyasu/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/images/no_image.svg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/images/no_image.svg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/kagemusha---tokugawa-ieyasu/" class="mangaUrl">Kagemusha - Tokugawa Ieyasu</a>
+<div class="chapterDate">Yesterday 6:04 PM</div>
+<a class="flagContainer" href="/en-manga/kagemusha---tokugawa-ieyasu/22/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">22</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news521e57c245b9efccdb434156624839" onclick="document.location = '/en-manga/lega-no-13/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/d2/d296d9833b7138930366fd39522455e42739a6cceaa93fb613aed694.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/d2/d296d9833b7138930366fd39522455e42739a6cceaa93fb613aed694.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/lega-no-13/" class="mangaUrl">Lega no 13</a>
+<div class="chapterDate">Yesterday 3:45 PM</div>
+<a class="flagContainer" href="/en-manga/lega-no-13/8/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">8</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70ea6ac092255ef7006a1d624839" onclick="document.location = '/en-manga/kubera/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/fd/fddf40ede41f0b633132a07f2568898f4f20200a81b4a945bac5ce01.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/fd/fddf40ede41f0b633132a07f2568898f4f20200a81b4a945bac5ce01.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/kubera/" class="mangaUrl">Kubera</a>
+<div class="chapterDate">Yesterday 3:44 PM</div>
+<div class="flagContainer" style="margin-left: -10px; width: 118px;
+            background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;"><a style="padding-left: 0px !important;" href="/en-manga/kubera/242/1/" class="chapterLink">242</a>
+<a style="margin-left: 10%;padding-left: 0px !important;" href="/en-manga/kubera/241/1/" class="chapterLink">241</a>
+</div>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news5516045a719a168ff776d86c624839" onclick="document.location = '/en-manga/happiness-oshimi-shuzo/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/3e/3e8c0c6513c4f36658fa30809b6f059f0fc77b4a2a5a59536cfe5357.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/3e/3e8c0c6513c4f36658fa30809b6f059f0fc77b4a2a5a59536cfe5357.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/happiness-oshimi-shuzo/" class="mangaUrl">Happiness (OSHIMI Shuzo)</a>
+<div class="chapterDate">Yesterday 3:41 PM</div>
+<a class="flagContainer" href="/en-manga/happiness-oshimi-shuzo/5/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">5</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news5297ced345b9ef119c492e4b624839" onclick="document.location = '/en-manga/grainerie/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/a4/a4d9117388976433facd4074da97e6c7ee18e845d0ba1cb214f471df.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/a4/a4d9117388976433facd4074da97e6c7ee18e845d0ba1cb214f471df.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/grainerie/" class="mangaUrl">Grainerie</a>
+<div class="chapterDate">Yesterday 3:40 PM</div>
+<a class="flagContainer" href="/en-manga/grainerie/13/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">13</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news54a9bac445b9ef06563255b7624839" onclick="document.location = '/en-manga/exciting-feelings/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/b5/b54e69f60f1c95c87506afab1c7fc862d4b1e8c6b9d3e6f45128bf58.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/b5/b54e69f60f1c95c87506afab1c7fc862d4b1e8c6b9d3e6f45128bf58.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/exciting-feelings/" class="mangaUrl">Exciting Feelings</a>
+<div class="chapterDate">Yesterday 3:37 PM</div>
+<a class="flagContainer" href="/en-manga/exciting-feelings/39/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">39</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news5218ae6a45b9ef8b8373165b624839" onclick="document.location = '/en-manga/abide-in-the-wind/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/58/58dd587deffe5229e1cc42ce98197cc24d544c432282a9506e247020.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/58/58dd587deffe5229e1cc42ce98197cc24d544c432282a9506e247020.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/abide-in-the-wind/" class="mangaUrl">Abide in the Wind</a>
+<div class="chapterDate">Yesterday 3:31 PM</div>
+<a class="flagContainer" href="/en-manga/abide-in-the-wind/86/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">86</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news54a9bca345b9ef469c688cd3624839" onclick="document.location = '/en-manga/yaoguai-mingdan/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/c1/c1313355835c8c31c9c9a4139b4e02757c257dbdaa7f62b21bec4b91.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/c1/c1313355835c8c31c9c9a4139b4e02757c257dbdaa7f62b21bec4b91.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/yaoguai-mingdan/" class="mangaUrl">Yaoguai Mingdan</a>
+<div class="chapterDate">Yesterday 3:03 PM</div>
+<a class="flagContainer" href="/en-manga/yaoguai-mingdan/40/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">40</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news521f343445b9ef97721b2472624839" onclick="document.location = '/en-manga/shinbunbu-no-komatsu-san/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/33/33e4c526e59ed05eb78b513d928d0748de0a8c29f14fdf1a9f1dcf2d.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/33/33e4c526e59ed05eb78b513d928d0748de0a8c29f14fdf1a9f1dcf2d.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/shinbunbu-no-komatsu-san/" class="mangaUrl">Shinbunbu no Komatsu-san</a>
+<div class="chapterDate">Yesterday 2:29 PM</div>
+<a class="flagContainer" href="/en-manga/shinbunbu-no-komatsu-san/5/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">5</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news524c9dca45b9ef11a5f54f48624839" onclick="document.location = '/en-manga/servant-x-service/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/49/49d9358a052a3f71b27b857d98a85254d3768042b7e880f06633ab09.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/49/49d9358a052a3f71b27b857d98a85254d3768042b7e880f06633ab09.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/servant-x-service/" class="mangaUrl">Servant X Service</a>
+<div class="chapterDate">Yesterday 2:26 PM</div>
+<a class="flagContainer" href="/en-manga/servant-x-service/6/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">6</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news54a9baf645b9ef0656325626624839" onclick="document.location = '/en-manga/jiang-ye/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/f2/f2ef0451e9c139e19dae669d470dfac6abb521cd2159285c1a52dd6e.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/f2/f2ef0451e9c139e19dae669d470dfac6abb521cd2159285c1a52dd6e.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/jiang-ye/" class="mangaUrl">Jiang Ye</a>
+<div class="chapterDate">Yesterday 1:08 PM</div>
+<a class="flagContainer" href="/en-manga/jiang-ye/11/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">11</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news52d7d39d45b9ef44a7ab463e624839" onclick="document.location = '/en-manga/hanimero/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/67/6775c7c50f8560f67ab7661090f8a05f3aedd8175a626661f9da0241.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/67/6775c7c50f8560f67ab7661090f8a05f3aedd8175a626661f9da0241.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/hanimero/" class="mangaUrl">Hanimero.</a>
+<div class="chapterDate">Yesterday 12:53 PM</div>
+<a class="flagContainer" href="/en-manga/hanimero/10/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">10</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news537238cb45b9ef5a0b1d213c624839" onclick="document.location = '/en-manga/graineliers/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/59/5995acfc35856df18b1dafcf337df45a5c3923357794f03585874e3d.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/59/5995acfc35856df18b1dafcf337df45a5c3923357794f03585874e3d.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/graineliers/" class="mangaUrl">Graineliers</a>
+<div class="chapterDate">Yesterday 12:48 PM</div>
+<a class="flagContainer" href="/en-manga/graineliers/13/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">13</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70e94cc092255ef700212e624839" onclick="document.location = '/en-manga/future-retro-hero-story/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/cd/cdc221ba9f4545ef79f78a6c0c5f1805d2a523e0ecc388dd4bd9caee.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/cd/cdc221ba9f4545ef79f78a6c0c5f1805d2a523e0ecc388dd4bd9caee.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/future-retro-hero-story/" class="mangaUrl">Future-Retro Hero Story</a>
+<div class="chapterDate">Yesterday 12:43 PM</div>
+<a class="flagContainer" href="/en-manga/future-retro-hero-story/5/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">5</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news551616f6719a168ff776defe624839" onclick="document.location = '/it-manga/asami-sensei-no-himitsu/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/ce/ce2436351284786fbb3eba28d03441544e078ee197cae618b6623072.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/ce/ce2436351284786fbb3eba28d03441544e078ee197cae618b6623072.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/it-manga/asami-sensei-no-himitsu/" class="mangaUrl">Asami-sensei no Himitsu</a>
+<div class="chapterDate">Yesterday 12:14 PM</div>
+<a class="flagContainer" href="/it-manga/asami-sensei-no-himitsu/4/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/it_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">4</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news521e8c4545b9effb1e533bcb624839" onclick="document.location = '/en-manga/babel-2-sei/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/5c/5cad71bdf405afe9e2f9620405c9d150fd0a7f9367a10986fcf9316a.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/5c/5cad71bdf405afe9e2f9620405c9d150fd0a7f9367a10986fcf9316a.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/babel-2-sei/" class="mangaUrl">Babel 2-Sei</a>
+<div class="chapterDate">Yesterday 12:13 PM</div>
+<a class="flagContainer" href="/en-manga/babel-2-sei/11/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">11</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4f66469e94cbc25cc100000f624839" onclick="document.location = '/en-manga/area-d---inou-ryouiki/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/14/14fcb760e5b2b57755cd0c65f0144bc4b916b6038381498cbb96c083.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/14/14fcb760e5b2b57755cd0c65f0144bc4b916b6038381498cbb96c083.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/area-d---inou-ryouiki/" class="mangaUrl">Area D - Inou Ryouiki</a>
+<div class="chapterDate">Yesterday 12:06 PM</div>
+<a class="flagContainer" href="/en-manga/area-d---inou-ryouiki/112/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">112</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news505aaa5ac092255211000034624839" onclick="document.location = '/it-manga/trigun-maximum/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/85/85468aea3be8e6e783349db1723230e45557198343e77ccc3405af6f.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/85/85468aea3be8e6e783349db1723230e45557198343e77ccc3405af6f.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/it-manga/trigun-maximum/" class="mangaUrl">Trigun Maximum</a>
+<div class="chapterDate">Yesterday 11:36 AM</div>
+<a class="flagContainer" href="/it-manga/trigun-maximum/106/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/it_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">106</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news527c1f3445b9ef1dc2344ac7624839" onclick="document.location = '/en-manga/zai-x-10/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/bf/bf0a32172e7557d06db89a04108a84ef2a43fbcdd8b4b4f6fb321ac5.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/bf/bf0a32172e7557d06db89a04108a84ef2a43fbcdd8b4b4f6fb321ac5.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/zai-x-10/" class="mangaUrl">Zai x 10</a>
+<div class="chapterDate">Yesterday 11:07 AM</div>
+<a class="flagContainer" href="/en-manga/zai-x-10/43/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">43</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news528fe5c745b9ef0de0f0df55624839" onclick="document.location = '/en-manga/salaryman-futsumashi-okumura-yukio-no-aishuu/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/01/01be529ac504f383c77b9cd5dc2ab5783c612530ba513517459aa553.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/01/01be529ac504f383c77b9cd5dc2ab5783c612530ba513517459aa553.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/salaryman-futsumashi-okumura-yukio-no-aishuu/" class="mangaUrl">Salaryman Futsumashi Okumura Yukio no Aishuu</a>
+<div class="chapterDate">Yesterday 11:00 AM</div>
+<a class="flagContainer" href="/en-manga/salaryman-futsumashi-okumura-yukio-no-aishuu/16/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">16</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news52b0db6d45b9efe22c0c3300624839" onclick="document.location = '/en-manga/koi-nashi-ai-nashi/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/84/849e0e948a033d27ed989203eb0b2aa908c0cbc088299ad7263b26e6.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/84/849e0e948a033d27ed989203eb0b2aa908c0cbc088299ad7263b26e6.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/koi-nashi-ai-nashi/" class="mangaUrl">Koi Nashi Ai Nashi</a>
+<div class="chapterDate">Yesterday 10:48 AM</div>
+<div class="flagContainer" style="margin-left: -10px; width: 118px;
+            background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;"><a style="padding-left: 0px !important;" href="/en-manga/koi-nashi-ai-nashi/10/1/" class="chapterLink">10</a>
+<a style="margin-left: 25%;padding-left: 0px !important;" href="/en-manga/koi-nashi-ai-nashi/9/1/" class="chapterLink">9</a>
+</div>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news5218b05245b9ef8b837319d1624839" onclick="document.location = '/en-manga/koi-dano-ai-dano/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/7e/7e4b41a6a4ef4a5549ec85b1fe5bf8d1a9c9dad3c324ff017a5d6787.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/7e/7e4b41a6a4ef4a5549ec85b1fe5bf8d1a9c9dad3c324ff017a5d6787.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/koi-dano-ai-dano/" class="mangaUrl">Koi dano Ai dano</a>
+<div class="chapterDate">Yesterday 10:48 AM</div>
+<a class="flagContainer" href="/en-manga/koi-dano-ai-dano/33/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">33</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70ea0bc092255ef7004915624839" onclick="document.location = '/en-manga/kamisama-dolls/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/14/14e7b7f14d7c3a72ba320f6c5a0ee7c9a0dda97f462449664921be01.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/14/14e7b7f14d7c3a72ba320f6c5a0ee7c9a0dda97f462449664921be01.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/kamisama-dolls/" class="mangaUrl">Kamisama Dolls</a>
+<div class="chapterDate">Yesterday 10:46 AM</div>
+<a class="flagContainer" href="/en-manga/kamisama-dolls/43/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">43</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news55660a6b719a1630dc3a6562624839" onclick="document.location = '/en-manga/all-that-we-hope-to-be/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/db/db4bbcabb326bc181a2eab58bfdad8de782c621e922880d445b432c2.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/db/db4bbcabb326bc181a2eab58bfdad8de782c621e922880d445b432c2.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/all-that-we-hope-to-be/" class="mangaUrl">All That We Hope to Be</a>
+<div class="chapterDate">Yesterday 10:31 AM</div>
+<a class="flagContainer" href="/en-manga/all-that-we-hope-to-be/11/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">11</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news541aac3145b9ef49009d6ab7624839" onclick="document.location = '/en-manga/gamma/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/4f/4fa9ec0ff0880b8d03d461900b15991020878e2c9ba9c72a0dde9f2f.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/4f/4fa9ec0ff0880b8d03d461900b15991020878e2c9ba9c72a0dde9f2f.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/gamma/" class="mangaUrl">Gamma</a>
+<div class="chapterDate">Yesterday 7:32 AM</div>
+<a class="flagContainer" href="/en-manga/gamma/10/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">10</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70ea03c092255ef70046e8624839" onclick="document.location = '/en-manga/tower-of-god/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/91/91c24be91396eb90517951cbdd430c931644e7562942b47592fd7a1e.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/91/91c24be91396eb90517951cbdd430c931644e7562942b47592fd7a1e.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/tower-of-god/" class="mangaUrl">Tower of God</a>
+<div class="chapterDate">Yesterday 5:13 AM</div>
+<a class="flagContainer" href="/en-manga/tower-of-god/234/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">234</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70ea66c092255ef700694e624839" onclick="document.location = '/en-manga/cheese-in-the-trap/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/9b/9b9c50e9776b833a0bc17c17571aa2b1759535a7275fa2d7b1b17408.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/9b/9b9c50e9776b833a0bc17c17571aa2b1759535a7275fa2d7b1b17408.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/cheese-in-the-trap/" class="mangaUrl">Cheese in the Trap</a>
+<div class="chapterDate">Yesterday 5:12 AM</div>
+<a class="flagContainer" href="/en-manga/cheese-in-the-trap/53/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">53</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4f42eb6e94cbc27105000014624839" onclick="document.location = '/en-manga/feng-shen-ji/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/db/db765abf8a5afca1f30962d90029766a170416b87f19ecc5daa3a1f4.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/db/db765abf8a5afca1f30962d90029766a170416b87f19ecc5daa3a1f4.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/feng-shen-ji/" class="mangaUrl">Feng Shen Ji</a>
+<div class="chapterDate">Yesterday 5:12 AM</div>
+<a class="flagContainer" href="/en-manga/feng-shen-ji/159/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">159</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news521f33da45b9ef97721b23b1624839" onclick="document.location = '/en-manga/seiketsu-no-haguruma/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/a2/a21b0e871de8d99025e2094f6c12bbcace2a1c491f33ce89ae1d675d.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/a2/a21b0e871de8d99025e2094f6c12bbcace2a1c491f33ce89ae1d675d.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/seiketsu-no-haguruma/" class="mangaUrl">Seiketsu no Haguruma</a>
+<div class="chapterDate">Yesterday 5:12 AM</div>
+<a class="flagContainer" href="/en-manga/seiketsu-no-haguruma/29/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">29</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news535d90f845b9efd26fb27d2f624839" onclick="document.location = '/en-manga/youkai-shoujo---monsuga/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/5f/5fc8b3196c42ce545beb3a8c1bfd10330c21c74d19245018580aa037.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/5f/5fc8b3196c42ce545beb3a8c1bfd10330c21c74d19245018580aa037.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/youkai-shoujo---monsuga/" class="mangaUrl">Youkai Shoujo - Monsuga</a>
+<div class="chapterDate">Yesterday 4:32 AM</div>
+<a class="flagContainer" href="/en-manga/youkai-shoujo---monsuga/38/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">38</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news521e918d45b9effb1e534871624839" onclick="document.location = '/en-manga/linden-hall-no-aria/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/83/835f598ea6433d4aa58b7bba5930bdfe4533f05bfe0a14e24d543e3b.png" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/83/835f598ea6433d4aa58b7bba5930bdfe4533f05bfe0a14e24d543e3b.png" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/linden-hall-no-aria/" class="mangaUrl">Linden Hall no Aria</a>
+<div class="chapterDate">Yesterday 3:06 AM</div>
+<a class="flagContainer" href="/en-manga/linden-hall-no-aria/10/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">10</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news54f07e12719a16087f5ca6c0624839" onclick="document.location = '/it-manga/tate-no-yuusha-no-nariagari/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/8e/8e19a940d42d73ad312dbd8e9b8e571234b6a52a34b7f0e63d5bf928.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/8e/8e19a940d42d73ad312dbd8e9b8e571234b6a52a34b7f0e63d5bf928.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/it-manga/tate-no-yuusha-no-nariagari/" class="mangaUrl">Tate no Yuusha no Nariagari</a>
+<div class="chapterDate">Yesterday 1:31 AM</div>
+<div class="flagContainer" style="margin-left: -10px; width: 118px;
+            background: url('//cdn.mangaeden.com/images/it_flag.png') repeat scroll 0% 0% / 118px 220px transparent;"><a style="padding-left: 0px !important;" href="/it-manga/tate-no-yuusha-no-nariagari/5/1/" class="chapterLink">5</a>
+<a style="margin-left: 30%;padding-left: 0px !important;" href="/it-manga/tate-no-yuusha-no-nariagari/4/1/" class="chapterLink">4</a>
+</div>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70ea1cc092255ef7004cfe624839" onclick="document.location = '/en-manga/ruler-of-the-land/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/55/5502e24b578c0328abbc8f886499f04c225bc7086b3b128c0ae78a40.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/55/5502e24b578c0328abbc8f886499f04c225bc7086b3b128c0ae78a40.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/ruler-of-the-land/" class="mangaUrl">Ruler of the Land</a>
+<div class="chapterDate">Jun 14, 2015</div>
+<div class="flagContainer" style="margin-left: -10px; width: 118px;
+            background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;"><a style="padding-left: 0px !important;" href="/en-manga/ruler-of-the-land/413/1/" class="chapterLink">413</a>
+<a style="margin-left: 10%;padding-left: 0px !important;" href="/en-manga/ruler-of-the-land/412/1/" class="chapterLink">412</a>
+</div>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4f64e41e94cbc2514200002d624839" onclick="document.location = '/en-manga/lotte-no-omocha/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/85/85b10ff42dbaf83975507b9c983111418123744523fbe99ff87b123e.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/85/85b10ff42dbaf83975507b9c983111418123744523fbe99ff87b123e.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/lotte-no-omocha/" class="mangaUrl">Lotte no Omocha!</a>
+<div class="chapterDate">Jun 14, 2015</div>
+<a class="flagContainer" href="/en-manga/lotte-no-omocha/51/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">51</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news54a9bb5745b9ef06563256ef624839" onclick="document.location = '/en-manga/netgame-no-yome-wa-onna-no-ko-ja-nai-to-omotta/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/ea/eae501e6f2472be2083d301252773abf91cdbac38168d09e4e1a8f0e.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/ea/eae501e6f2472be2083d301252773abf91cdbac38168d09e4e1a8f0e.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/netgame-no-yome-wa-onna-no-ko-ja-nai-to-omotta/" class="mangaUrl">Netgame no Yome wa Onna no Ko ja nai to Omotta?</a>
+<div class="chapterDate">Jun 14, 2015</div>
+<a class="flagContainer" href="/en-manga/netgame-no-yome-wa-onna-no-ko-ja-nai-to-omotta/8/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">8</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news5341c13d45b9ef3481ed0aa1624839" onclick="document.location = '/it-manga/watashi-ni-xx-shinasai/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/98/9869ac55d844cb51a601e04096f0c3ba70adae11fff01fe5855849e2.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/98/9869ac55d844cb51a601e04096f0c3ba70adae11fff01fe5855849e2.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/it-manga/watashi-ni-xx-shinasai/" class="mangaUrl">Watashi ni XX Shinasai</a>
+<div class="chapterDate">Jun 14, 2015</div>
+<a class="flagContainer" href="/it-manga/watashi-ni-xx-shinasai/66/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/it_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">66</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news53655c5845b9eff785935131624839" onclick="document.location = '/en-manga/todays-kerberos/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/images/no_image.svg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/images/no_image.svg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/todays-kerberos/" class="mangaUrl">Today's Kerberos</a>
+<div class="chapterDate">Jun 14, 2015</div>
+<a class="flagContainer" href="/en-manga/todays-kerberos/6/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">6</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70e9fec092255ef70045a0624839" onclick="document.location = '/en-manga/karakuri-circus/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/fe/fe8aab86a42a83e65aadc49e94a2ce8f0f302ac17b2698e02ce84875.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/fe/fe8aab86a42a83e65aadc49e94a2ce8f0f302ac17b2698e02ce84875.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/karakuri-circus/" class="mangaUrl">Karakuri Circus</a>
+<div class="chapterDate">Jun 14, 2015</div>
+<a class="flagContainer" href="/en-manga/karakuri-circus/176/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">176</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4eae84aec0922541a6000019624839" onclick="document.location = '/it-manga/due-come-noi/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/a9/a955434e7b37ad2915acffc790fed7ab466cc93e41daae99963ca83a.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/a9/a955434e7b37ad2915acffc790fed7ab466cc93e41daae99963ca83a.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/it-manga/due-come-noi/" class="mangaUrl">Due come Noi</a>
+<div class="chapterDate">Jun 14, 2015</div>
+<a class="flagContainer" href="/it-manga/due-come-noi/366/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/it_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">366</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news4e70ea90c092255ef7007489624839" onclick="document.location = '/it-manga/area-no-kishi/';" class=" clearThumb
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/61/61594988273cf48488a675280e71511fcd7778764e19b38f93617e5d.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/61/61594988273cf48488a675280e71511fcd7778764e19b38f93617e5d.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/it-manga/area-no-kishi/" class="mangaUrl">Area no Kishi</a>
+<div class="chapterDate">Jun 14, 2015</div>
+<a class="flagContainer" href="/it-manga/area-no-kishi/124/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/it_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">124</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li id="news5096b788c092254a33010478624839" onclick="document.location = '/en-manga/magi---labyrinth-of-magic/';" class="
+         topMangaHome fetch624839 toUnveil toResize 
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/mangasimg/98x/5c/5ccf3023a30ace74dceb11beac6c25670c76ae0caaad0fadc5da5348.jpg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/mangasimg/98x/5c/5ccf3023a30ace74dceb11beac6c25670c76ae0caaad0fadc5da5348.jpg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/magi---labyrinth-of-magic/" class="mangaUrl">Magi - Labyrinth of Magic</a>
+<div class="chapterDate">Jun 14, 2015</div>
+<a class="flagContainer" href="/en-manga/magi---labyrinth-of-magic/269/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">269</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>
+<li style="display:block; height:0px;"></li>
+</ul>
+http://www.mangaeden.com/ajax/news/1/2/1/
+

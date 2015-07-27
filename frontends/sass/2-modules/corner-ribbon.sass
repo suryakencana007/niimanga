@@ -1,0 +1,94 @@
+.wrapper-ribbon
+  width: 85px
+  height: 88px
+  overflow: hidden
+  position: absolute
+  top: -3px
+  right: -3px
+  z-index: 333
+
+.corner-ribbon
+  width: 125px
+  position: relative
+  top: 25px
+  left: -50px
+  text-align: center
+  line-height: 25px
+  letter-spacing: 1px
+  color: #f0f0f0
+  transform: rotate(-45deg)
+  -webkit-transform: rotate(-45deg)
+  -moz-transform: rotate(-45deg)
+  -ms-transform: rotate(-45deg)
+  -o-transform: rotate(-45deg)
+
+  &.sticky
+    position: fixed
+
+  &.shadow
+    box-shadow: 0 0 3px rgba(0,0,0,.3)
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.3)
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,.3)
+
+  &.top-left
+    top: 25px
+    left: -50px
+    transform: rotate(-45deg)
+    -webkit-transform: rotate(-45deg)
+    -moz-transform: rotate(-45deg)
+    -ms-transform: rotate(-45deg)
+    -o-transform: rotate(-45deg)
+
+  &.top-right
+    top: 22px
+    left: -5px
+    transform: rotate(45deg)
+    -webkit-transform: rotate(45deg)
+    -moz-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    -o-transform: rotate(45deg)
+
+
+  &.bottom-left
+    top: auto
+    bottom: 25px
+    left: -50px
+    transform: rotate(45deg)
+    -webkit-transform: rotate(45deg)
+    -moz-transform: rotate(-45deg)
+    -ms-transform: rotate(-45deg)
+    -o-transform: rotate(-45deg)
+
+
+  &.bottom-right
+    top: auto
+    right: -50px
+    bottom: 25px
+    left: auto
+    transform: rotate(-45deg)
+    -webkit-transform: rotate(-45deg)
+    -moz-transform: rotate(-45deg)
+    -ms-transform: rotate(-45deg)
+    -o-transform: rotate(-45deg)
+
+  &.white
+    background: #f0f0f0
+    color: #555
+  &.black
+    background: #333
+  &.grey
+    background: #999
+  &.blue, &.batoto
+    background: #39d
+  &.green
+    background: #2c7
+  &.turquoise
+    background: #1b9
+  &.purple
+    background: #95b
+  &.red, &.mangahere
+    background: #e43
+  &.orange
+    background: #e82
+  &.yellow, &.mangaeden
+    background: #ec0

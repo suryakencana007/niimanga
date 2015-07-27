@@ -1,0 +1,19 @@
+<li id="news521e930145b9effb1e534bd0624839" onclick="document.location = '/en-manga/nijiiro-days/';" class="
+         topMangaHome fetch624839 toUnveil toResize
+         ">
+<div class="hottestImage">
+<img src="//cdn.mangaeden.com/images/loader.gif?v=0" data-src="//cdn.mangaeden.com/images/no_image.svg" style="display:none;">
+<noscript>
+<img src="//cdn.mangaeden.com/images/no_image.svg" style="">
+</noscript>
+</div>
+<div class="hottestInfo">
+<a href="/en-manga/nijiiro-days/" class="mangaUrl">Nijiiro Days</a>
+<div class="chapterDate">Today 8:54 AM</div>
+<a class="flagContainer" href="/en-manga/nijiiro-days/19/1/" style="margin-left: -10px; width: 118px;
+                      background: url('//cdn.mangaeden.com/images/en_flag.png') repeat scroll 0% 0% / 118px 220px transparent;">
+<span style="padding-left: 0px !important;" class="chapterBox">19</span>
+</a>
+</div>
+<div class="clear"></div>
+</li>

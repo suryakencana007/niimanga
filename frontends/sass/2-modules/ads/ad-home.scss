@@ -1,0 +1,36 @@
+.ad-left.home {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: -99;
+
+  .ad-box {
+    width: 100%;
+    a {
+      cursor: pointer;
+    }
+    img {
+      width: 217px;
+      height: 896px;
+    }
+  }
+}
+
+.ad-right.home {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  z-index: -99;
+
+  .ad-box {
+    width: 100%;
+    a {
+      cursor: pointer;
+    }
+    img {
+      float: right;
+      width: 217px;
+      height: 896px;
+    }
+  }
+}

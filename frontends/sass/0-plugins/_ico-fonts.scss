@@ -1,0 +1,9 @@
+a .fa {
+  margin-right: 10px;
+}
+
+[class^="fa-"]:before,[class*=" fa-"]:before {
+  text-decoration:inherit;
+  display:inline-block;
+  speak:none;
+}

@@ -1,0 +1,90 @@
+var webpack = require('webpack');
+var path = require('path');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var node_modules_dir = path.join(__dirname, 'node_modules');
+var bower_components_dir = path.join(__dirname, 'bower_components');
+var plugins = [];
+
+var sassLoaders = [
+"css-loader"
+];
+var alias = {
+
+};
+var aliasLoader = {
+
+};
+var externals = [
+
+];
+var modulesDirectories = ["web_modules", "node_modules"];
+var extensions = ["", ".web.js", ".js", ".jsx"];
+var root = path.join(__dirname, "app");
+plugins.push(new ExtractTextPlugin("css/styles.css"));
+plugins.push(
+  new webpack.ProvidePlugin({
+    $: "jquery",
+    jQuery: "jquery",
+    "window.jQuery": "jquery",
+    "root.jQuery": "jquery"
+  })
+  );
+if (process.env.PRODUCTION) {
+  plugins.push(
+    new webpack.optimize.UglifyJsPlugin()
+    );
+}
+alias['jquery'] = path.join(__dirname, 'node_modules/jquery/dist/jquery');
+
+module.exports = {
+  context: __dirname,
+  entry: {
+    main:["bootstrap-webpack!./bootstrap.config.js", "./app"]
+  },
+  output: {    
+    publicPath: '/',
+    path: process.env.PRODUCTION ? path.resolve(__dirname, '../niimanga/dist') : path.resolve(__dirname, './dist'),
+    filename: '[name].js',
+    chunkFilename: "[chunkhash].js"
+    // filename: 'bundle.js'
+  },
+  module: {
+    noParse: [],
+    loaders: [    
+      // **IMPORTANT** This is needed so that each bootstrap js file required by
+      // bootstrap-sass-loader has access to the jQuery object
+      { test: /bootstrap\/js\//, loader: 'imports?jQuery=jquery' },
+      { test: /X-editable\/dist\/bootstrap3-editable\/js\/bootstrap-editable\.js$/, loader: 'imports?jQuery=jquery' },
+      { test: /bootstrap-table\/dist\//, loader: 'imports?jQuery=jquery' },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract("style-loader", sassLoaders.join("!"))
+      },
+      { test: /\.jsx$/, exclude: [node_modules_dir, bower_components_dir], loader: 'babel-loader?stage=0' },
+      { test: /\.js$/, include: path.join(__dirname, "app"), loader: 'babel-loader?stage=0' },
+      { test: /\.png$/, loader: "url-loader?limit=100000" },
+      { test: /\.gif$/, loader: "url-loader?limit=100000" },
+      { test: /\.jpg$/, loader: "url-loader?limit=100000" },
+
+      // Needed for the css-loader when [bootstrap-webpack](https://github.com/bline/bootstrap-webpack)
+      // loads bootstrap's css.
+      { test: /\.woff(2)?(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&minetype=application/font-woff" },      
+      { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&minetype=application/font-woff" },
+      { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,    loader: "file" },
+      { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&mimetype=image/svg+xml" }
+      ]
+    },
+    devtool: "sourcemap",
+    plugins: plugins,
+    resolveLoader: {
+      root: path.join(__dirname, "node_modules"),
+      alias: aliasLoader
+    },
+    externals: externals,
+    resolve: {
+      root: root,
+      modulesDirectories: modulesDirectories,
+      extensions: extensions,
+      alias: alias
+    }
+  };
