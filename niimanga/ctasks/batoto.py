@@ -17,13 +17,6 @@
  #  mangaeden.py
 """
 
-# @app.task
-# def build_idx_mongo(*args, **kwargs):
-#     try:
-#         mongo_index()
-#         build_index_whoosh.delay()
-#     except(KeyError, ValueError, AttributeError) as e:
-#         LOG.error(e)
 import shutil
 from concurrent.futures import ThreadPoolExecutor
 from niimanga.libs.exceptions import HtmlError
@@ -45,6 +38,7 @@ import transaction
 
 INI = load_ini()
 initialize_sql(INI)
+
 
 def _chapter_slug(str_, slug_manga):
     name = str_
