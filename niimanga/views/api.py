@@ -136,7 +136,7 @@ class MangaApi(ZHandler):
             .filter(and_(Manga.chapter_updated.between(datetime.now() - timedelta(days=7), datetime.now()),
                          Manga.chapter_count > 0)) \
             .order_by(desc(Manga.chapter_updated)) \
-            .limit(8) \
+            .limit(16) \
             .all()
         return MangaApi._card_fill(_, latest)
 
@@ -146,7 +146,7 @@ class MangaApi(ZHandler):
         qry = Manga.query
         popular = qry.filter(Manga.chapter_count > 0) \
             .order_by(desc(Manga.viewed)) \
-            .limit(9) \
+            .limit(5) \
             .all()
         return MangaApi._card_fill(_, popular)
 

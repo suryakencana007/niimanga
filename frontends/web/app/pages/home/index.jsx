@@ -1,10 +1,12 @@
 var React = require('react'),
     _ = require('lodash'),
+    Radium = require('radium'),
     Banner = require('pages/home/banner'),
     Latest = require('pages/home/latest'),
     Popular = require('pages/home/popular');
 
-module.exports = React.createClass({
+
+var Homepage = React.createClass({
     propTypes: {
         initLoaded: React.PropTypes.bool
     },
@@ -76,14 +78,9 @@ module.exports = React.createClass({
     render: function() {
         return (
                 <div className="container header-wrapper">
-                    <div className="ad-left home">
-                        <div className="ad-box">
-                            <a href="#">
-                            <img src="static/res/ad-banner-left.png" className="img-responsive" />
-                            </a>
-                        </div>
-                    </div>
-                    
+                    <a ref="ad-left" href="#"><div style={styles.left}></div></a>
+                    <a ref="ad-right" href="#"><div style={styles.right}></div></a>
+
                     <div className="row">
                         <div className="col-xs-12 col-md-9">
                             <Banner />
@@ -118,14 +115,31 @@ module.exports = React.createClass({
                             </div>
                         </div>
                     </div>
-                    <div className="ad-right home">
-                        <div className="ad-box">
-                            <a href="#" >
-                            <img src="static/res/ad-banner-right.png" className="img-responsive" />
-                            </a>
-                        </div>
-                    </div>
                 </div>
         );
     }
-});;
+});
+
+var styles = {
+    left: {
+        height: '900px',
+        left: '-493px',
+        top: '34px',
+        position: 'fixed',
+        width: '50%',
+        cursor: 'pointer',
+        background: 'url(static/res/ad-banner-left.png) 100% 0% no-repeat scroll transparent'
+    },
+
+    right: {
+        height: '900px',
+        left: '711px',
+        top: '34px',
+        position: 'fixed',
+        width: '50%',
+        cursor: 'pointer',
+        background: 'url(static/res/ad-banner-right.png) 100% 0% no-repeat scroll transparent'
+    }
+};
+
+module.exports = Homepage;

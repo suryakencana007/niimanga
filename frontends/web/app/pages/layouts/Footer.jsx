@@ -8,7 +8,7 @@ module.exports = React.createClass({
             <footer className="footer-wrapper">
                 <div className="container">
                     <div className="row">
-                        <div className="footer-main">
+                        <div className="col-md-12 footer-main">
                             <ul className="sitemap">
                                 <li><Link to="/">home</Link></li>
                                 <li><Link to="popular">hot manga</Link></li>
@@ -18,7 +18,7 @@ module.exports = React.createClass({
                         </div>
                     </div>
                     <div className="row">
-                        <div className="disclaimer">
+                        <div className="col-md-12 disclaimer">
                             Copyrights and trademarks for the manga, and other promotional materials are held by their respective owners and their use is allowed under the fair use clause of the
                             Copyright Law.
                             <div className="corporate">© 2015 Niimanga.net.</div>

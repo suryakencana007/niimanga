@@ -1,1 +1,15 @@
 "dev": "./node_modules/.bin/webpack-dev-server --inline --content-base ./"
+<div className="ad-left home">
+    <div className="ad-box">
+        <a href="#">
+        <img src="static/res/ad-banner-left.png" className="img-responsive" />
+        </a>
+    </div>
+</div>
+<div className="ad-right home">
+  <div className="ad-box">
+      <a href="#" >
+      <img src="static/res/ad-banner-right.png" className="img-responsive" />
+      </a>
+  </div>
+</div>
