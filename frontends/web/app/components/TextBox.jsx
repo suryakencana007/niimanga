@@ -1,28 +1,16 @@
 var React = require("react");
-module.exports = React.createClass({
-    getInitialState: function() {
-        return {value: ''};
-    },
+var PureRender = require("components/mixin/PureRender");
+var {Component} = require("react/addons");
 
-    handleChange: function(event) {
-        this.setState({value: event.target.value});
-    },
-
-    render: function(e) {
-        var label = this.props.label,
-            type = this.props.type,
-            placeholder = this.props.placeholder || '';
-
+@PureRender
+class TextBox extends Component {
+    render(): any {
         return (
-            <div className="form-group">
-                <label className="col-sm-2 control-label">
-			{label}
-                </label>
-                <div className="col-sm-10">
-                    <input type={type} onChange={this.handleChange}
-                        className="form-control" placeholder={placeholder} />
-                </div>
-            </div>
-        );
+            <input 
+            className="form-control"
+            {...this.props}
+            />
+            );
     }
-});
+}
+module.exports = TextBox;

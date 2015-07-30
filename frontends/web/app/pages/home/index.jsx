@@ -1,14 +1,28 @@
 var React = require('react'),
     _ = require('lodash'),
+    // Helmet = require('react-helmet'),
+    HeadRender = require('components/mixin/HeadRender'),
     Radium = require('radium'),
     Banner = require('pages/home/banner'),
     Latest = require('pages/home/latest'),
+    Promise = require('when').Promise,
     Popular = require('pages/home/popular');
 
 
 var Homepage = React.createClass({
+    mixins: [HeadRender],
     propTypes: {
         initLoaded: React.PropTypes.bool
+    },
+    statics: {
+        fetchData: (params, query) => {
+            console.log('ok');
+            return {
+                    title: "joss",
+                    name: "groook"
+                
+            }
+        }
     },
 
     getInitialState: function () {
@@ -31,7 +45,27 @@ var Homepage = React.createClass({
     },
 
     componentDidMount(){
-     
+        var timeout;
+        this.props.loadingEvents.on('start', () => {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => {
+            this.setState({ loading: true });
+          }, 250);
+        });
+        this.props.loadingEvents.on('end', () => {
+          clearTimeout(timeout);
+          this.setState({ loading: false });
+        });
+
+        this.setState({
+            head: {
+                title: "Niimanga - The only manga reader page you'll ever need",
+                description: "Niimanga - Manga reader for free and enjoying what you'll need to reading manga popular series",
+                sitename: "Niimanga",
+                image: "http://niimanga.net/static/socmed.png",
+                url: "http://niimanga.net"
+            }
+        });
     },
 
     componentWillMount() {
@@ -76,8 +110,10 @@ var Homepage = React.createClass({
     },
 
     render: function() {
+        console.log(this.props.data);
         return (
                 <div className="container header-wrapper">
+                    {this.renderHead()}
                     <a ref="ad-left" href="#"><div style={styles.left}></div></a>
                     <a ref="ad-right" href="#"><div style={styles.right}></div></a>
 

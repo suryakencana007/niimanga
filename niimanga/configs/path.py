@@ -28,4 +28,5 @@ def includeme(config):
         here = baseurl
 
         return here
+
     config.add_request_method(_get_path, 'rak_path')

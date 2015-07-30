@@ -1,9 +1,14 @@
 require('./styles.css');
 require("font-awesome-webpack");
 
-var React = require('react'),
-Router = require('react-router'),
-routes = require('./routes');
+var React = require('react');
+var Router = require('react-router');
+var routes = require('./routes');
+var fetchData = require('./utils/fetchData');
+var EventEmitter = require('events').EventEmitter;
+
+
+var loadingEvents = new EventEmitter();
 
 var renderState = {
   element: document.getElementById('app-container'),
@@ -13,7 +18,11 @@ var renderState = {
 
 var render = () => {
   var { element, Handler, routerState } = renderState;
-  React.render(<Handler />, element);
+  loadingEvents.emit('start');
+  fetchData(routerState).then((data) => {
+    loadingEvents.emit('end');
+    React.render(<Handler data={data} loadingEvents={loadingEvents} />, element);
+  });
 };
 
 Router.run(routes(), function (Handler, state) {

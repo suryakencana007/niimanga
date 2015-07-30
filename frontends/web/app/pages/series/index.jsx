@@ -2,6 +2,8 @@ var React = require('react'),
     Router = require('react-router'),
     { Link } = Router,
     ajax = require('components/Ajax'),
+    HeadRender = require('components/mixin/HeadRender'),
+    Radium = require('radium'),
     Loading = require('components/Loading'),
     _ = require('lodash');
 
@@ -26,6 +28,7 @@ var Chapter_list = React.createClass({
     }
 });
 var Pages = React.createClass({
+    mixins: [HeadRender],
     contextTypes: {
         router: React.PropTypes.func.isRequired
     },
@@ -63,11 +66,18 @@ var Pages = React.createClass({
             dataType: 'json',
             method: 'POST',
             success: function(data) {
-                console.log(data.status);
+                // console.log(data.status);
                 if (self.isMounted()) {
                     self.setState({
                         series: data,
-                        populated: true
+                        populated: true,
+                        head: {
+                            title: data.name + " - Niimanga",
+                            description: data.description + " " + data.tags.map(function(item){return item.label + " "}),
+                            sitename: "Niimanga",
+                            image: "http://niimanga.net/" + data.thumb_url,
+                            url: "http://niimanga.net/#/manga/" + data.last_url.split('/')[0]
+                        }
                     });
                 }
             }.bind(self),
@@ -148,18 +158,42 @@ var Pages = React.createClass({
         }
         return (
             <div className="row">
+            {this.renderHead()}
             {body}
             </div>
-
         );
     }
 });
+
+var styles = {
+    left: {
+        height: '900px',
+        left: '-493px',
+        top: '34px',
+        position: 'fixed',
+        width: '50%',
+        cursor: 'pointer',
+        background: 'url(static/res/ad-banner-left.png) 100% 0% no-repeat scroll transparent'
+    },
+
+    right: {
+        height: '900px',
+        left: '711px',
+        top: '34px',
+        position: 'fixed',
+        width: '50%',
+        cursor: 'pointer',
+        background: 'url(static/res/ad-banner-right.png) 100% 0% no-repeat scroll transparent'
+    }
+};
 
 module.exports = React.createClass({
     render: function() {
         return (
             <div>
                 <div className="container">
+                 <a ref="ad-left" href="#"><div style={styles.left}></div></a>
+                 <a ref="ad-right" href="#"><div style={styles.right}></div></a>
                     <Pages />
                 </div>
             </div>

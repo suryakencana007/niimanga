@@ -75,7 +75,6 @@ module.exports = React.createClass({
     },
 
     render: function () {
-        var activeCategory = this.context.router.getCurrentParams().category;       
         // <GoogleAnalytics id="UA-65629589-1" />
         return (
         <div className={this.isWrapper()}>
@@ -84,7 +83,7 @@ module.exports = React.createClass({
 
             <div className="content-wrapper">
                 
-                <RouteHandler />
+                <RouteHandler {...this.props}/>
             </div>
             <Footer />
             <ScrollToTopBtn />

@@ -13,8 +13,8 @@ Search = require('./pages/search');
 
 module.exports = () => {
     return [
-    <Route handler={App}>
-        <DefaultRoute handler={Index} />
+    <Route name="root" path="/" handler={App}>
+        <DefaultRoute name="home" path="/" handler={Index} />
         <Route name="popular" path="/popular" handler={Popular} />
         <Route name="latest" path="/latest" handler={Latest} />
         <Route name="series" path="/manga/:seriesSlug" handler={Series} />

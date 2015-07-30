@@ -37,6 +37,5 @@ def load_ini():
         selected_ini
     )
     cfg.readfp(open(ini_path))
-
     # Hold onto the ini config.
     return dict(cfg.items('app:main', raw=True))
