@@ -1,7 +1,7 @@
 var React = require('react'),
     Router = require('react-router'),
     { RouteHandler } = Router,
-    // GoogleAnalytics = require('react-g-analytics'),
+    GoogleAnalytics = require('react-g-analytics'),
     ajax = require('components/Ajax'),
     Navbar = require('pages/layouts/Navbar'),
     Footer = require('pages/layouts/Footer'),
