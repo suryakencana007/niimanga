@@ -118,6 +118,8 @@ class MangaApi(ZHandler):
     @view_config(route_name='latest_manga', renderer='json', request_method='POST')
     def latest_manga(self):
         _ = self.R
+        limit = int(_.params.get('cards', 16))
+        offset = int(_.params.get('page', 1)) * limit
         """ output
             dict(
             url = request.storage.url(filename)
@@ -133,20 +135,23 @@ class MangaApi(ZHandler):
         """
         qry = Manga.query
         latest = qry \
-            .filter(and_(Manga.chapter_updated.between(datetime.now() - timedelta(days=7), datetime.now()),
-                         Manga.chapter_count > 0)) \
+            .filter(Manga.chapter_count > 0) \
             .order_by(desc(Manga.chapter_updated)) \
-            .limit(16) \
+            .offset(offset) \
+            .limit(limit) \
             .all()
         return MangaApi._card_fill(_, latest)
 
     @view_config(route_name='popular_manga', renderer='json')
     def popular_series(self):
         _ = self.R
+        limit = int(_.params.get('cards', 5))
+        offset = int(_.params.get('page', 1)) * limit
         qry = Manga.query
         popular = qry.filter(Manga.chapter_count > 0) \
             .order_by(desc(Manga.viewed)) \
-            .limit(5) \
+            .offset(offset) \
+            .limit(limit) \
             .all()
         return MangaApi._card_fill(_, popular)
 

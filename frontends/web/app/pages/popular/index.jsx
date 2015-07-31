@@ -1,38 +1,16 @@
 var React = require('react'),
-    _ = require('lodash'),
-    ajax = require('components/Ajax'),
-    Loading = require('components/Loading'),
-    ListCard = require('components/manga/ListCard');
-
-var CardList = React.createClass({
-    renderCard: function (card, index){
-        return(
-            <ListCard manga={card}/>
-        );
-    },
-
-    render: function() {
-        return(
-            <div className="latest-list">
-                <div className="title-green">Popular Manga</div>
-                <Loading loading={this.props.fetching} />
-            {this.props.manga.map(this.renderCard)}
-            </div>
-        );
-    }
-});
+_ = require('lodash'),
+Radium = require('radium'),
+ajax = require('components/Ajax'),
+Loading = require('components/Loading'),
+InfiniteScroll = require('components/scroller/InfiniteScroll'),
+ListCard = require('components/manga/ListCard');
 
 var popular = React.createClass({
-    componentWillMount: function () {
-        this.fetchCards();
-    },
-
-    componentDidMount: function (){
-        //this.fetchCards();
-    },
-
     getInitialState: function () {
         return {
+            limit: 25,
+            offset: 1,
             cards : [],
             fetching: false
         }
@@ -40,25 +18,23 @@ var popular = React.createClass({
 
     fetchCards: function () {
         var newState = this.state;
-        newState.cards = [];
+        // newState.cards = [];
         newState.fetching = true;
 
         this.setState(newState);
 
         var self = this;
         ajax.toAjax({
-            url: '/api/v1/popular',
+            url: '/api/v1/popular?page=' + newState.offset + '&cards=' + newState.limit,
             dataType: 'json',
             method: 'POST',
             success: function (data) {
                 //cached.set('chapter_' + url, data);
                 self.updateCardsData(data);
+                // console.log(data);
             }.bind(self),
             error: function (data) {
-                //self.setState({
-                //    errorMsg: data.responseJSON.msg
-                //});
-                console.log(data);
+
             }.bind(self),
             complete: function () {
                 self.setState({fetching: false});
@@ -68,21 +44,47 @@ var popular = React.createClass({
 
     updateCardsData: function (data) {
         this.setState({
-            cards: data
+            cards: this.state.cards.concat(data),
+            offset: this.state.offset + 1
         });
     },
 
+    _onRequestMoreItems: function (){
+        this.fetchCards();
+    },
+    
+    renderCard: function (card, index){
+        return <ListCard manga={card} key={index}/>;
+    },
+
     render: function() {
-        return (
-            <div>
-                <div className="container">
-                    <div className="row">
-                        <CardList manga={this.state.cards} fetching={this.state.fetching} />
-                    </div>
+        return(
+           <div className="container">
+           <div className="row">
+                <div className="popular-list">
+                    <div className="title-green">Popular Manga</div>
+                    <InfiniteScroll
+                    hasMore={true}
+                    onRequestMoreItems={this._onRequestMoreItems}
+                    threshold={250}
+                    style={styles.messagesList}>
+                    {this.state.cards.map(this.renderCard)}
+                    </InfiniteScroll>
                 </div>
+                <Loading loading={this.state.fetching} />
             </div>
-        );
+            </div>
+            );
     }
 });
 
+var styles = {
+    wrapperList: {
+        height: '250px',
+        overflow: 'hidden'
+    },
+    messagesList: {
+        height: '100%'
+    },
+}
 module.exports = popular;

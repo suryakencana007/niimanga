@@ -5,7 +5,6 @@ var React = require('react'),
     Radium = require('radium'),
     Banner = require('pages/home/banner'),
     Latest = require('pages/home/latest'),
-    Promise = require('when').Promise,
     Popular = require('pages/home/popular');
 
 
@@ -18,9 +17,8 @@ var Homepage = React.createClass({
         fetchData: (params, query) => {
             console.log('ok');
             return {
-                    title: "joss",
-                    name: "groook"
-                
+                title: "joss",
+                name: "groook"
             }
         }
     },
@@ -110,7 +108,6 @@ var Homepage = React.createClass({
     },
 
     render: function() {
-        console.log(this.props.data);
         return (
                 <div className="container header-wrapper">
                     {this.renderHead()}

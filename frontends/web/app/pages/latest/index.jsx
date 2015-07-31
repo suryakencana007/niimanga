@@ -1,61 +1,40 @@
 var React = require('react'),
-    _ = require('lodash'),
-    ajax = require('components/Ajax'),
-    Loading = require('components/Loading'),
-    Card = require('components/manga/Card');
-
-var CardList = React.createClass({
-    renderCard: function (card, index){
-        return(
-            <Card manga={card}/>
-        );
-    },
-
-    render: function() {
-        return(
-            <div className="latest-list">
-                <div className="title-green">Latest Manga</div>
-                <Loading loading={this.props.fetching} />
-            {this.props.manga.map(this.renderCard)}
-            </div>
-        );
-    }
-});
+_ = require('lodash'),
+Radium = require('radium'),
+ajax = require('components/Ajax'),
+Loading = require('components/Loading'),
+InfiniteScroll = require('components/scroller/InfiniteScroll'),
+Card = require('components/manga/Card');
 
 var latest = React.createClass({
-    componentDidMount: function (){
-        this.fetchCards(this.props.url);
-    },
-
     getInitialState: function () {
         return {
+            limit: 10,
+            offset: 1,
             cards : [],
             fetching: false
         }
     },
 
-    fetchCards: function (url) {
+    fetchCards: function () {
         var newState = this.state;
-        newState.cards = [];
+        // newState.cards = [];
         newState.fetching = true;
 
         this.setState(newState);
 
         var self = this;
         ajax.toAjax({
-            url: '/api/v1/latest',
+            url: '/api/v1/latest?page=' + newState.offset + '&cards=' + newState.limit,
             dataType: 'json',
             method: 'POST',
             success: function (data) {
                 //cached.set('chapter_' + url, data);
                 self.updateCardsData(data);
-                console.log(data);
+                // console.log(data);
             }.bind(self),
             error: function (data) {
-                //self.setState({
-                //    errorMsg: data.responseJSON.msg
-                //});
-                console.log(data);
+
             }.bind(self),
             complete: function () {
                 self.setState({fetching: false});
@@ -65,21 +44,47 @@ var latest = React.createClass({
 
     updateCardsData: function (data) {
         this.setState({
-            cards: data
+            cards: this.state.cards.concat(data),
+            offset: this.state.offset + 1
         });
     },
 
+    _onRequestMoreItems: function (){
+        this.fetchCards();
+    },
+    
+    renderCard: function (card, index){
+        return <Card manga={card} key={index}/>;
+    },
+
     render: function() {
-        return (
-            <div>
-                <div className="container">
-                    <div className="row">
-                        <CardList manga={this.state.cards} fetching={this.state.fetching} />
+        return(
+            <div className="container">
+                <div className="row">
+                    <div className="latest-list">
+                    <div className="title-green">Latest Manga</div>
+                    <InfiniteScroll
+                    hasMore={true}
+                    onRequestMoreItems={this._onRequestMoreItems}
+                    threshold={250}
+                    style={styles.messagesList}>
+                    {this.state.cards.map(this.renderCard)}
+                    </InfiniteScroll>                   
                     </div>
+                    <Loading loading={this.state.fetching} />
                 </div>
             </div>
         );
     }
 });
 
+var styles = {
+    wrapperList: {
+        height: '250px',
+        overflow: 'hidden'
+    },
+    messagesList: {
+        height: '100%'
+    },
+}
 module.exports = latest;

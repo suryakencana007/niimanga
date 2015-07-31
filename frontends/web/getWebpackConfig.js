@@ -72,6 +72,9 @@ module.exports = function(options) {
 
   if (options.environment === 'prod') {
     config.plugins = [
+    new webpack.DefinePlugin({
+      'process.env': {NODE_ENV: '"production"'}
+    }),
     new webpack.optimize.UglifyJsPlugin(),
     new webpack.optimize.DedupePlugin()
     ]

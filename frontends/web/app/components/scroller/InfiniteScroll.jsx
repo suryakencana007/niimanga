@@ -41,11 +41,13 @@ class InfiniteScroll extends Component {
 
   _attachListeners() {
     window.addEventListener('resize', this._update);
+    window.addEventListener('scroll', this._update);
     this._update();
   }
 
   _detachListeners() {
     window.removeEventListener('resize', this._update);
+    window.removeEventListener('scroll', this._update);
   }
 
   _onScroll = (event: Event) => {
@@ -63,7 +65,8 @@ class InfiniteScroll extends Component {
       el.offsetHeight -
       el.scrollTop
     ) < Number(this.props.threshold);
-
+     console.log(isPastThreshold);
+     console.log(el.scrollTop + ': scrollTop');
     if ((!this._lastHeight || this._lastHeight < height) && isPastThreshold) {
       // call loadMore after _detachListeners to allow
       // for non-async loadMore functions

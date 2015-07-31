@@ -152,7 +152,7 @@ class Scroller extends Component {
 var styles = {
   scroller: {
     overflow: 'hidden',
-    position: 'relative',
+    position: 'relative'
   },
 
   scrollbar: {
@@ -163,6 +163,7 @@ var styles = {
     top: 0,
     transition: 'opacity .25s',
     width: '8px',
+    zIndex: 999
   },
 
   scrollbarHover: {

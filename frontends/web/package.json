@@ -51,6 +51,7 @@
     "font-awesome-webpack": "0.0.3",
     "react-g-analytics": "~0.1.0",
     "react-helmet": "~1.1.0",
-    "object-assign": "~3.0.0"
+    "object-assign": "~3.0.0",
+    "axios": "~0.5.4"
   }
 }

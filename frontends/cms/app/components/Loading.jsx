@@ -13,7 +13,7 @@ module.exports = React.createClass({
         var text = <h4>{this.props.text}</h4> || '';
         return (
             <div className='icon-container' style={this.css}>
-                <i className='fa fa-5x fa-spinner fa-spin'></i>
+                <i className='fa fa-5x fa-spinner fa-pulse'></i>
                 {text}
             </div>
         );
