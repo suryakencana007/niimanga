@@ -75,14 +75,13 @@ module.exports = React.createClass({
     },
 
     render: function () {
-        // <GoogleAnalytics id="UA-65629589-1" />
         return (
         <div className={this.isWrapper()}>
             {this.state.isLoading ? <Spinner /> : null}
             <Navbar genres={this.state.genres}/>
 
             <div className="content-wrapper">
-                
+                <GoogleAnalytics id="UA-65629589-1" />
                 <RouteHandler {...this.props}/>
             </div>
             <Footer />
