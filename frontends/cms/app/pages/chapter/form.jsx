@@ -41,7 +41,6 @@ module.exports = React.createClass({
                             <SelectSeries
                                 name="series"
                                 value={this.state.series}
-                                searchable={true}
                                 onChange={this._onChangeSeries}
                             />
                             <span className="help-block"></span>
@@ -60,7 +59,6 @@ module.exports = React.createClass({
                             <SelectLang
                                 name="lang"
                                 value={this.state.lang}
-                                searchable={true}
                                 onChange={this._onChangeLang}/>
                                 <span className="help-block"></span>
                         </div>

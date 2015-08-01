@@ -5,8 +5,9 @@
   "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "PRODUCTION=1 ./node_modules/.bin/webpack",
-    "dev": "./node_modules/.bin/webpack-dev-server --devtool eval --progress --colors --hot --content-base dist/"
+    "serve": "node server.js",
+    "build": "./node_modules/.bin/webpack --config webpack.prod.config.js",
+    "dev": "npm run serve"
   },
   "author": "zi nanang.ask@gmail.com",
   "license": "MIT",
@@ -46,6 +47,8 @@
     "react-onclickoutside": "~0.2.4",
     "events": "~1.0.2",
     "font-awesome": "~4.3.0",
-    "font-awesome-webpack": "0.0.3"
+    "font-awesome-webpack": "0.0.3",
+    "axios": "~0.5.4",
+    "object-assign": "~3.0.0"
   }
 }

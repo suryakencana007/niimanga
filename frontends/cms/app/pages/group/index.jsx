@@ -1,5 +1,6 @@
 var React = require('react'),
     _ = require('lodash'),
+    $ = require('jquery'),
     GridTable = require('components/Grid'),
     Modal = require('components/modal'),
     Form = require('pages/group/form');

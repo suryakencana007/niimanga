@@ -1,6 +1,5 @@
 var React = require('react'),
     _ = require('lodash'),
-    // Helmet = require('react-helmet'),
     HeadRender = require('components/mixin/HeadRender'),
     Radium = require('radium'),
     Banner = require('pages/home/banner'),

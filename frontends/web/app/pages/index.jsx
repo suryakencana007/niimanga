@@ -1,15 +1,16 @@
 var React = require('react'),
-    Router = require('react-router'),
-    { RouteHandler } = Router,
-    GoogleAnalytics = require('react-g-analytics'),
-    ajax = require('components/Ajax'),
-    Navbar = require('pages/layouts/Navbar'),
-    Footer = require('pages/layouts/Footer'),
-    ScrollToTopBtn = require('components/ScrollToTop'),
-    Spinner = require('components/Spinner');
+Router = require('react-router'),
+{ RouteHandler } = Router,
+GoogleAnalytics = require('react-g-analytics'),
+ajax = require('components/Ajax'),
+HeadRender = require('components/mixin/HeadRender'),
+Navbar = require('pages/layouts/Navbar'),
+Footer = require('pages/layouts/Footer'),
+ScrollToTopBtn = require('components/ScrollToTop'),
+Spinner = require('components/Spinner');
 
 module.exports = React.createClass({
-
+    mixins: [HeadRender],
     contextTypes: {
         router: React.PropTypes.func.isRequired
     },
@@ -66,27 +67,27 @@ module.exports = React.createClass({
                 //self.setState({
                 //    errorMsg: data.responseJSON.msg
                 //});
-                console.log(data);
-            }.bind(self),
-            complete: function () {
-                self.setState({fetching: false});
-            }.bind(self)
-        });
+        console.log(data);
+    }.bind(self),
+    complete: function () {
+        self.setState({fetching: false});
+    }.bind(self)
+});
     },
 
     render: function () {
         return (
-        <div className={this.isWrapper()}>
+            <div className={this.isWrapper()}>
             {this.state.isLoading ? <Spinner /> : null}
             <Navbar genres={this.state.genres}/>
 
             <div className="content-wrapper">
-                <GoogleAnalytics id="UA-65629589-1" />
-                <RouteHandler {...this.props}/>
+            <GoogleAnalytics id="UA-65629589-1" />
+            <RouteHandler {...this.props}/>
             </div>
             <Footer />
             <ScrollToTopBtn />
-        </div>
-        );
+            </div>
+            );
     }
 });

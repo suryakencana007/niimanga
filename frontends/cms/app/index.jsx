@@ -1,11 +1,11 @@
-'use strict';
 require('./styles.css');
 require("font-awesome-webpack");
-require('X-editable/dist/bootstrap3-editable/css/bootstrap-editable.css');
-require('X-editable/dist/bootstrap3-editable/js/bootstrap-editable.js');
+
+// require('X-editable/dist/bootstrap3-editable/css/bootstrap-editable.css');
+// require('X-editable/dist/bootstrap3-editable/js/bootstrap-editable.js');
 require('bootstrap-table/dist/bootstrap-table.css');
 require('bootstrap-table/dist/bootstrap-table.js');
-require('bootstrap-table/dist/extensions/editable/bootstrap-table-editable.js');
+// require('bootstrap-table/dist/extensions/editable/bootstrap-table-editable.js');
 
 var React = require('react'),
 Router = require('react-router'),

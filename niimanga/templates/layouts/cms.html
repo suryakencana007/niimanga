@@ -1,16 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Niimanga</title>
-<!-- 	<link rel="stylesheet" href="todomvc-common/base.css"> -->
-	<link rel="stylesheet" href="${request.static_url('niimanga:public/css/app.css')}">
-	<link rel="stylesheet" href="${request.static_url('niimanga:public/css/mix.css')}">
+<head itemscope itemtype="http://schema.org/WebSite"> 
+  <title itemprop="name"></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <link rel="icon" href="http://favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://favicon.ico" type="image/x-icon">
+  <link itemprop="url" href="http://www.niimanga.net">
 </head>
+
 <body>
-    <div id="up-component"></div>
-    <script src="${request.static_url('niimanga:public/js/vendor.js')}"></script>
-	<script src="${request.static_url('niimanga:public/js/app.js')}"></script>
-	<script>require("index");</script>
+<div id="app-container"></div>
+<div id="up-component"></div>
+<script src="${request.static_url('niimanga:public/bmain.js')}"></script>
 </body>
 </html>

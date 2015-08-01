@@ -286,7 +286,7 @@ class Batoto(Site):
         if webtoon is not None:
             img_tags = soup.find_all(_page_img_tag)
             return [
-                {'url': tag['src'], 'filename': tag['src'].split('/')[-1]}
+                tag['src']
                 for tag in img_tags
             ]
 

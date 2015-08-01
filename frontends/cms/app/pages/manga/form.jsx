@@ -64,7 +64,6 @@ module.exports = React.createClass({
                              <GenreSeries
                                 name="genres"
                                 value={this.state.genres}
-                                searchable={true}
                                 onChange={this._onChangeGenres}
                             />
                             <span className="help-block">Here goes genres Series</span>

@@ -24,7 +24,7 @@ module.exports = React.createClass({
                 asyncOptions={this.fetchLangs}
                 name={this.props.name}
                 ref="selectLang"
-                searchable={this.props.searchable}
+                
                 value={this.props.value}
                 onChange={this._onChange} />
         );

@@ -65,8 +65,7 @@ class InfiniteScroll extends Component {
       el.offsetHeight -
       el.scrollTop
     ) < Number(this.props.threshold);
-     console.log(isPastThreshold);
-     console.log(el.scrollTop + ': scrollTop');
+    
     if ((!this._lastHeight || this._lastHeight < height) && isPastThreshold) {
       // call loadMore after _detachListeners to allow
       // for non-async loadMore functions

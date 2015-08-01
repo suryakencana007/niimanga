@@ -1,4 +1,5 @@
 var React = require("react");
+var $ = require('jquery');
 
 module.exports = React.createClass({
     render: function() {
@@ -43,7 +44,7 @@ module.exports = React.createClass({
     },
 
     componentDidMount: function () {
-        this.$el = $(this.getDOMNode());
+        this.$el = $(React.findDOMNode(this));
         this.$el.on("hidden.bs.modal", this.reset);
 
         //emitter.on(constants.changed, function() {
