@@ -1,10 +1,10 @@
 var React = require('react'),
-    _ = require('lodash'),
-    HeadRender = require('components/mixin/HeadRender'),
-    Radium = require('radium'),
-    Banner = require('pages/home/banner'),
-    Latest = require('pages/home/latest'),
-    Popular = require('pages/home/popular');
+_ = require('lodash'),
+HeadRender = require('components/mixin/HeadRender'),
+Radium = require('radium'),
+Banner = require('pages/home/banner'),
+Latest = require('pages/home/latest'),
+Popular = require('pages/home/popular');
 
 
 var Homepage = React.createClass({
@@ -47,12 +47,12 @@ var Homepage = React.createClass({
           clearTimeout(timeout);
           timeout = setTimeout(() => {
             this.setState({ loading: true });
-          }, 250);
-        });
+        }, 250);
+      });
         this.props.loadingEvents.on('end', () => {
           clearTimeout(timeout);
           this.setState({ loading: false });
-        });
+      });
 
         this.setState({
             head: {
@@ -69,14 +69,16 @@ var Homepage = React.createClass({
         (function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0],
           p=/^http:/.test(d.location)?'http':'https';
+          if(d.getElementById(id)) return;
           js = d.createElement(s); 
           js.id = id;
           js.type = 'text/javascript';
           js.async = true;
           js.src =p+"://connect.facebook.net/en_US/sdk.js";
           fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+      }(document, 'script', 'facebook-jssdk'));
         (function(id) {
+            if(document.getElementById(id)) return;
             var po = document.createElement('script'); 
             po.id=id;
             po.type = 'text/javascript';
@@ -88,6 +90,7 @@ var Homepage = React.createClass({
         (function(d,s,id){
             var js,fjs=d.getElementsByTagName(s)[0],
             p=/^http:/.test(d.location)?'http':'https';
+            if(d.getElementById(id)) return;
             js=d.createElement(s);
             js.id=id;
             js.type = 'text/javascript';
@@ -104,48 +107,48 @@ var Homepage = React.createClass({
 
     render: function() {
         return (
-                <div className="container header-wrapper">
-                    {this.renderHead()}
-                    <a ref="ad-left" href="#"><div style={styles.left}></div></a>
-                    <a ref="ad-right" href="#"><div style={styles.right}></div></a>
+            <div className="container header-wrapper">
+            {this.renderHead()}
+            <a ref="ad-left" href="#"><div style={styles.left}></div></a>
+            <a ref="ad-right" href="#"><div style={styles.right}></div></a>
 
-                    <div className="row">
-                        <div className="col-xs-12 col-md-9">
-                            <Banner />
-                            <Latest />
-                        </div>
-                        <div className="col-xs-12 col-md-3">
-                            <div className="fb-page socmed card-content" 
-                                data-href="https://www.facebook.com/niimanga" 
-                                data-small-header="false" 
-                                data-adapt-container-width="true" 
-                                data-hide-cover="false" 
-                                data-show-facepile="true" 
-                                data-show-posts="false">
-                                <div className="fb-xfbml-parse-ignore">
-                                <blockquote cite="https://www.facebook.com/niimanga">
-                                <a href="https://www.facebook.com/niimanga">Niimanga</a></blockquote>
-                                </div>
-                            </div>
+            <div className="row">
+            <div className="col-xs-12 col-md-9">
+            <Banner />
+            <Latest />
+            </div>
+            <div className="col-xs-12 col-md-3">
+            <div className="fb-page socmed card-content" 
+            data-href="https://www.facebook.com/niimanga" 
+            data-small-header="false" 
+            data-adapt-container-width="true" 
+            data-hide-cover="false" 
+            data-show-facepile="true" 
+            data-show-posts="false">
+            <div className="fb-xfbml-parse-ignore">
+            <blockquote cite="https://www.facebook.com/niimanga">
+            <a href="https://www.facebook.com/niimanga">Niimanga</a></blockquote>
+            </div>
+            </div>
 
-                            <Popular />
-                            <div className="title-green">Social Media Page</div>
-                            <div className="socmed">
-                                <div className="g-page" 
-                                data-width="215" 
-                                data-href="//plus.google.com/u/0/109363191390818524400" 
-                                data-rel="publisher"></div>
-                            </div>
-                            <div className="socmed">
-                                <a className="twitter-timeline card-content" 
-                                href="https://twitter.com/niimanga"
-                                 data-widget-id="625868171711393792">Tweets by @niimanga</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        );
-    }
+            <Popular />
+            <div className="title-green">Social Media Page</div>
+            <div className="socmed">
+            <div className="g-page" 
+            data-width="215" 
+            data-href="//plus.google.com/u/0/109363191390818524400" 
+            data-rel="publisher"></div>
+            </div>
+            <div className="socmed">
+            <a className="twitter-timeline card-content" 
+            href="https://twitter.com/niimanga"
+            data-widget-id="625868171711393792">Tweets by @niimanga</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            );
+}
 });
 
 var styles = {
