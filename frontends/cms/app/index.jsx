@@ -1,16 +1,18 @@
 require('./styles.css');
 require("font-awesome-webpack");
-
-// require('X-editable/dist/bootstrap3-editable/css/bootstrap-editable.css');
-// require('X-editable/dist/bootstrap3-editable/js/bootstrap-editable.js');
 require('bootstrap-table/dist/bootstrap-table.css');
 require('bootstrap-table/dist/bootstrap-table.js');
-// require('bootstrap-table/dist/extensions/editable/bootstrap-table-editable.js');
 
-var React = require('react'),
-Router = require('react-router'),
-routes = require('./routes');
+var React = require('react');
+var Router = require('react-router');
+var routes = require('./routes');
+var fetchData = require('./utils/fetchData');
+var rehydrate = require('./utils/rehydrate');
+var { EventEmitter } = require('events');
 
+var loadingEvents = new EventEmitter();
+
+var token = rehydrate();
 var renderState = {
   element: document.getElementById('app-container'),
   Handler: null,
@@ -18,8 +20,12 @@ var renderState = {
 };
 
 var render = () => {
-  var { element, Handler, routerState } = renderState;
-  React.render(<Handler />, element);
+   var { element, Handler, routerState } = renderState;
+  loadingEvents.emit('start');
+  fetchData(token, routerState).then((data) => {
+    loadingEvents.emit('end');
+    React.render(<Handler data={data} token={token} loadingEvents={loadingEvents} />, element);
+  });
 };
 
 Router.run(routes(), function (Handler, state) {

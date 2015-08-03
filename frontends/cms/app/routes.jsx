@@ -1,6 +1,6 @@
 var React = require('react'),
 Router = require('react-router'),
-{ Route, DefaultRoute } = Router,
+{ Route, DefaultRoute, NotFoundRoute } = Router,
 App = require('./pages'),
 Index = require('./pages/home'),
 Group = require('./pages/group'),
@@ -10,11 +10,12 @@ Chapter = require('./pages/chapter');
 
 module.exports = () => {
     return [
-    <Route handler={App}>
+    <Route name="root" path="/" handler={App}>
         <DefaultRoute handler={Index} />
         <Route name="group" path="/group" handler={Group} />
         <Route name="series" path="/series" handler={Series} />
         <Route name="chapter" path="/chapter" handler={Chapter} />
-    </Route>
+        <NotFoundRoute handler={require('./pages/NotFound')}/>
+    </Route>    
     ];
 };

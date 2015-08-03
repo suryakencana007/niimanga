@@ -8,7 +8,7 @@ module.exports = React.createClass({
         refresh: React.PropTypes.bool,
         clickToSelect: React.PropTypes.bool,
         singleSelect: React.PropTypes.bool,
-        usave: React.PropTypes.func,
+        usave: React.PropTypes.string,
         save: React.PropTypes.func,
         onCheckRow: React.PropTypes.func,
         onClickRow: React.PropTypes.func
@@ -48,7 +48,7 @@ module.exports = React.createClass({
         });
 
         // events grid table
-        if (this.props.usave) this._onEditableSave(this.props.usave);        
+        if (this.props.usave) this._onEditableSave(this.props.usave);
         if (this.props.save) this._onEditable();
         if (this.props.onCheckRow) this._onCheckRow();
         if (this.props.onUnCheckRow) this._onUnCheckRow();

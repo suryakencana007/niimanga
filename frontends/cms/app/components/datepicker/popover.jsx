@@ -1,5 +1,5 @@
-var React = require('react'),
-    Tether = require('components/datepicker/util/tether');
+var React = require('react');
+var Tether = require('components/datepicker/util/tether');
 var Popover = React.createClass({
   displayName: 'Popover',
 

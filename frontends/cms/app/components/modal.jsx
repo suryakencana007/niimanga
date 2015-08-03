@@ -34,7 +34,7 @@ module.exports = React.createClass({
     },
 
     css: {
-        'margin-bottom': '27px'
+        marginBottom: '27px'
     },
 
     getInitialState: function() {

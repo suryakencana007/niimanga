@@ -1,13 +1,14 @@
-var React = require('react'),
-Router = require('react-router'),
-{ RouteHandler } = Router,
-GoogleAnalytics = require('react-g-analytics'),
-ajax = require('components/Ajax'),
-HeadRender = require('components/mixin/HeadRender'),
-Navbar = require('pages/layouts/Navbar'),
-Footer = require('pages/layouts/Footer'),
-ScrollToTopBtn = require('components/ScrollToTop'),
-Spinner = require('components/Spinner');
+var React = require('react');
+var Router = require('react-router');
+var { RouteHandler } = Router;
+var GoogleAnalytics = require('react-g-analytics');
+var ajax = require('components/Ajax');
+var HeadRender = require('components/mixin/HeadRender');
+var Navbar = require('pages/layouts/Navbar');
+var Footer = require('pages/layouts/Footer');
+var TransitionGroup = require('react/lib/ReactCSSTransitionGroup');
+var ScrollToTopBtn = require('components/ScrollToTop');
+var Spinner = require('components/Spinner');
 
 module.exports = React.createClass({
     mixins: [HeadRender],
@@ -83,7 +84,9 @@ module.exports = React.createClass({
 
             <div className="content-wrapper">
             <GoogleAnalytics id="UA-65629589-1" />
-            <RouteHandler {...this.props}/>
+            <TransitionGroup transitionName="tcontent">
+            <RouteHandler key={name} {...this.props}/>
+            </TransitionGroup>
             </div>
             <Footer />
             <ScrollToTopBtn />

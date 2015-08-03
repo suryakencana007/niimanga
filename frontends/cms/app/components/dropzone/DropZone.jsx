@@ -1,8 +1,8 @@
-var React = require('react'),
-    _ = require('lodash'),
-    UUID = require('utils/uuid'),
-    DzPreview = require('components/dropzone/DzPreview'),
-    BasicUpload = require('components/dropzone/xhr');
+var React = require('react');
+var _ = require('lodash');
+var UUID = require('utils/uuid');
+var DzPreview = require('components/dropzone/DzPreview');
+var BasicUpload = require('components/dropzone/xhr');
 
 var Dropzone = React.createClass({
     getDefaultProps: function() {
@@ -168,8 +168,8 @@ var Dropzone = React.createClass({
         }
 
         var style = this.props.style || {
-                'min-width': this.props.size || 100,
-                'min-height': this.props.size || 100,
+                minWidth: this.props.size || 100,
+                minHeight: this.props.size || 100,
                 borderStyle: this.state.isDragActive ? 'solid' : 'dashed'
             };
 

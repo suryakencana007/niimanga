@@ -36,7 +36,7 @@ module.exports = React.createClass({
             <form className="form-horizontal">
                 <div className="form-group">
                     <div className="row">
-                        <label className="col-md-4 control-label" for="manga">Series</label>
+                        <label className="col-md-4 control-label">Series</label>
                         <div className="col-md-6">
                             <SelectSeries
                                 name="series"
@@ -47,14 +47,14 @@ module.exports = React.createClass({
                         </div>
                     </div>
                     <div className="row">
-                        <label className="col-md-4 control-label" for="title">Chapter Title</label>
+                        <label className="col-md-4 control-label">Chapter Title</label>
                         <div className="col-md-6">
                             <input id="title" name="title" type="text" placeholder="Chapter Title" className="form-control input-md" />
                             <span className="help-block">Here goes your Chapter Title</span>
                         </div>
                     </div>
                     <div className="row">
-                        <label className="col-md-4 control-label" for="lang">Language</label>
+                        <label className="col-md-4 control-label">Language</label>
                         <div className="col-md-6">
                             <SelectLang
                                 name="lang"
@@ -64,21 +64,21 @@ module.exports = React.createClass({
                         </div>
                     </div>
                      <div className="row">
-                        <label className="col-md-4 control-label" for="chapter">Chapter</label>
+                        <label className="col-md-4 control-label">Chapter</label>
                         <div className="col-md-6">
                             <input id="chapter" name="chapter" type="text" placeholder="Chapter no" className="form-control input-md" />
                             <span className="help-block">Here goes your Chapter no</span>
                         </div>
                     </div>
                     <div className="row">
-                        <label className="col-md-4 control-label" for="volume">Volume</label>
+                        <label className="col-md-4 control-label">Volume</label>
                         <div className="col-md-6">
                             <input id="volume" name="volume" type="text" placeholder="Volume no" className="form-control input-md" />
                             <span className="help-block">Here goes your Volume no</span>
                         </div>
                     </div>
                     <div className="row">
-                        <label className="col-md-4 control-label" for="upload">Upload Chapter</label>
+                        <label className="col-md-4 control-label">Upload Chapter</label>
                         <div className="col-md-6">
                             <DropZone ref="dropZone" multiple={false} onDrop={this._onDrop} urlXhr='/upload' methodXhr='POST' />
                             <span className="help-block">please *zip or rar upload</span>
