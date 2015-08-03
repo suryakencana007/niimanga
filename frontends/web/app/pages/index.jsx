@@ -59,21 +59,18 @@ module.exports = React.createClass({
             dataType: 'json',
             method: 'GET',
             success: function (data) {
-                //cached.set('chapter_' + url, data);
-                // console.log(data.rows);
+             
                 data =  Array.prototype.slice.call(data.rows, 0, data.rows.length);
                 self.setState({genres: data})
             }.bind(self),
             error: function (data) {
-                //self.setState({
-                //    errorMsg: data.responseJSON.msg
-                //});
-        console.log(data);
-    }.bind(self),
-    complete: function () {
-        self.setState({fetching: false});
-    }.bind(self)
-});
+              
+                console.log(data);
+            }.bind(self),
+            complete: function () {
+                self.setState({fetching: false});
+            }.bind(self)
+        });
     },
 
     render: function () {
