@@ -100,12 +100,12 @@ var Homepage = React.createClass({
 
     componentWillUnmount(){
         this.setState({initLoaded: false});
-        var d = document.getElementsByTagName('body')[0];
-        if(typeof d !== 'undefined') {
-            d.removeChild(document.getElementById("facebook-jssdk"));
-            d.removeChild(document.getElementById("google-pjs"));
-            d.removeChild(document.getElementById("twitter-wjs"));
-        }
+        // var d = document.getElementsByTagName('body')[0];
+        // if(typeof d !== 'undefined') {
+        //     d.removeChild(document.getElementById("facebook-jssdk"));
+        //     d.removeChild(document.getElementById("google-pjs"));
+        //     d.removeChild(document.getElementById("twitter-wjs"));
+        // }
     },
 
     render: function() {
