@@ -16,7 +16,7 @@ DEV_INI = development.ini
 # untuk production live
 .PHONY: run_app
 run_app:
-	$(GUNICORN) --paster $(PROD_INI) --reload &
+	$(GUNICORN) --paster $(PROD_INI) --worker-class gevent --reload &
 .PHONY: run_celery
 run_celery:
 	$(CELERY) worker -A pyramid_celery.celery_app --ini $(DEV_INI) -B &
