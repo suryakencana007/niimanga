@@ -14,7 +14,7 @@ Search = require('./pages/search');
 module.exports = () => {
     return [
     <Route name="root" path="/" handler={App}>
-        <DefaultRoute name="home" path="/" handler={Index} />
+        <DefaultRoute name="home" handler={Index} />
         <Route name="popular" path="/popular" handler={Popular} />
         <Route name="latest" path="/latest" handler={Latest} />
         <Route name="series" path="/manga/:seriesSlug" handler={Series} />

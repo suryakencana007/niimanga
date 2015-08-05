@@ -1,15 +1,17 @@
-var React = require('react'),
-    _ = require('lodash'),
-    ajax = require('components/Ajax'),
-    Loading = require('components/Loading'),
-    Card = require('components/manga/Card'),
-    cached = require('stores/cached');
+var React = require('react');
+var _ = require('lodash');
+var api = require('utils/api');
+var cache = require('utils/cache');
+var Loading = require('components/Loading');
+var Alert = require('components/Alert');
+var Card = require('components/manga/Card');
+
 
 var CardList = React.createClass({
     renderCard: function (card, index){
         return(
             <Card manga={card}/>
-        );
+            );
     },
 
     render: function() {
@@ -17,25 +19,37 @@ var CardList = React.createClass({
             <div className="latest-list">
                 <div className="title-green">Genre Manga</div>
                 <Loading loading={this.props.fetching} />
-            {this.props.manga.map(this.renderCard)}
+                {this.props.manga.map(this.renderCard)}
             </div>
-        );
+            );
     }
 });
 
-var search = React.createClass({
+var genre = React.createClass({
     contextTypes: {
         router: React.PropTypes.func.isRequired
     },
+    statics: {
+        fetchData: function(token, params, query) {
+            var url = '/api/v1/genre?q=' + params.q;
+            return api.get(url, token).then((data) => {
+                // cache.expire(token, url);
+                return data;
+            }).then(null ,
+                function(){
+                    return {error: true};
+                });
+        }
+    },
 
-    componentWillReceiveProps: function (nextProps) {
-        var query = nextProps.params.q;
-        this.fetchCards(query);
+    componentWillReceiveProps: function(nextProps){
+        var data = nextProps.data.genre;        
+        data.error ? this.setState({fetching: false}): this.fetchCards(data);
     },
 
     componentDidMount: function (){
-        var params = this.context.router.getCurrentParams();
-        this.fetchCards(params.q);
+        var data = this.props.data.genre;
+        data.error ? this.setState({fetching: false}): this.fetchCards(data);
     },
 
     getInitialState: function () {
@@ -45,54 +59,30 @@ var search = React.createClass({
         }
     },
 
-    fetchCards: function (query) {
-        var newState = this.state;
-        newState.cards = [],
-        newState.fetching = true;
-        this.setState(newState);
-        var cachedData = cached.get('genre_' + query);
-        if (cachedData !== null) {
-            this.updateCardsData(cachedData);
-            //this.startProgressTimer();
-            //console.log('cached');
-            return;
-        }
+    fetchCards: function (data) {
+       var newState = this.state;
+       newState.cards = [];
+       newState.fetching = true;
+       this.setState(newState);
+       this.updateCardsData(data);
+   },
 
-        var self = this;
-        ajax.toAjax({
-            url: '/api/v1/genre?q='+query,
-            dataType: 'json',
-            method: 'GET',
-            success: function (data) {
-                cached.set('genre_' + query, data);
-                self.updateCardsData(data);
-                //console.log(data);
-            }.bind(self),
-            error: function (data) {
-                //self.setState({
-                //    errorMsg: data.responseJSON.msg
-                //});
-                console.log(data);
-            }.bind(self),
-            complete: function () {
-                self.setState({fetching: false});
-            }.bind(self)
-        });
-    },
-
-    updateCardsData: function (data) {
-        this.setState({
-            cards: data,
-            fetching: false
-        });
-    },
+   updateCardsData: function (data) {
+    this.setState({
+        cards: data,
+        fetching: false
+    });
+},
 
     render: function() {
+        var data =  this.props.data.genre;
         return (
             <div>
                 <div className="container">
                     <div className="row">
+                    { data.error ? <Alert msg={'Ooopss! there is no manga series'} />:
                         <CardList manga={this.state.cards} fetching={this.state.fetching} />
+                    }
                     </div>
                 </div>
             </div>
@@ -100,4 +90,4 @@ var search = React.createClass({
     }
 });
 
-module.exports = search;
+module.exports = genre;

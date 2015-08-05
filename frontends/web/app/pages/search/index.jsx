@@ -1,9 +1,10 @@
-var React = require('react'),
-    _ = require('lodash'),
-    ajax = require('components/Ajax'),
-    Loading = require('components/Loading'),
-    Card = require('components/manga/Card'),
-    cached = require('stores/cached');
+var React = require('react');
+var _ = require('lodash');
+var api = require('utils/api');
+var cache = require('utils/cache');
+var Loading = require('components/Loading');
+var Alert = require('components/Alert');
+var Card = require('components/manga/Card');
 
 var CardList = React.createClass({
     renderCard: function (card, index){
@@ -28,58 +29,42 @@ var search = React.createClass({
     contextTypes: {
         router: React.PropTypes.func.isRequired
     },
+    statics: {
+        fetchData: function(token, params, query) {
+            var url = '/api/v1/search?q=' + params.q;
+            return api.get(url, token).then((data)=> {
+                // cache.expire(token, url);
+                return data;
+            }).then(null ,
+                function(){
+                    return {error: true};
+                });
+        }
+    },
 
-    componentWillReceiveProps: function (nextProps) {
-        console.log(nextProps.params.q);
-        var query = nextProps.params.q;
-        this.fetchCards(query);
+    componentWillReceiveProps: function(nextProps){
+        var data = nextProps.data.search;
+        data.error ? this.setState({fetching: false}): this.fetchCards(data);
     },
 
     componentDidMount: function (){
-        var params = this.context.router.getCurrentParams();
-        this.fetchCards(params.q);
+        var data = this.props.data.search;
+        data.error ? this.setState({fetching: false}): this.fetchCards(data);
     },
 
     getInitialState: function () {
         return {
             cards : [],
-            fetching: true
+            fetching: false
         }
     },
 
-    fetchCards: function (query) {
+    fetchCards: function (data) {
         var newState = this.state;
-        newState.cards = [],
+        newState.cards = [];
         newState.fetching = true;
         this.setState(newState);
-        var cachedData = cached.get('search_' + query);
-        if (cachedData !== null) {
-            this.updateCardsData(cachedData);
-            //this.startProgressTimer();
-            console.log('cached');
-            return;
-        }
-
-        var self = this;
-        ajax.toAjax({
-            url: '/api/v1/search?q='+query,
-            dataType: 'json',
-            method: 'GET',
-            success: function (data) {
-                cached.set('search_' + query, data);
-                self.updateCardsData(data);
-                console.log(data);
-            }.bind(self),
-            error: function (data) {
-                //self.setState({
-                //    errorMsg: data.responseJSON.msg
-                //});
-                console.log(data);
-            }.bind(self),
-            complete: function () {
-                self.setState({fetching: false});
-            }.bind(self)
-        });
+        this.updateCardsData(data);
     },
 
     updateCardsData: function (data) {
@@ -90,11 +75,14 @@ var search = React.createClass({
     },
 
     render: function() {
+        var data =  this.props.data.search;
         return (
             <div>
                 <div className="container">
                     <div className="row">
+                    { data.error ? <Alert msg={'There some image cannot be loaded for this chapter'} />: 
                         <CardList manga={this.state.cards} fetching={this.state.fetching} />
+                    }
                     </div>
                 </div>
             </div>

@@ -1,11 +1,9 @@
-var React = require('react'),
-    Router = require('react-router'),
-    { Link } = Router,
-    ajax = require('components/Ajax'),
-    Loading = require('components/Loading'),
-    Alert = require('components/Alert'),
-    cached = require('stores/cached');
-
+var React = require('react');
+var Router = require('react-router');
+var { Link } = Router;
+var api = require('utils/api');
+var Loading = require('components/Loading');
+var Alert = require('components/Alert');
 
 var Pages = React.createClass({
 
@@ -69,14 +67,14 @@ var Pages = React.createClass({
                 self.setState({loaded: loaded});
             };
             return (
-                <div className="col-xs-12 col-sm-12">
-                    <div className="card">
-                        <div className="card-content">
-                            <img className="page-img" key={url + index} src={url}
+                <div className="col-xs-12 col-md-12 col-sm-12">
+                  
+                        <div className="card-content" style={{marginBottom: '10px'}}>
+                            <img className="img-responsive" key={url + index} src={url}
                                 onLoad={appendFunc} />
                             <div className="page-number">{ index + 1 } / { all.length }</div>
                         </div>
-                    </div>
+                  
                 </div>
             );
         });
@@ -91,7 +89,18 @@ var Pages = React.createClass({
 
 module.exports = React.createClass({
 
+    statics: {
+        fetchData: function(token, params, query) {
+            var url = '/api/v1/chapter/' + params.seriesSlug + '/' + params.chapterSlug;
+            return api.post(url, token).then(null ,
+                function(){
+                    return {error: true};
+                });
+        }
+    },
+
     render: function () {
+        var data = this.props.data.chapter;
         var info = this.state.info,
             name = info.name,
             next = info.next_chapter_url,
@@ -115,12 +124,19 @@ module.exports = React.createClass({
             <div className="container">
                 <div className="poros">
                     <div className="tengah">
-                        <h2 className="chapter-name">{name}</h2>
+                        <div className="row">
+                        { 
+                            data.error ? <Alert msg={'There some image cannot be loaded for this chapter'} />: (
+                            <span>
+                                <h2 className="chapter-name">{name}</h2>
 
-                        <ActionBar info={info}  setState={setState} />
-                        <Loading loading={fetching} />
-                    {pages}
-                        <ActionBar info={info} setState={setState} />
+                                <ActionBar info={info}  setState={setState} />
+                                <Loading loading={fetching} />
+                            {pages}
+                                <ActionBar info={info} setState={setState} />
+                            </span>
+                        )}
+                        </div>
                     </div>
                 </div>
 
@@ -128,18 +144,9 @@ module.exports = React.createClass({
         );
     },
 
-    componentWillReceiveProps: function (nextProps) {
-        this.fetchPages();
-    },
-
     componentDidMount: function () {
-        console.log('componentDidMount');
-        //bindKeyboardShortcuts.apply(this);
-        this.fetchPages();
-    },
-
-    contextTypes: {
-        router: React.PropTypes.func.isRequired
+        var data = this.props.data.chapter;
+        data.error ? this.setState({fetching: false}): this.fetchPages(data);
     },
 
     getInitialState: function () {
@@ -156,41 +163,12 @@ module.exports = React.createClass({
         };
     },
 
-    fetchPages: function () {
+    fetchPages: function (data) {
         var newState = this.state;
-        newState.info.pages = [];
+        newState.cards = [],
         newState.fetching = true;
         this.setState(newState);
-        var params = this.context.router.getCurrentParams();
-
-        var cachedData = cached.get('chapter_' + params.chapterSlug);
-        if (cachedData !== null) {
-            this.updateChapterData(cachedData);
-            //this.startProgressTimer();
-            console.log('cached');
-            return;
-        }
-
-
-        var self = this;
-        ajax.toAjax({
-            url: '/api/v1/chapter/' + params.seriesSlug + '/' + params.chapterSlug,
-            dataType: 'json',
-            method: 'POST',
-            success: function (data) {
-                cached.set('chapter_' + params.chapterSlug, data);
-                self.updateChapterData(data);
-            }.bind(self),
-            error: function (data) {
-                //self.setState({
-                //    errorMsg: data.responseJSON.msg
-                //});
-                console.log(data);
-            }.bind(self),
-            complete: function () {
-                self.setState({fetching: false});
-            }.bind(self)
-        });
+        this.updateChapterData(data);
     },
 
     updateChapterData: function(data) {

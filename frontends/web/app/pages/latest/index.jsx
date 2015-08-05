@@ -1,10 +1,13 @@
-var React = require('react'),
-_ = require('lodash'),
-Radium = require('radium'),
-ajax = require('components/Ajax'),
-Loading = require('components/Loading'),
-InfiniteScroll = require('components/scroller/InfiniteScroll'),
-Card = require('components/manga/Card');
+var React = require('react');
+var _ = require('lodash');
+var Radium = require('radium');
+var cache = require('utils/cache');
+var api = require('utils/api');
+var Loading = require('components/Loading');
+var Alert = require('components/Alert');
+var InfiniteScroll = require('components/scroller/InfiniteScroll');
+var Card = require('components/manga/Card');
+
 
 var latest = React.createClass({
     getInitialState: function () {
@@ -17,28 +20,20 @@ var latest = React.createClass({
     },
 
     fetchCards: function () {
-        var newState = this.state;
-        // newState.cards = [];
+        var newState = this.state;     
         newState.fetching = true;
 
         this.setState(newState);
 
         var self = this;
-        ajax.toAjax({
-            url: '/api/v1/latest?page=' + newState.offset + '&cards=' + newState.limit,
-            dataType: 'json',
-            method: 'POST',
-            success: function (data) {
-                //cached.set('chapter_' + url, data);
-                self.updateCardsData(data);
-                // console.log(data);
-            }.bind(self),
-            error: function (data) {
-
-            }.bind(self),
-            complete: function () {
-                self.setState({fetching: false});
-            }.bind(self)
+        var url = '/api/v1/latest?page=' + newState.offset + '&cards=' + newState.limit;
+        var result = api.post(url, this.props.token).then((data) => {
+            cache.expire(this.props.token, url);
+            self.updateCardsData(data);
+            self.setState({fetching: false});
+        }).then(null, function(){
+            self.setState({error: true});
+            self.setState({fetching: false});
         });
     },
 
@@ -52,6 +47,10 @@ var latest = React.createClass({
     _onRequestMoreItems: function (){
         this.fetchCards();
     },
+
+    _onScroll: function(e) {
+
+    },
     
     renderCard: function (card, index){
         return <Card manga={card} key={index}/>;
@@ -63,18 +62,22 @@ var latest = React.createClass({
                 <div className="row">
                     <div className="latest-list">
                     <div className="title-green">Latest Manga</div>
-                    <InfiniteScroll
-                    hasMore={true}
-                    onRequestMoreItems={this._onRequestMoreItems}
-                    threshold={250}
-                    style={styles.messagesList}>
-                    {this.state.cards.map(this.renderCard)}
-                    </InfiniteScroll>                   
+                        {this.state.error? 
+                            <Alert msg={'There is some trouble with the system! please reload this page'} />:
+                        <InfiniteScroll
+                        onScroll={this._onScroll}
+                        hasMore={true}
+                        onRequestMoreItems={this._onRequestMoreItems}
+                        threshold={250}
+                        style={styles.messagesList}>
+                        {this.state.cards.map(this.renderCard)}
+                        </InfiniteScroll>
+                    }
                     </div>
                     <Loading loading={this.state.fetching} />
                 </div>
             </div>
-        );
+            );
     }
 });
 

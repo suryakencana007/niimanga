@@ -1,11 +1,13 @@
-var React = require('react'),
-    Router = require('react-router'),
-    { Link } = Router,
-    ajax = require('components/Ajax'),
-    HeadRender = require('components/mixin/HeadRender'),
-    Radium = require('radium'),
-    Loading = require('components/Loading'),
-    _ = require('lodash');
+var React = require('react');
+var Router = require('react-router');
+var { Link } = Router;
+var api = require('utils/api');
+var HeadRender = require('components/mixin/HeadRender');
+var Radium = require('radium');
+var Loading = require('components/Loading');
+var _ = require('lodash');
+
+var isMobile = require('utils/ismobile');
 
 var Chapter_list = React.createClass({
     renderItem: function() {
@@ -31,7 +33,7 @@ var Pages = React.createClass({
     mixins: [HeadRender],
     contextTypes: {
         router: React.PropTypes.func.isRequired
-    },
+    },   
 
     getInitialState: function() {
         return {
@@ -60,8 +62,21 @@ var Pages = React.createClass({
 
     componentDidMount: function() {
         var self = this;
-        var params = this.context.router.getCurrentParams();
-        ajax.toAjax({
+        var data = this.props.data.series;
+        if (self.isMounted()) {
+            self.setState({
+                series: data,
+                populated: true,
+                head: {
+                    title: data.name + " - Niimanga",
+                    description: data.description + " " + data.tags.map(function(item){return item.label + " "}),
+                    sitename: "Niimanga",
+                    image: "http://niimanga.net/" + data.thumb_url,
+                    url: "http://niimanga.net/#/manga/" + data.last_url.split('/')[0]
+                }
+            });
+        }
+        /*ajax.toAjax({
             url: '/api/v1/series/' + params.seriesSlug,
             dataType: 'json',
             method: 'POST',
@@ -89,7 +104,7 @@ var Pages = React.createClass({
             complete: function() {
                 self.setState({fetching: false});
             }
-        });
+        });*/
     },
     css: {
         padding: "10px 0"
@@ -108,9 +123,9 @@ var Pages = React.createClass({
             var series = this.state.series;
             var href = series.last_url.split('/');
             body = (
-                <div className="col-md-12 card books page left-cover">
+                <div className="card books page left-cover">
                     <div className="card-content">
-                        <div className="cover">
+                        <div className="col-md-2 col-xs-12 cover">
                             <div className="cover-image-container">
                                 <div className="cover-outer-align">
                                     <div className="cover-inner-align">
@@ -124,20 +139,20 @@ var Pages = React.createClass({
                             </div>
                         </div>
 
-                        <div className="detail">
+                        <div className="col-md-10 col-xs-12 detail">
                             <a className="title" href="#">{series.name}</a>
 
-                            <div className="subtitle-container">
+                            <div className="col-xs-12 subtitle-container">
                                 <a className="subtitle" href="#">{series.authors}</a>
                             </div>
-                            <div className="alias">{series.aka}</div>
-                            <div className="col-md-12 genres poros">
+                            <div className="col-xs-12 alias">{series.aka}</div>
+                            <div className="col-xs-12 genres poros">
                                 <div className="tengah">
                             {this.renderTags(series.tags)}
                                 </div>
                             </div>
-                            <div className="updated">{series.time}</div>
-                            <div className="btn-ch">
+                            <div className="col-xs-12 updated">{series.time}</div>
+                            <div className="col-xs-12 btn-ch">
                                 <Link to="chapter" params={{seriesSlug: href[0], chapterSlug: href[1]}} className="btn btn-play">
                                     <i className="fa fa-leanpub fa-fw"></i>
                                 {series.last_chapter}</Link>
@@ -188,13 +203,26 @@ var styles = {
 };
 
 module.exports = React.createClass({
+     statics: {
+        fetchData: function(token, params, query) {
+            var url = '/api/v1/series/' + params.seriesSlug;
+            return api.post(url, token).then(null ,
+                function(){
+                    return {error: true};
+                });
+        }
+    },
+
     render: function() {
         return (
             <div>
                 <div className="container">
-                 <a ref="ad-left" href="#"><div style={styles.left}></div></a>
-                 <a ref="ad-right" href="#"><div style={styles.right}></div></a>
-                    <Pages />
+                {isMobile() ? null: <span>
+                   <a ref="ad-left" href="#"><div style={styles.left}></div></a>
+                   <a ref="ad-right" href="#"><div style={styles.right}></div></a>
+                   </span>
+               }
+               <Pages {...this.props}/>
                 </div>
             </div>
         );

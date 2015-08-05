@@ -6,6 +6,7 @@ Banner = require('pages/home/banner'),
 Latest = require('pages/home/latest'),
 Popular = require('pages/home/popular');
 
+var isMobile = require('utils/ismobile');
 
 var Homepage = React.createClass({
     mixins: [HeadRender],
@@ -13,8 +14,7 @@ var Homepage = React.createClass({
         initLoaded: React.PropTypes.bool
     },
     statics: {
-        fetchData: (params, query) => {
-            console.log('ok');
+        fetchData: (token, params, query) => {
             return {
                 title: "joss",
                 name: "groook"
@@ -109,13 +109,15 @@ var Homepage = React.createClass({
         return (
             <div className="container header-wrapper">
             {this.renderHead()}
+            { isMobile()? null: (<span>
             <a ref="ad-left" href="#"><div style={styles.left}></div></a>
             <a ref="ad-right" href="#"><div style={styles.right}></div></a>
-
+            </span>)
+            }
             <div className="row">
             <div className="col-xs-12 col-md-9">
             <Banner />
-            <Latest />
+            <Latest {...this.props}/>
             </div>
             <div className="col-xs-12 col-md-3">
             <div className="fb-page socmed card-content" 
@@ -131,7 +133,7 @@ var Homepage = React.createClass({
             </div>
             </div>
 
-            <Popular />
+            <Popular {...this.props}/>
             <div className="title-green">Social Media Page</div>
             <div className="socmed">
             <div className="g-page" 

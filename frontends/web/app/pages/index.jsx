@@ -2,7 +2,7 @@ var React = require('react');
 var Router = require('react-router');
 var { RouteHandler } = Router;
 var GoogleAnalytics = require('react-g-analytics');
-var ajax = require('components/Ajax');
+var api = require('utils/api');
 var HeadRender = require('components/mixin/HeadRender');
 var Navbar = require('pages/layouts/Navbar');
 var Footer = require('pages/layouts/Footer');
@@ -10,10 +10,21 @@ var TransitionGroup = require('react/lib/ReactCSSTransitionGroup');
 var ScrollToTopBtn = require('components/ScrollToTop');
 var Spinner = require('components/Spinner');
 
+var isMobile = require('utils/ismobile');
+
 module.exports = React.createClass({
     mixins: [HeadRender],
     contextTypes: {
         router: React.PropTypes.func.isRequired
+    },
+    statics: {
+        fetchData: function(token, params, query) {
+            return api.get('api/v1/genres?q=', token).then(function(data){
+                return Array.prototype.slice.call(data.rows, 0, data.rows.length);
+            }).then(null , function(){
+                return {error: true};
+            });
+        }
     },
 
     getInitialState: function() {
@@ -24,60 +35,42 @@ module.exports = React.createClass({
     },
 
     componentWillMount: function() {
-        this.setState({ isLoading: false });
-        this.fetchGenres();
+        // this.fetchGenres();
     },
 
     componentDidMount: function() {
-        var self = this;    
-        this.pid = setInterval(function(){
-            self.setState({isLoading: false});
-        }, 1000);        
+        var timeout;
+        this.props.loadingEvents.on('start', () => {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => {
+            this.setState({ loading: true });
+        }, 250);
+      });
+        this.props.loadingEvents.on('end', () => {
+          clearTimeout(timeout);
+          this.setState({ loading: false });
+      });    
     },
 
     componentWillUnmount: function() {
         clearTimeout(this.pid);
     },
 
-    isWrapper: function() {
-        var wrapper = 'body-container';
-        return wrapper;
-    },
-
-    upToComp: function() {
-        // "Go to top" button.
-        // Only show this on non-mobile devices where screen real estate is plenty
-        if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            return ScrollToTopBtn;
-        }
-    },
-
     fetchGenres: function() {
-        var self = this;
-        ajax.toAjax({
-            url: "api/v1/genres?q=",
-            dataType: 'json',
-            method: 'GET',
-            success: function (data) {
-             
-                data =  Array.prototype.slice.call(data.rows, 0, data.rows.length);
-                self.setState({genres: data})
-            }.bind(self),
-            error: function (data) {
-              
-                console.log(data);
-            }.bind(self),
-            complete: function () {
-                self.setState({fetching: false});
-            }.bind(self)
+        var data = api.get('api/v1/genres?q=', this.props.token).then(function(data){
+            return Array.prototype.slice.call(data.rows, 0, data.rows.length);
+        }).then(null , function(){
+            return {error: true};
         });
+        if(!data.error) this.setState({genres: data});
     },
 
     render: function () {
+        var data = this.props.data.root;
         return (
-            <div className={this.isWrapper()}>
-            {this.state.isLoading ? <Spinner /> : null}
-            <Navbar genres={this.state.genres}/>
+            <div className={!isMobile() ? 'body-container': null}>
+            {this.state.loading ? <Spinner /> : null}
+            <Navbar genres={data}/>
 
             <div className="content-wrapper">
             <GoogleAnalytics id="UA-65629589-1" />

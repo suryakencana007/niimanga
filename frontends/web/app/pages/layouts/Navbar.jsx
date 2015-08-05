@@ -44,10 +44,12 @@ module.exports = React.createClass({
     },
 
     render: function () {
-        var genres_o = this.getGenres(this.props.genres, 0, 10);
-        var genres_t = this.getGenres(this.props.genres, 10, 20);
-        var genres_th = this.getGenres(this.props.genres, 20, 30);
-        var genres_fo = this.getGenres(this.props.genres, 30, 40);
+        if(this.props.genres && this.props.genres.length > 0) {
+            var genres_o = this.getGenres(this.props.genres, 0, 10);
+            var genres_t = this.getGenres(this.props.genres, 10, 20);
+            var genres_th = this.getGenres(this.props.genres, 20, 30);
+            var genres_fo = this.getGenres(this.props.genres, 30, 40);
+        }   
         return (
             <header className="navbar navbar-fixed-top">
                 <div className="navbar-inner">

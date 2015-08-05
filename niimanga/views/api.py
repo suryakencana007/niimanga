@@ -262,10 +262,12 @@ class MangaApi(ZHandler):
         _ = self.R
         q = _.params.get('q', '')
         qry = Manga.query
-        results = qry.filter(Manga.title.ilike('%{q}%'.format(q=q))) \
+        results = qry.filter(and_(Manga.title.ilike('%{q}%'.format(q=q)), Manga.chapter_count > 0)) \
             .order_by(desc(Manga.chapter_updated)) \
             .all()
-        return MangaApi._card_fill(_, results)
+        if results:
+            return MangaApi._card_fill(_, results)
+        return dict({error: 'there is error from Manga Record Collections'})
 
     @view_config(route_name='upload_chapter',
                  request_method='POST', renderer='json')

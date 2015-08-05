@@ -5,11 +5,13 @@ var React = require('react');
 var Router = require('react-router');
 var routes = require('./routes');
 var fetchData = require('./utils/fetchData');
-var EventEmitter = require('events').EventEmitter;
+var rehydrate = require('./utils/rehydrate');
+var { EventEmitter } = require('events');
 
 
 var loadingEvents = new EventEmitter();
 
+var token = rehydrate();
 var renderState = {
   element: document.getElementById('app-container'),
   Handler: null,
@@ -19,9 +21,9 @@ var renderState = {
 var render = () => {
   var { element, Handler, routerState } = renderState;
   loadingEvents.emit('start');
-  fetchData(routerState).then((data) => {
+fetchData(token, routerState).then((data) => {
     loadingEvents.emit('end');
-    React.render(<Handler data={data} loadingEvents={loadingEvents} />, element);
+    React.render(<Handler data={data} token={token} loadingEvents={loadingEvents} />, element);
   });
 };
 

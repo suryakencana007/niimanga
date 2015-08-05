@@ -1,10 +1,12 @@
-var React = require('react'),
-_ = require('lodash'),
-Radium = require('radium'),
-ajax = require('components/Ajax'),
-Loading = require('components/Loading'),
-InfiniteScroll = require('components/scroller/InfiniteScroll'),
-ListCard = require('components/manga/ListCard');
+var React = require('react');
+var _ = require('lodash');
+var Radium = require('radium');
+var cache = require('utils/cache');
+var api = require('utils/api');
+var Loading = require('components/Loading');
+var Alert = require('components/Alert');
+var InfiniteScroll = require('components/scroller/InfiniteScroll');
+var ListCard = require('components/manga/ListCard');
 
 var popular = React.createClass({
     getInitialState: function () {
@@ -18,27 +20,19 @@ var popular = React.createClass({
 
     fetchCards: function () {
         var newState = this.state;
-        // newState.cards = [];
         newState.fetching = true;
 
         this.setState(newState);
 
         var self = this;
-        ajax.toAjax({
-            url: '/api/v1/popular?page=' + newState.offset + '&cards=' + newState.limit,
-            dataType: 'json',
-            method: 'POST',
-            success: function (data) {
-                //cached.set('chapter_' + url, data);
-                self.updateCardsData(data);
-                // console.log(data);
-            }.bind(self),
-            error: function (data) {
-
-            }.bind(self),
-            complete: function () {
-                self.setState({fetching: false});
-            }.bind(self)
+        var url = '/api/v1/popular?page=' + newState.offset + '&cards=' + newState.limit;
+        var result = api.post(url, this.props.token).then((data) => {
+            cache.expire(this.props.token, url);
+            self.updateCardsData(data);
+            self.setState({fetching: false});
+        }).then(null, function(){
+            self.setState({error: true});
+            self.setState({fetching: false});
         });
     },
 
@@ -63,13 +57,16 @@ var popular = React.createClass({
            <div className="row">
                 <div className="popular-list">
                     <div className="title-green">Popular Manga</div>
-                    <InfiniteScroll
-                    hasMore={true}
-                    onRequestMoreItems={this._onRequestMoreItems}
-                    threshold={250}
-                    style={styles.messagesList}>
-                    {this.state.cards.map(this.renderCard)}
-                    </InfiniteScroll>
+                    {this.state.error? 
+                            <Alert msg={'There is some trouble with the system! please reload this page'} />:
+                        <InfiniteScroll
+                        hasMore={true}
+                        onRequestMoreItems={this._onRequestMoreItems}
+                        threshold={250}
+                        style={styles.messagesList}>
+                        {this.state.cards.map(this.renderCard)}
+                        </InfiniteScroll>
+                    }
                 </div>
                 <Loading loading={this.state.fetching} />
             </div>

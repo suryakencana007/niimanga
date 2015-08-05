@@ -1,10 +1,11 @@
-var React = require('react'),
-_ = require('lodash'),
-Radium = require('radium'),
-ajax = require('components/Ajax'),
-Loading = require('components/Loading'),
-Scroller = require('components/scroller/Scroller'),
-ListCard = require('components/manga/ListCard');
+var React = require('react');
+var _ = require('lodash');
+var Radium = require('radium');
+var cache = require('utils/cache');
+var api = require('utils/api');
+var Loading = require('components/Loading');
+var Scroller = require('components/scroller/Scroller');
+var ListCard = require('components/manga/ListCard');
 
 var popular = React.createClass({
     getInitialState: function () {
@@ -24,21 +25,11 @@ var popular = React.createClass({
         this.setState(newState);
 
         var self = this;
-        ajax.toAjax({
-            url: '/api/v1/popular?page=' + newState.offset + '&cards=' + newState.limit,
-            dataType: 'json',
-            method: 'POST',
-            success: function (data) {
-                //cached.set('chapter_' + url, data);
-                self.updateCardsData(data);
-                // console.log(data);
-            }.bind(self),
-            error: function (data) {
-
-            }.bind(self),
-            complete: function () {
-                self.setState({fetching: false});
-            }.bind(self)
+        var url = '/api/v1/popular?page=' + newState.offset + '&cards=' + newState.limit;
+        var result = api.post(url, this.props.token).then((data) => {
+           cache.expire(this.props.token, url);
+           self.updateCardsData(data);
+           self.setState({fetching: false});
         });
     },
 
