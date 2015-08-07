@@ -16,7 +16,7 @@
  # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  #  latests.py
 """
-from niimanga.ctasks.batoto import build_from_latest
+from niimanga.ctasks.batoto import build_to_sys
 from niimanga.sites.batoto import Batoto
 
 
@@ -26,6 +26,6 @@ try:
     for i, source in enumerate(site.search_latest()):
         # LOG.info(source)
         print(source)
-        build_from_latest(site, source)
+        build_to_sys(site, source)
 except Exception as e:
     print(e.message)

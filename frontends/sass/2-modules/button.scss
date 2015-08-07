@@ -8,16 +8,16 @@
 }
 
 .btn-search {
-  border: 0;
   height: 34px;
-  background-color: #fff;
+  background-color: #009000;
   padding: 0 15px;
-  border-radius: 0 2px 2px 0;
-  border: 1px solid #ccc;
+  border-radius: 0;
+  border: 1px solid #fff;
   z-index: 2;
-}
-
-.btn-search:hover {
+  color: #fff;
+  &:hover, &:focus {
+    color: #FA6700;
+  }
 }
 
 .btn-play {
@@ -42,5 +42,38 @@
     background-image: -moz-linear-gradient(top,#4fa149 0%,#408b3a 100%);
     background-image: -o-linear-gradient(top,#4fa149 0%,#408b3a 100%);
     background-image: linear-gradient(top,#4fa149 0%,#408b3a 100%);
+  }
+}
+
+.white-btn {
+  text-align: left;
+  background-color: #ffffff;
+  color: #009900;
+  border-radius: 0px;
+  border-color: #009900;
+
+  &:hover, &:active, &:focus{
+    background-color: #009900;
+    color:#ffffff;
+    border-color: #009900;
+  }
+  .arrow-custom{
+    font-size: 12px;
+    vertical-align: baseline;
+    border-color: #009900;
+    background-color: #009900;
+    color: #ffffff;
+    border-radius: 45px;
+    width: 18px;
+    height: 18px;
+    padding-left: 5px;
+    padding-top: 3px;
+  }
+  &:hover .arrow-custom,
+  &:active .arrow-custom,
+  &:focus .arrow-custom{
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #009900;
   }
 }

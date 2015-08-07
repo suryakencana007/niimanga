@@ -1,6 +1,9 @@
-var React = require('react'),
-    Router = require('react-router'),
-    { Route, DefaultRoute, RouteHandler, Link } = Router;
+var React = require('react');
+var Router = require('react-router');
+var { Route, DefaultRoute, RouteHandler, Link } = Router;
+var SearchBox = require('components/SearchBox');
+
+var isMobile = require('utils/ismobile');
 
 module.exports = React.createClass({
     mixins: [
@@ -19,10 +22,24 @@ module.exports = React.createClass({
         }
     },
 
-    handleSearch: function (e) {
-        e.preventDefault(); // So that browser won't submit an old-fashioned POST
-        console.log(this.state.query);
-        var query = this.state.query
+    _onSearchClick: function() {
+
+    },
+
+    _onMenuTrigger: function() {
+        var $body = document.body;
+        if($body.className == 'menu-active'){
+           $body.className = '';
+            this.setState({leftMenu: false});
+        } else {
+           $body.className = 'menu-active';
+           this.setState({leftMenu: true});
+       }
+    },
+
+    handleSearch: function (query) {
+     /*   console.log(this.state.query);
+        var query = this.state.query*/
         if (!query || query.trim().length < 2) {
             return;
         }
@@ -30,10 +47,10 @@ module.exports = React.createClass({
         this.setState({query: ''});
     },
 
-    handleChange: function(event) {
-        var val = event.target.value;
-        console.log(val);
-        this.setState({query: val});
+    handleChange: function(query) {
+        // var val = event.target.value;
+        // console.log(val);
+        this.setState({query: query});
     },
 
     getGenres: function(gen, start, end) {
@@ -49,14 +66,18 @@ module.exports = React.createClass({
             var genres_t = this.getGenres(this.props.genres, 10, 20);
             var genres_th = this.getGenres(this.props.genres, 20, 30);
             var genres_fo = this.getGenres(this.props.genres, 30, 40);
-        }   
+        }
+        var navbar = (isMobile()? 'navbar': 'navbar navbar-fixed-top');
+
         return (
-            <header className="navbar navbar-fixed-top">
+            <header className={navbar} style={{borderWidth:' 0 0 1px', marginBottom: '0'}}>
                 <div className="navbar-inner">
                     <div className="container clearfix">
+                    { !isMobile()? ( <span>
                         <div className="nav-logo">
                             <Link to="/" >Niimanga<span className="site-logo"></span></Link>
                         </div>
+                        
                         <ul className="top-right-nav">
                             <li className="dropdown border-both">
                                 <a data-toggle="dropdown" data-hover="dropdown" className="dropdown-toggle" href="#">Genres</a>
@@ -98,19 +119,14 @@ module.exports = React.createClass({
                                 </li>
                             </ul>
                         </div>
-                        <form className="search-nav" role="search" onSubmit={ this.handleSearch } >
-
-                            <div className="search-wrapper">
-                                <div className="search-parent">
-                                    <input className="form-control" onChange={this.handleChange} type="text" value={this.state.query} placeholder="Searching series name..."/>
-                                    <span className="btn-search-wrapper">
-                                        <button className="btn btn-search" type="submit">
-                                            <i className="fa fa-search fa-fw"></i>
-                                        </button>
-                                    </span>
-                                </div>
-                            </div>
-                        </form>
+                        </span>): <div className="menu-trigger" onClick={this._onMenuTrigger} >
+    <i className="fa fa-bars fa-fw"></i></div> }
+                        <SearchBox
+                        onQueryChange={this.handleChange}
+                        onQuerySubmit={this.handleSearch}
+                        query={this.state.query}
+                        placeholder="Searching series name..."
+                        />
                     </div>
                 </div>
             </header>

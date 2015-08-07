@@ -9,6 +9,7 @@ var Footer = require('pages/layouts/Footer');
 var TransitionGroup = require('react/lib/ReactCSSTransitionGroup');
 var ScrollToTopBtn = require('components/ScrollToTop');
 var Spinner = require('components/Spinner');
+var Sidebar = require('pages/layouts/Sidebar');
 
 var isMobile = require('utils/ismobile');
 
@@ -68,11 +69,13 @@ module.exports = React.createClass({
     render: function () {
         var data = this.props.data.root;
         return (
-            <div className={!isMobile() ? 'body-container': null}>
+            <span>
+             {!isMobile() ? null: <Sidebar />}
+            <div className={!isMobile() ? 'body-container': 'content-wrapper-mobile'}>
             {this.state.loading ? <Spinner /> : null}
             <Navbar genres={data}/>
 
-            <div className="content-wrapper">
+            <div className="content-wrapper" style={isMobile()? {padding: 0}: null}>
             <GoogleAnalytics id="UA-65629589-1" />
             <TransitionGroup transitionName="tcontent">
             <RouteHandler key={name} {...this.props}/>
@@ -81,6 +84,7 @@ module.exports = React.createClass({
             <Footer />
             <ScrollToTopBtn />
             </div>
+            </span>
             );
     }
 });

@@ -81,6 +81,45 @@ class Batoto(Site):
             print(e)
             return []
 
+    def search_popular(self, keyword=None):
+        url = self.netlocs[2]
+        resp = requests.get(url)
+
+        search_results = []
+        if resp.status_code != 200:
+            return []
+
+        soup = BeautifulSoup(resp.content)
+
+        try:
+            table = soup.find('ul', class_='block_list')
+            en_rows = table.find_all('li', class_='hentry')
+            # print(len(en_rows))
+            for i, rows in enumerate(en_rows):
+                # if rows.find('a', style='font-weight:bold;') is not None:
+                image_thumb = rows.find('img').attrs['src']
+                origin_url = rows.find('a').attrs['href']
+                title = rows.find('img').attrs['alt']
+
+                last_title = rows.find_all('a')[-1].text
+                last_url = rows.find_all('a')[-1].attrs['href']
+
+                search_results.append(
+                    dict(
+                        thumb=self.netlocs[3] + image_thumb.split('/')[-1],
+                        origin=origin_url,
+                        name=title,
+                        time=self.parseDate.to_time_stamp(self.parseDate.timetuple()),
+                        last_chapter=last_title,
+                        last_url=last_url,
+                        site=self.netlocs[1]
+                    )
+                )
+            return search_results
+        except AttributeError as e:
+            print(e)
+            return []
+
     def _normalize_series_url(self, url):
         """
         Series URLs from search results are in this form:

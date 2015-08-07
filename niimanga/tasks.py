@@ -18,7 +18,7 @@
 """
 
 from pyramid_celery import celery_app as app
-from niimanga.ctasks.batoto import build_from_latest
+from niimanga.ctasks.batoto import build_to_sys
 from niimanga.sites.batoto import Batoto
 
 
@@ -31,6 +31,17 @@ def build_latest(*args, **kwargs):
         for i, source in enumerate(site.search_latest()):
             # LOG.info(source)
             print(source)
-            build_from_latest(site, source)
+            build_to_sys(site, source)
+    except Exception as e:
+        print(e.message)
+
+
+@app.task
+def build_latest(*args, **kwargs):
+    try:
+        for i, source in enumerate(site.search_popular()):
+            # LOG.info(source)
+            print(source)
+            build_to_sys(site, source)
     except Exception as e:
         print(e.message)

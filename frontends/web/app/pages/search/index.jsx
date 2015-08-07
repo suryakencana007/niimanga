@@ -25,10 +25,6 @@ var CardList = React.createClass({
 });
 
 var search = React.createClass({
-
-    contextTypes: {
-        router: React.PropTypes.func.isRequired
-    },
     statics: {
         fetchData: function(token, params, query) {
             var url = '/api/v1/search?q=' + params.q;

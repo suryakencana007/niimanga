@@ -74,3 +74,24 @@ var InfiniteList = React.createClass({
 
 React.renderComponent(<InfiniteList/>,
         document.getElementById('react-example-one'));
+
+<form className="search-nav" role="search" onSubmit={ this.handleSearch } >
+
+                            <div className="search-wrapper">
+                                <div className="search-parent">
+                                    <input className="form-control" onChange={this.handleChange} type="text" value={this.state.query} placeholder="Searching series name..."/>
+                                    <span className="btn-search-wrapper">
+                                        <button className="btn btn-search" type="submit">
+                                            <i className="fa fa-search fa-fw"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+
+  <SearchBox 
+                     types="submit"
+                     onQueryChange={this.handleChange}
+                     onQuerySubmit={this.handleSearch}
+                     query={this.state.query}
+                     />                     

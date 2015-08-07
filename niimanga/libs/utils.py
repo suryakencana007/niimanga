@@ -302,3 +302,7 @@ class LocalDateTime(arrow.Arrow):
     @staticmethod
     def from_time_stamp(timestamp):
         return datetime.fromtimestamp(timestamp)
+
+    @staticmethod
+    def to_time_stamp(timetuple):
+        return time.mktime(timetuple)

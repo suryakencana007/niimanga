@@ -15,7 +15,7 @@ var Chapter_list = React.createClass({
             var href = chapter.url.split('/');
             return (
                 <Link to="chapter" params={{seriesSlug: href[0], chapterSlug: href[1]}} className="list-group-item">
-                    {chapter.name} <span className="pull-right">{chapter.time}</span>
+                <span>{chapter.name}</span><span className="pull-right">{chapter.time}</span>
                 </Link>
             )
         });
@@ -23,7 +23,7 @@ var Chapter_list = React.createClass({
     },
     render: function() {
         return (
-            <div className="list-group">
+            <div className="col-xs-12 list-group">
              {this.renderItem()}
             </div>
         );
@@ -75,36 +75,7 @@ var Pages = React.createClass({
                     url: "http://niimanga.net/#/manga/" + data.last_url.split('/')[0]
                 }
             });
-        }
-        /*ajax.toAjax({
-            url: '/api/v1/series/' + params.seriesSlug,
-            dataType: 'json',
-            method: 'POST',
-            success: function(data) {
-                // console.log(data.status);
-                if (self.isMounted()) {
-                    self.setState({
-                        series: data,
-                        populated: true,
-                        head: {
-                            title: data.name + " - Niimanga",
-                            description: data.description + " " + data.tags.map(function(item){return item.label + " "}),
-                            sitename: "Niimanga",
-                            image: "http://niimanga.net/" + data.thumb_url,
-                            url: "http://niimanga.net/#/manga/" + data.last_url.split('/')[0]
-                        }
-                    });
-                }
-            }.bind(self),
-            error: function(data) {
-                self.setState({
-                    errorMsg: data.responseJSON.msg
-                });
-            },
-            complete: function() {
-                self.setState({fetching: false});
-            }
-        });*/
+        }       
     },
     css: {
         padding: "10px 0"
@@ -123,7 +94,7 @@ var Pages = React.createClass({
             var series = this.state.series;
             var href = series.last_url.split('/');
             body = (
-                <div className="card books page left-cover">
+                <div className="card books page left-cover" style={(isMobile()? {display:'block'}: null)}>
                     <div className="card-content">
                         <div className="col-md-2 col-xs-12 cover">
                             <div className="cover-image-container">
@@ -157,14 +128,14 @@ var Pages = React.createClass({
                                     <i className="fa fa-leanpub fa-fw"></i>
                                 {series.last_chapter}</Link>
                             </div>
-                            <div className="description">
+                            <div className="col-xs-12 description">
                                 <p>
                             {series.description}
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className = "title-green" > Chapters </div>
+                    <div className="title-green" > Chapters </div>
                     <Chapter_list chapters={series.chapters}/>
                 </div>
             );

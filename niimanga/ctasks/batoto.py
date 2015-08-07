@@ -48,7 +48,7 @@ def _chapter_slug(str_, slug_manga):
     return no, utils.slugist('{1}-chapter-{0}'.format(no.zfill(3), slug_manga))
 
 
-def build_from_latest(site, source):
+def build_to_sys(site, source):
     try:
         lt = LocalDateTime.now()
         """
@@ -120,6 +120,7 @@ def build_from_latest(site, source):
 
         chapters_info = series_info.get('chapters', [])
         for i, ch in enumerate(chapters_info[0:2]):
+            print(ch.get('name', ''))
             # batoto slug
             slug_bt = ch.get('name', '')
 

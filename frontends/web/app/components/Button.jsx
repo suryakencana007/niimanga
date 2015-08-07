@@ -7,24 +7,27 @@ class Button extends Component {
   static propTypes = {
     children: PropTypes.node,
     onClick: PropTypes.func,
-    use: PropTypes.oneOf(['default', 'special'])
-  }
-
-  static defaultProps = {
-    use: 'default'
+    types: React.PropTypes.string
   };
 
-  _onClick = () => {
+  static defaultProps = {
+    types: 'button'
+  };
+
+  _onClick = (e: Object) => {
     this.props.onClick && this.props.onClick();
   };
 
   render(): any {
-    return (
+
+
+    return ( 
       <button
         onClick={this._onClick}
-        type="button">
+        type={this.props.type}>
         {this.props.children}
       </button>
     );
   }
 }
+module.exports = Button;

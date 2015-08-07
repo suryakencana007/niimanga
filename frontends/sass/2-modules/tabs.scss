@@ -1,0 +1,29 @@
+.tabs-menu {
+  display: table;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs-menu-item {
+  float: left;
+  margin-right: 14px; 
+  a {
+    @extend .btn;
+    @extend .white-btn;
+    display: block;
+    color: #009000;
+    text-decoration: none;
+  }
+  
+  &.is-active {
+    a {     
+      background-color: #009900;
+      color:#ffffff;
+      border-color: #009900;
+    }
+  }
+}
+.tab-panel {
+  padding: 5px;
+}

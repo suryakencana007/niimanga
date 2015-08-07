@@ -1,10 +1,14 @@
-var React = require('react'),
-_ = require('lodash'),
-HeadRender = require('components/mixin/HeadRender'),
-Radium = require('radium'),
-Banner = require('pages/home/banner'),
-Latest = require('pages/home/latest'),
-Popular = require('pages/home/popular');
+var React = require('react');
+var _ = require('lodash');
+var HeadRender = require('components/mixin/HeadRender');
+var Tabs = require('components/Tabs');
+var Radium = require('radium');
+// var Banner = require('pages/home/banner');
+var Banner = require('pages/home/slickers');
+var Latest = require('pages/home/latest');
+var LatestIndex = require('pages/mobiles/latest');
+var Popular = require('pages/home/popular');
+var PopularIndex = require('pages/mobiles/popular');
 
 var isMobile = require('utils/ismobile');
 
@@ -116,39 +120,55 @@ var Homepage = React.createClass({
             }
             <div className="row">
             <div className="col-xs-12 col-md-9">
-            <Banner />
-            <Latest {...this.props}/>
-            </div>
-            <div className="col-xs-12 col-md-3">
-            <div className="fb-page socmed card-content" 
-            data-href="https://www.facebook.com/niimanga" 
-            data-small-header="false" 
-            data-adapt-container-width="true" 
-            data-hide-cover="false" 
-            data-show-facepile="true" 
-            data-show-posts="false">
-            <div className="fb-xfbml-parse-ignore">
-            <blockquote cite="https://www.facebook.com/niimanga">
-            <a href="https://www.facebook.com/niimanga">Niimanga</a></blockquote>
-            </div>
+
+                <Banner />
+                {isMobile()? (<span>
+                <div className="title-green"><br /></div>
+                <Tabs>
+                    <Tabs.Panel className="btn btn-play" title='Hot'>
+                      <PopularIndex {...this.props} />
+                    </Tabs.Panel>
+                    <Tabs.Panel title='Release'>
+                      <LatestIndex {...this.props} />
+                    </Tabs.Panel>
+                </Tabs>
+                </span>): (<span>
+                    <Latest {...this.props}/>
+                </span>)}
             </div>
 
-            <Popular {...this.props}/>
-            <div className="title-green">Social Media Page</div>
-            <div className="socmed">
-            <div className="g-page" 
-            data-width="215" 
-            data-href="//plus.google.com/u/0/109363191390818524400" 
-            data-rel="publisher"></div>
+            <div className="col-xs-12 col-md-3">
+                <div className="fb-page socmed card-content" 
+                data-href="https://www.facebook.com/niimanga" 
+                data-small-header="false" 
+                data-adapt-container-width="true" 
+                data-hide-cover="false" 
+                data-show-facepile="true" 
+                data-show-posts="false">
+                    <div className="fb-xfbml-parse-ignore">
+                    <blockquote cite="https://www.facebook.com/niimanga">
+                    <a href="https://www.facebook.com/niimanga">Niimanga</a></blockquote>
+                    </div>
+                </div>
+
+                {!isMobile()?<Popular {...this.props}/>: null }
+                
+                <div className="title-green">Social Media Page</div>
+                <div className="socmed">
+                    <div className="g-page" 
+                    data-width="215" 
+                    data-href="//plus.google.com/u/0/109363191390818524400" 
+                    data-rel="publisher">
+                    </div>
+                </div>
+                <div className="socmed">
+                    <a className="twitter-timeline card-content" 
+                    href="https://twitter.com/niimanga"
+                    data-widget-id="625868171711393792">Tweets by @niimanga</a>
+                 </div>
             </div>
-            <div className="socmed">
-            <a className="twitter-timeline card-content" 
-            href="https://twitter.com/niimanga"
-            data-widget-id="625868171711393792">Tweets by @niimanga</a>
-            </div>
-            </div>
-            </div>
-            </div>
+        </div>
+    </div>
             );
 }
 });

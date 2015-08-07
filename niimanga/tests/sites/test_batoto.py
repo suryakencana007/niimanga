@@ -3,7 +3,7 @@ import logging
 from unittest import TestCase, main
 
 from niimanga.sites.batoto import Batoto
-from niimanga.ctasks.batoto import build_from_latest
+from niimanga.ctasks.batoto import build_to_sys
 
 
 site = Batoto()
@@ -90,6 +90,12 @@ class SearchLatest(TestCase):
         print(site.search_latest())
 
 
+class SearchPopular(TestCase):
+
+    def test_normal(self):
+        print(site.search_popular())
+
+
 class LatestToDB(TestCase):
 
     def test_normal(self):
@@ -97,7 +103,7 @@ class LatestToDB(TestCase):
         for i, source in enumerate(site.search_latest()):
             # LOG.info(source)
             print(source)
-            build_from_latest(site, source)
+            build_to_sys(site, source)
 
 if __name__ == '__main__':
     main()
