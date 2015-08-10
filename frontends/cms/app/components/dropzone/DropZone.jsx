@@ -90,7 +90,7 @@ var Dropzone = React.createClass({
         }
 
         if (this.props.onDrop) {
-            this.props.onDrop(fstate, e);
+            this.props.onDrop(this.state.files, e);
         }
 
     },

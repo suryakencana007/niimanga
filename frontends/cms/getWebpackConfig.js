@@ -3,7 +3,6 @@ var webpack = require('webpack');
 
 var node_modules_dir = path.join(__dirname, 'node_modules');
 var bower_components_dir = path.join(__dirname, 'bower_components');
-var _ = require('lodash');
 
 module.exports = function(options) {
   var config = {
@@ -15,11 +14,9 @@ module.exports = function(options) {
       path: options.environment === 'prod' ? path.resolve(__dirname, '../../niimanga/public') : path.resolve(__dirname, './dist'),
       filename: 'bmain.js',
       publicPath: options.environment === 'prod' ? '/static/' : '',
-    },   
+    },
     module: {
       loaders: [
-        // **IMPORTANT** This is needed so that each bootstrap js file required by
-      // bootstrap-sass-loader has access to the jQuery object
       { test: /bootstrap\/js\//, loader: 'imports?jQuery=jquery' },
       { test: /X-editable\/dist\/bootstrap3-editable\/js\/bootstrap-editable\.js$/, loader: 'imports?jQuery=jquery' },
       { test: /bootstrap-table\/dist\//, loader: 'imports?jQuery=jquery' },
@@ -29,9 +26,6 @@ module.exports = function(options) {
       { test: /\.png$/, loader: "url-loader?limit=100000" },
       { test: /\.gif$/, loader: "url-loader?limit=100000" },
       { test: /\.jpg$/, loader: "url-loader?limit=100000" },
-
-      // Needed for the css-loader when [bootstrap-webpack](https://github.com/bline/bootstrap-webpack)
-      // loads bootstrap's css.
       { test: /\.woff(2)?(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&minetype=application/font-woff" },      
       { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&minetype=application/font-woff" },
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,    loader: "file" },
@@ -39,13 +33,12 @@ module.exports = function(options) {
       ]
     },
     plugins: [
-    
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
       "window.jQuery": "jquery",
       "root.jQuery": "jquery"
-    }), 
+    }),
     ],
     resolve: {
       root: path.join(__dirname, "app"),
@@ -67,7 +60,6 @@ module.exports = function(options) {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
     ];
-    // config.module.loaders[0].loaders.unshift('react-hot');
   }
 
   if (options.environment === 'prod') {

@@ -11,11 +11,11 @@ Chapter = require('./pages/chapter');
 module.exports = () => {
     return [
     <Route name="root" path="/" handler={App}>
-        <DefaultRoute handler={Index} />
+        <DefaultRoute name="home" handler={Index} />
         <Route name="group" path="/group" handler={Group} />
         <Route name="series" path="/series" handler={Series} />
         <Route name="chapter" path="/chapter" handler={Chapter} />
         <NotFoundRoute handler={require('./pages/NotFound')}/>
-    </Route>    
+    </Route>
     ];
 };

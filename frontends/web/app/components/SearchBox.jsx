@@ -34,7 +34,7 @@ class SearchBox extends Component {
                 type="search"
                 onChange={this._onQueryChange}
                 onKeyDown={this._onQueryKeyDown}
-                placeholder={this.props.placeholders}
+                placeholder={this.props.placeholder}
                 value={this.props.query}
                 />
                 <span className="btn-search-wrapper">

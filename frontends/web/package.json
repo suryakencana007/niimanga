@@ -53,6 +53,7 @@
     "react-helmet": "~1.1.0",
     "object-assign": "~3.0.0",
     "axios": "~0.5.4",
-    "nuka-carousel": "0.0.17"
+    "nuka-carousel": "0.0.17",
+    "react-motion": "~0.2.7"
   }
 }

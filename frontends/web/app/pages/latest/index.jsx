@@ -13,7 +13,7 @@ var latest = React.createClass({
     getInitialState: function () {
         return {
             limit: 10,
-            offset: 1,
+            offset: 0,
             cards : [],
             fetching: false
         }

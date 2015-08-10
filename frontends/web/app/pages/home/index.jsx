@@ -3,7 +3,6 @@ var _ = require('lodash');
 var HeadRender = require('components/mixin/HeadRender');
 var Tabs = require('components/Tabs');
 var Radium = require('radium');
-// var Banner = require('pages/home/banner');
 var Banner = require('pages/home/slickers');
 var Latest = require('pages/home/latest');
 var LatestIndex = require('pages/mobiles/latest');
@@ -33,16 +32,16 @@ var Homepage = React.createClass({
     },
 
     componentDidUpdate(){
-        if(!this.state.initLoaded && typeof FB !== 'undefined') {
+        /*if(!this.state.initLoaded && typeof FB !== 'undefined') {
             this.setState({initLoaded: true});
-            /* make the API call */
+            // make the API call
             FB.init({
                 appId: '844212729007674',
                 cookie: true,
                 xfbml: true,
                 version: 'v2.4'
             });
-        }
+        }*/
     },
 
     componentDidMount(){
@@ -63,24 +62,23 @@ var Homepage = React.createClass({
                 title: "Niimanga - The only manga reader page you'll ever need",
                 description: "Niimanga - Manga reader for free and enjoying what you'll need to reading manga popular series",
                 sitename: "Niimanga",
-                image: "http://niimanga.net/static/socmed.png",
+                image: "http://niimanga.net/static/res/share.png",
                 url: "http://niimanga.net"
             }
         });
+        this.socmedPlugin();
     },
 
-    componentWillMount() {
+    socmedPlugin: function() {
         (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0],
-          p=/^http:/.test(d.location)?'http':'https';
-          if(d.getElementById(id)) return;
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
           js = d.createElement(s); 
           js.id = id;
-          js.type = 'text/javascript';
           js.async = true;
-          js.src =p+"://connect.facebook.net/en_US/sdk.js";
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=844212729007674";
           fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+      })(document, 'script', 'facebook-jssdk');
         (function(id) {
             if(document.getElementById(id)) return;
             var po = document.createElement('script'); 
@@ -132,35 +130,54 @@ var Homepage = React.createClass({
                       <LatestIndex {...this.props} />
                     </Tabs.Panel>
                 </Tabs>
-                </span>): (<span>
-                    <Latest {...this.props}/>
-                </span>)}
+                </span>): ( <Latest {...this.props}/>)}
+
+                <div className="title-green">Social Media Page</div>
+               
+                <div className="socmed col-xs-12">
+                    <div className="col-md-5 col-xs-12">
+                        <div className="g-page" 
+                        data-width="215" 
+                        data-href="//plus.google.com/u/0/109363191390818524400" 
+                        data-rel="publisher">
+                        </div>
+                    </div>
+                    <div className="col-md-7 col-xs-12">
+                        <div className="fb-page" 
+                            data-href="https://www.facebook.com/niimanga" 
+                            data-small-header="false" 
+                            data-adapt-container-width="true" 
+                            data-hide-cover="false" 
+                            data-show-facepile="true" 
+                            data-show-posts="false">
+                        <div className="fb-xfbml-parse-ignore">
+                        <blockquote cite="https://www.facebook.com/niimanga">
+                        <a href="https://www.facebook.com/niimanga">Niimanga</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
 
             <div className="col-xs-12 col-md-3">
-                <div className="fb-page socmed card-content" 
-                data-href="https://www.facebook.com/niimanga" 
-                data-small-header="false" 
-                data-adapt-container-width="true" 
-                data-hide-cover="false" 
-                data-show-facepile="true" 
-                data-show-posts="false">
-                    <div className="fb-xfbml-parse-ignore">
-                    <blockquote cite="https://www.facebook.com/niimanga">
-                    <a href="https://www.facebook.com/niimanga">Niimanga</a></blockquote>
-                    </div>
-                </div>
 
                 {!isMobile()?<Popular {...this.props}/>: null }
                 
-                <div className="title-green">Social Media Page</div>
-                <div className="socmed">
-                    <div className="g-page" 
-                    data-width="215" 
-                    data-href="//plus.google.com/u/0/109363191390818524400" 
-                    data-rel="publisher">
+                <div className="title-green">Social Media Share</div>
+                
+                <div className="socmed col-xs-6">
+                    <div className="socmed col-xs-6 fb-like" 
+                    data-href="https://www.facebook.com/niimanga" 
+                    data-layout="button_count" 
+                    data-action="like" 
+                    data-show-faces="true" 
+                    data-share="false">
                     </div>
                 </div>
+                <div className="socmed col-xs-6"><div className="fb-share-button" data-href="http://www.niimanga.net" data-layout="button_count"></div></div>
+                <div className="socmed col-xs-6"><div className="g-plusone" data-annotation="bubble" data-href="http://www.niimanga.net"></div></div>
+                <div className="socmed col-xs-6"><div className="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/109363191390818524400" data-rel="publisher"></div></div>
+
                 <div className="socmed">
                     <a className="twitter-timeline card-content" 
                     href="https://twitter.com/niimanga"

@@ -95,3 +95,16 @@ React.renderComponent(<InfiniteList/>,
                      onQuerySubmit={this.handleSearch}
                      query={this.state.query}
                      />                     
+
+                       <ul>
+            <li><Link className="link-cover" to="/">
+            <i className="fa fa-home fa-fw"></i><span>Home</span></Link></li>
+            <li><Link className="link-cover" to="/">
+            <i className="fa fa-tags fa-fw"></i><span>Genres</span></Link></li>
+            <li><Link className="link-cover" to="latest" >
+            <i className="fa fa-rss fa-fw"></i> Latest Manga</Link>
+            </li>
+            <li><Link className="link-cover" to="popular" >
+            <i className="fa fa-fire fa-fw"></i>Hot Manga</Link>
+            </li>            
+            </ul>

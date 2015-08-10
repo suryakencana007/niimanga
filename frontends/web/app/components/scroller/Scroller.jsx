@@ -1,4 +1,3 @@
-var Colors = require('components/Color');
 var InfiniteScroll = require('./InfiniteScroll');
 var PureRender = require('components/mixin/PureRender');
 var Radium = require('radium');

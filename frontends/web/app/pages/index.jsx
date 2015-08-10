@@ -35,10 +35,6 @@ module.exports = React.createClass({
         };
     },
 
-    componentWillMount: function() {
-        // this.fetchGenres();
-    },
-
     componentDidMount: function() {
         var timeout;
         this.props.loadingEvents.on('start', () => {

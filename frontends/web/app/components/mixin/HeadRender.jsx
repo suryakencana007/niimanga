@@ -21,6 +21,7 @@ var HeadRender = function (){
   ];
   var link = [
   {"rel": "canonical", "href": "http://niimanga.net"},
+  {"rel": "alternate", "href": "http://niimanga.net/#/"},
   {"rel": "publisher", "href": "https://plus.google.com/109363191390818524400" },
   {"rel": "author", "href": "https://twitter.com/@suryakencana007" },
 

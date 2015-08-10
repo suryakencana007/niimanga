@@ -20,7 +20,7 @@ var renderState = {
 };
 
 var render = () => {
-   var { element, Handler, routerState } = renderState;
+  var { element, Handler, routerState } = renderState;
   loadingEvents.emit('start');
   fetchData(token, routerState).then((data) => {
     loadingEvents.emit('end');

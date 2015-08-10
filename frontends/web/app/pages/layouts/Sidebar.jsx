@@ -1,8 +1,13 @@
 var React = require('react');
 var Router = require('react-router');
 var { Link } = Router;
+var Radium = require('radium');
 var {Component, PropTypes} = require('react/addons');
+import SidebarHeader from 'components/linkgroup/header.jsx';
+import SidebarLinkGroup from 'components/linkgroup/link-group.jsx';
+import SidebarLink from 'components/linkgroup/link.jsx';
 
+@Radium.Enhancer
 class SideBar extends Component {
 
     render() {
@@ -11,21 +16,30 @@ class SideBar extends Component {
             <div className="nav-logo" style={{float: 'none', padding: ' 5px 20px'}}>
             <Link to="/" >Niimanga<span className="site-logo"></span></Link>
             </div>
-            <ul>
-            <li><Link className="link-cover" to="/">
-            <i className="fa fa-home fa-fw"></i><span>Home</span></Link></li>
-            <li><Link className="link-cover" to="/">
-            <i className="fa fa-tags fa-fw"></i><span>Genres</span></Link></li>
-            <li><Link className="link-cover" to="latest" >
-            <i className="fa fa-rss fa-fw"></i> Latest Manga</Link>
-            </li>
-            <li><Link className="link-cover" to="popular" >
-            <i className="fa fa-fire fa-fw"></i>Hot Manga</Link>
-            </li>            
-            </ul>
+            <div style={styles.base}>
+                <SidebarHeader>Site</SidebarHeader>
+                <SidebarLinkGroup>
+                <SidebarLink linkto={'/'} iconClass={ 'fa fa-home fa-fw' } external={ true }>Home</SidebarLink>
+                <SidebarLink linkto={'/'} iconClass={ 'fa fa-tags fa-fw' } external={ true }>Genres</SidebarLink>
+                </SidebarLinkGroup>
+                <SidebarHeader>Manga</SidebarHeader>
+                <SidebarLinkGroup>
+                <SidebarLink linkto={'latest'} iconClass={ 'fa fa-rss fa-fw' } external={ true }>Latest</SidebarLink>
+                <SidebarLink linkto={'popular'} iconClass={ 'fa fa-fire fa-fw' } external={ true }>Hot</SidebarLink>
+                </SidebarLinkGroup>
+            </div>
             </nav>
             );
     }
 }
 
+var styles = {
+    base: {
+        position: 'relative',
+        paddingLeft: '10px',
+        width: '100%',
+        maxWidth: '225px',
+        height: '564px',
+    }
+};
 module.exports = SideBar;

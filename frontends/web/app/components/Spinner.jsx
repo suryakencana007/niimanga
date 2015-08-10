@@ -1,6 +1,6 @@
-var Colors = require('constants/Colors'),
-Radium = require('radium'),
-React = require('react');
+var Colors = require('components/mixin/Colors');
+var Radium = require('radium');
+var React = require('react');
 
 var Spinner = React.createClass({
   render: function(e) {
