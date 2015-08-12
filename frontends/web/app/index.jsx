@@ -27,7 +27,7 @@ fetchData(token, routerState).then((data) => {
   });
 };
 
-Router.run(routes(), function (Handler, state) {
+Router.run(routes(), Router.HistoryLocation, function (Handler, state) {
   renderState.Handler = Handler;
   renderState.routerState = state;
   render();

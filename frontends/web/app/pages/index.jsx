@@ -20,7 +20,7 @@ module.exports = React.createClass({
     },
     statics: {
         fetchData: function(token, params, query) {
-            return api.get('api/v1/genres?q=', token).then(function(data){
+            return api.get('/api/v1/genres?q=', token).then(function(data){
                 return Array.prototype.slice.call(data.rows, 0, data.rows.length);
             }).then(null , function(){
                 return {error: true};
@@ -41,25 +41,16 @@ module.exports = React.createClass({
           clearTimeout(timeout);
           timeout = setTimeout(() => {
             this.setState({ loading: true });
-        }, 250);
+        }, 500);
       });
         this.props.loadingEvents.on('end', () => {
           clearTimeout(timeout);
           this.setState({ loading: false });
-      });    
+      });
     },
 
     componentWillUnmount: function() {
         clearTimeout(this.pid);
-    },
-
-    fetchGenres: function() {
-        var data = api.get('api/v1/genres?q=', this.props.token).then(function(data){
-            return Array.prototype.slice.call(data.rows, 0, data.rows.length);
-        }).then(null , function(){
-            return {error: true};
-        });
-        if(!data.error) this.setState({genres: data});
     },
 
     render: function () {

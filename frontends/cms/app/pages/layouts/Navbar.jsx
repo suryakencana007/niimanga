@@ -10,7 +10,7 @@ module.exports = React.createClass({
                 <div className="navbar-inner">
                     <div className="container clearfix">
                         <div className="nav-logo">
-                           <Link to="/" >Niimanga<span className="site-logo"></span></Link>
+                            <Link to="/" >Niimanga<span className="site-logo"></span></Link>
                         </div>
                         <ul className="top-right-nav">
                             <li className="dropdown border-both">

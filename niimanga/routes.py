@@ -133,3 +133,14 @@ def includeme(config):
     # cms slider image detail
     config.add_route('cms_slider_detail',
                      '/cms/slimage/{action}')
+
+    """
+        route frontends
+    """
+    config.add_route('url_popular', '/popular')
+    config.add_route('url_latest', '/latest')
+    config.add_route('url_series', '/manga/{seriesSlug}')
+    config.add_route('url_chapter', '/chapter/{seriesSlug}/{chapterSlug}')
+    config.add_route('url_search', '/search/{q}')
+    config.add_route('url_genre', '/genre/{q}')
+

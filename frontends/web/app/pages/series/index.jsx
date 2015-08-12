@@ -159,7 +159,7 @@ var styles = {
         position: 'fixed',
         width: '50%',
         cursor: 'pointer',
-        background: 'url(static/res/ad-banner-left.png) 100% 0% no-repeat scroll transparent'
+        background: 'url(/static/res/ad-banner-left.png) 100% 0% no-repeat scroll transparent'
     },
 
     right: {
@@ -169,7 +169,7 @@ var styles = {
         position: 'fixed',
         width: '50%',
         cursor: 'pointer',
-        background: 'url(static/res/ad-banner-right.png) 100% 0% no-repeat scroll transparent'
+        background: 'url(/static/res/ad-banner-right.png) 100% 0% no-repeat scroll transparent'
     }
 };
 

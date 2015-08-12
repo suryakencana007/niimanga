@@ -104,7 +104,7 @@ class MangaApi(ZHandler):
             chapter = row.last_chapter(row.id)
             # chapter = Chapter.query.first()
             card = dict(
-                thumb=thumb,
+                thumb='/{thumb}'.format(thumb=thumb),
                 origin='/'.join([row.slug]),
                 name=row.title,
                 time=time,
@@ -193,7 +193,7 @@ class MangaApi(ZHandler):
             return dict(
                 origin=origin,
                 aka=aka,
-                thumb_url=thumb,
+                thumb_url='/{thumb}'.format(thumb=thumb),
                 artists=artists,
                 authors=authors,
                 description=description,
@@ -224,7 +224,7 @@ class MangaApi(ZHandler):
         # cari manga by slug
         manga = Manga.query.filter(Manga.slug == slug).first()
         manga.updated_viewed()
-        LOG.debug(manga.slug)
+        # LOG.debug(manga.slug)
         # cari chapter manga
         chapter = manga.get_chapter(manga, chap_slug)
 
@@ -233,8 +233,6 @@ class MangaApi(ZHandler):
         manga_list = MangaUtil(path, manga.id, chapter.id)
 
         manga_list.build_image_lookup_dict()
-        # for key in manga.items:
-        #     print(key)
         """
             /store/{manga_id}/{chapter_id/filenames
             untuk folder manga storage digunakan gendID manga e.g /store/2589637412/897589647/filenames
@@ -242,11 +240,13 @@ class MangaApi(ZHandler):
 
         page_img = []
         for item in manga_list.items:
-            LOG.debug(manga_list.get_item_by_key(item)[1])
-            urlmanga = _.static_url('niimanga:rak/manga/{manga_id}/{chapter_id}/{file}'
-                                    .format(manga_id=manga.id,
-                                            chapter_id=chapter.id,
-                                            file=manga_list.get_item_by_key(item)[1]))
+            # LOG.debug(manga_list.get_item_by_key(item)[1])
+            filename = '/'.join([manga.id, chapter.id, manga_list.get_item_by_key(item)[1]])
+            urlmanga = '/{thumb}'.format(thumb=_.storage.url(filename))
+            # urlmanga = _.static_url('niimanga:rak/manga/{manga_id}/{chapter_id}/{file}'
+            #                         .format(manga_id=manga.id,
+            #                                 chapter_id=chapter.id,
+            #                                 file=manga_list.get_item_by_key(item)[1]))
             page_img.append(urlmanga)
 
         return dict(
@@ -267,7 +267,7 @@ class MangaApi(ZHandler):
             .all()
         if results:
             return MangaApi._card_fill(_, results)
-        return dict({error: 'there is error from Manga Record Collections'})
+        return dict(error='there is error from Manga Record Collections')
 
     @view_config(route_name='upload_chapter',
                  request_method='POST', renderer='json')

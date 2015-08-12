@@ -36,7 +36,7 @@ class MangaUtil(object):
         # The top argument for name in files
         extens = ['jpg', 'png', 'gif']  # the extensions to search for
         names = []
-        LOG.debug(self.path)
+        # LOG.debug(self.path)
         for root, dirs, files in os.walk(self.path):
             # Loop through the file names for the current step
             for name in files:
@@ -48,7 +48,7 @@ class MangaUtil(object):
                     # names.append(os.path.join(self.path, name))
                     # print(os.path.join(dirname, filename))
                     names.append(name)
-                LOG.debug('{dirs}-{files}'.format(dirs=dirs, files=name))
+                # LOG.debug('{dirs}-{files}'.format(dirs=dirs, files=name))
         return names
 
     def build_image_lookup_dict(self):

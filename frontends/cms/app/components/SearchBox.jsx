@@ -36,7 +36,7 @@ class SearchBox extends Component {
                 value={this.props.query}
                 />
                 <span className="btn-search-wrapper">
-                    <button className="btn btn-search" 
+                    <button className="btn btn-search"
                     onClick={this._onSearchClick}
                     type="submit">
                         <i className="fa fa-search fa-fw"></i>

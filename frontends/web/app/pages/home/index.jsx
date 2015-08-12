@@ -16,14 +16,6 @@ var Homepage = React.createClass({
     propTypes: {
         initLoaded: React.PropTypes.bool
     },
-    statics: {
-        fetchData: (token, params, query) => {
-            return {
-                title: "joss",
-                name: "groook"
-            }
-        }
-    },
 
     getInitialState: function () {
         return {
@@ -44,41 +36,31 @@ var Homepage = React.createClass({
         }*/
     },
 
-    componentDidMount(){
-        var timeout;
-        this.props.loadingEvents.on('start', () => {
-          clearTimeout(timeout);
-          timeout = setTimeout(() => {
-            this.setState({ loading: true });
-        }, 250);
-      });
-        this.props.loadingEvents.on('end', () => {
-          clearTimeout(timeout);
-          this.setState({ loading: false });
-      });
-
-        this.setState({
-            head: {
-                title: "Niimanga - The only manga reader page you'll ever need",
-                description: "Niimanga - Manga reader for free and enjoying what you'll need to reading manga popular series",
-                sitename: "Niimanga",
-                image: "http://niimanga.net/static/res/share.png",
-                url: "http://niimanga.net"
-            }
-        });
-        this.socmedPlugin();
-    },
-
     socmedPlugin: function() {
-        (function(d, s, id) {
+        /*(function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
           if (d.getElementById(id)) return;
           js = d.createElement(s); 
           js.id = id;
-          js.async = true;
+          // js.async = true;
           js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=844212729007674";
           fjs.parentNode.insertBefore(js, fjs);
-      })(document, 'script', 'facebook-jssdk');
+      })(document, 'script', 'facebook-jssdk');*/
+        window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '844212729007674',
+              xfbml      : true,
+              version    : 'v2.4'
+          });
+        };
+
+        (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=844212729007674";
+         fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
         (function(id) {
             if(document.getElementById(id)) return;
             var po = document.createElement('script'); 
@@ -88,7 +70,7 @@ var Homepage = React.createClass({
             po.src = 'https://apis.google.com/js/platform.js';
             var s = document.getElementsByTagName('script')[0]; 
             s.parentNode.insertBefore(po, s);
-        })("google-pjs");
+        }("google-pjs"));
         (function(d,s,id){
             var js,fjs=d.getElementsByTagName(s)[0],
             p=/^http:/.test(d.location)?'http':'https';
@@ -100,11 +82,27 @@ var Homepage = React.createClass({
             js.src=p+"://platform.twitter.com/widgets.js";
             fjs.parentNode.insertBefore(js,fjs);
             
-        })(document,"script","twitter-wjs");
+        }(document,"script","twitter-wjs"));
+    },
+
+    componentDidMount(){
+        this.socmedPlugin();
+        this.setState({
+            head: {
+                title: "Niimanga - The only manga reader page you'll ever need",
+                description: "Niimanga - Manga reader for free and enjoying what you'll need to reading manga popular series",
+                sitename: "Niimanga",
+                image: "http://niimanga.net/static/res/share.png",
+                url: "http://niimanga.net"
+            }
+        });        
     },
 
     componentWillUnmount(){
         this.setState({initLoaded: false});
+        var d = document.getElementById('facebook-jssdk');
+        var parent = d.parentNode;
+        parent.removeChild(d);
     },
 
     render: function() {
@@ -198,7 +196,7 @@ var styles = {
         position: 'fixed',
         width: '50%',
         cursor: 'pointer',
-        background: 'url(static/res/ad-banner-left.png) 100% 0% no-repeat scroll transparent'
+        background: 'url(/static/res/ad-banner-left.png) 100% 0% no-repeat scroll transparent'
     },
 
     right: {
@@ -208,7 +206,7 @@ var styles = {
         position: 'fixed',
         width: '50%',
         cursor: 'pointer',
-        background: 'url(static/res/ad-banner-right.png) 100% 0% no-repeat scroll transparent'
+        background: 'url(/static/res/ad-banner-right.png) 100% 0% no-repeat scroll transparent'
     }
 };
 
