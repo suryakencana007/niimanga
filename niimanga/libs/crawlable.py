@@ -54,7 +54,7 @@ class CrawlAble(object):
         # request should be the one and only arg to the view function
         request = args[0].R
         # If requester is a bot, serve custom "bot version"
-        crawlers = ('Googlebot', 'facebookexternalhit', 'Slackbot', 'Facebot')
+        crawlers = ('Googlebot', 'facebookexternalhit', 'Slackbot', 'Facebot', 'Twitterbot')
         for crawler in crawlers:
             if crawler in request.headers['User-Agent']:
                 return action_(*args, **kwargs)
