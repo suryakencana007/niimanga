@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="${request.static_url('niimanga:public/res/favicon.ico')}" type="image/x-icon">
     <link rel="shortcut icon" href="${request.static_url('niimanga:public/res/favicon.ico')}" type="image/x-icon">
-    <title itemprop="name">Chapter ${last_chapter} - ${name} | ${aka}</title>
+    <title itemprop="name">Chapter ${last_chapter} - ${name | u} | ${aka | u}</title>
     <meta name="description" content="${artists} ${authors} ${description}" >
     <meta property="og:locale" content="en_US" >
     <meta property="og:type" content="article" >
-    <meta property="og:title" content="Chapter ${last_chapter} - ${name} | ${aka}" >
+    <meta property="og:title" content="Chapter ${last_chapter} - ${name | u} | ${aka | u}" >
     <meta property="og:description" content="${artists} ${authors} ${description}" >
     <meta property="og:url" content="http://www.niimanga.net${url}" >
     <meta property="og:site_name" content="niimanga" >
     <meta property="og:image" content="http://www.niimanga.net/${thumb_url}">
     <meta name="twitter:card" content="summary_large_image" >
     <meta name="twitter:description" content="${artists} ${authors} ${description}" >
-    <meta name="twitter:title" content="Chapter ${last_chapter} - ${name} | ${aka}" >
+    <meta name="twitter:title" content="Chapter ${last_chapter} - ${name | u} | ${aka | u}" >
     <meta name="twitter:domain" content="http://www.niimanga.net${url}" >
     <meta name="twitter:image:src" content="http://www.niimanga.net/${thumb_url}">
     <meta name="twitter:creator" content="@niimanga" >

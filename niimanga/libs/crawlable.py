@@ -53,9 +53,8 @@ class CrawlAble(object):
         """
         # request should be the one and only arg to the view function
         request = args[0].R
-
         # If requester is a bot, serve custom "bot version"
-        crawlers = ('Googlebot', 'facebookexternalhit', 'Slackbot')
+        crawlers = ('Googlebot', 'facebookexternalhit', 'Slackbot', 'Facebot')
         for crawler in crawlers:
             if crawler in request.headers['User-Agent']:
                 return action_(*args, **kwargs)
@@ -63,7 +62,7 @@ class CrawlAble(object):
         # Not a bot. Let's serve the js app!
         with open(os.getcwd() + '/niimanga/public/index.html', 'r') as f:
             request.response.content_type = 'text/html'
-            request.response.charset = 'UTF-8'
+            request.response.charset = 'utf8'
             request.response.status_int = 200
             request.response.body = f.read()
         LOG.info('dari crawlable decorated123')
