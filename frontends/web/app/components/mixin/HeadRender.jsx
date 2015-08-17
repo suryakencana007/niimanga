@@ -16,8 +16,9 @@ var HeadRender = function (){
   {"name": "twitter:description", "content": this.state.head.description},
   {"name": "twitter:title", "content": this.state.head.title},
   {"name": "twitter:domain", "content": this.state.head.sitename},
-  {"name": "twitter:image:src", "content": this.state.head.image},
-  {"name": "twitter:creator", "content": "@niimanga"}
+  {"name": "twitter:image", "content": this.state.head.image},
+  {"name": "twitter:creator", "content": "@suryakencana007"},
+  {"name": "twitter:site", "content": "@niimanga"}
   ];
   var link = [
   {"rel": "canonical", "href": "http://niimanga.net"},

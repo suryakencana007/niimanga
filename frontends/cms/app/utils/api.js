@@ -4,7 +4,7 @@ var cache = require('./cache');
 
 // var HOST = 'http://addressbook-api.herokuapp.com';
 // var HOST = 'http://localhost:5000';
-var HOST = '';
+var HOST = '/api/1.0';
 
 exports.get = (url, token) => {
   var cached = cache.get(token, url);

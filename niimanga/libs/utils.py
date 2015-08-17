@@ -40,7 +40,7 @@ REFRESH_TOKEN_LENGTH = 32
 CLIENT_KEY_LENGTH = 40
 CLIENT_SECRET_LENGTH = 20
 ALLOWED_CHARACTERS = string.letters + string.digits + '-' + '.' + '_' + '~'
-URI_API = u'/api/v1'
+URI_API = u'/api/1.0'
 MANGA_PATH = u'rak/manga/'
 ANIME_PATH = u'rak/anime/'
 

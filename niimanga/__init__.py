@@ -23,6 +23,7 @@ import niimanga.libs.security
 import niimanga.routes
 import niimanga.configs.session
 import niimanga.configs.path
+import niimanga.configs.cors
 import niimanga.models
 import niimanga.configs.view
 
@@ -62,6 +63,9 @@ def main(global_config, **settings):
 
     # set Database Configuration
     cfg.include(niimanga.models)
+
+    # set cors Configuration
+    # cfg.include(niimanga.configs.cors)
 
     # set asset static Configuration
     cfg.include(niimanga.configs.view)

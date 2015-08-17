@@ -15,7 +15,6 @@ module.exports = () => {
         <Route name="group" path="/group" handler={Group} />
         <Route name="series" path="/series" handler={Series} />
         <Route name="chapter" path="/chapter" handler={Chapter} />
-        <NotFoundRoute handler={require('./pages/NotFound')}/>
     </Route>
     ];
 };

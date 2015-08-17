@@ -24,9 +24,6 @@ def includeme(config):
     config.add_route('hum', '/hum')
     config.add_route('logout', 'logout')
     config.add_route("reset", "{username}/reset/{reset_key}")
-    config.add_route("search_all", "/search")
-
-    config.add_route("search_manga", "/series")
     config.add_route("manga", "/manga", request_method='POST')
     # config.add_route("chapter_manga", "/chapter", request_method='POST')
 
@@ -48,10 +45,10 @@ def includeme(config):
 
     # ping checks
     config.add_route('api_ping',
-                     '/api/v1/{api_key}/ping',
+                     '{URI}/{api_key}/ping'.format(URI=URI_API, api_key='{api_key}'),
                      request_method='GET')
     config.add_route('api_ping_missing_user',
-                     '/api/v1/ping',
+                     '{URI}/ping'.format(URI=URI_API),
                      request_method='GET')
     config.add_route('api_ping_missing_api',
                      '/ping',
@@ -60,30 +57,9 @@ def includeme(config):
     config.add_route('api_header', '/ping/header', request_method='GET')
     config.add_route('upload', '/upload')
     config.add_route('download', '/download')
-    """
-        manga
-    """
-    #home page manga
-    config.add_route('manga_home',
-                     '/manga')
-    #home page manga
-    config.add_route('manga_hot',
-                     '/manga/hot')
-    #genre manga
-    config.add_route('list_genre',
-                     '/manga/genre')
-    #genre manga
-    config.add_route('manga_genre',
-                     '/manga/genre/{genre}')
-    # #page manga
-    # config.add_route('manga_title',
-    #                  '/manga/{title_slug}')
-    # # slug-title, slug-chapter e.g /manga/fairy-tail/chapter-001
-    config.add_route('moco_manga',
-                     '/manga/{title_slug}/{chapter_no}')
 
     """
-        api frontends manga
+        api front ends manga
     """
     # search
     config.add_route('search_series', '{URI}/search'.format(URI=URI_API))
@@ -106,36 +82,27 @@ def includeme(config):
     config.add_route('list_genres', '{URI}/genres'.format(URI=URI_API))
 
     """
-        cms
+        api front ends cms
     """
-    # cms main
-    config.add_route('cms_main',
-                     '/cms')
+    # cms main '{URI}/search'.format(URI=URI_API)
+    config.add_route('cms_main', '/cms')
     # cms chapter
-    config.add_route('cms_chapter',
-                     '/cms/chapter/{action}')
+    config.add_route('cms_chapter', '{URI}/chapter/end/{action}'.format(URI=URI_API, action='{action}'))
     # cms series
-    config.add_route('cms_series',
-                     '/cms/series/{action}')
+    config.add_route('cms_series', '{URI}/series/end/{action}'.format(URI=URI_API, action='{action}'))
     # cms menu
-    config.add_route('cms_menu',
-                     '/cms/menu/{action}')
+    config.add_route('cms_menu', '{URI}/menu/end/{action}'.format(URI=URI_API, action='{action}'))
     # cms group
-    config.add_route('cms_group',
-                     '/cms/grp/{action}')
+    config.add_route('cms_group', '{URI}/group/end/{action}'.format(URI=URI_API, action='{action}'))
     # cms season
-    config.add_route('cms_season',
-                     '/cms/season/{action}')
+    config.add_route('cms_season', '{URI}/season/end/{action}'.format(URI=URI_API, action='{action}'))
     # cms slider image
-    config.add_route('cms_slider',
-                     '/cms/slider/{action}')
-
+    config.add_route('cms_slider', '{URI}/slider/end/{action}'.format(URI=URI_API, action='{action}'))
     # cms slider image detail
-    config.add_route('cms_slider_detail',
-                     '/cms/slimage/{action}')
+    config.add_route('cms_slider_detail', '{URI}/slimage/end/{action}'.format(URI=URI_API, action='{action}'))
 
     """
-        route frontends
+        route front ends
     """
     config.add_route('url_popular', '/popular')
     config.add_route('url_latest', '/latest')
@@ -143,4 +110,10 @@ def includeme(config):
     config.add_route('url_chapter', '/chapter/{seriesSlug}/{chapterSlug}')
     config.add_route('url_search', '/search/{q}')
     config.add_route('url_genre', '/genre/{q}')
+
+
+    """
+        route front ends cms
+    """
+    # config.add_route('url_popular', '/popular')
 

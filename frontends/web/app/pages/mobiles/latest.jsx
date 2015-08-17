@@ -26,7 +26,7 @@ var latest = React.createClass({
         this.setState(newState);
 
         var self = this;
-        var url = '/api/v1/latest?page=' + newState.offset + '&cards=' + newState.limit;
+        var url = '/latest?page=' + newState.offset + '&cards=' + newState.limit;
         var result = api.post(url, this.props.token).then((data) => {
             cache.expire(this.props.token, url);
             self.updateCardsData(data);

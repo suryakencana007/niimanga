@@ -91,7 +91,7 @@ module.exports = React.createClass({
 
     statics: {
         fetchData: function(token, params, query) {
-            var url = '/api/v1/chapter/' + params.seriesSlug + '/' + params.chapterSlug;
+            var url = '/chapter/' + params.seriesSlug + '/' + params.chapterSlug;
             return api.post(url, token).then(null ,
                 function(){
                     return {error: true};

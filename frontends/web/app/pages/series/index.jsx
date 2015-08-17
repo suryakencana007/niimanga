@@ -176,7 +176,7 @@ var styles = {
 module.exports = React.createClass({
      statics: {
         fetchData: function(token, params, query) {
-            var url = '/api/v1/series/' + params.seriesSlug;
+            var url = '/series/' + params.seriesSlug;
             return api.post(url, token).then(null ,
                 function(){
                     return {error: true};

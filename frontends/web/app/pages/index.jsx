@@ -20,7 +20,7 @@ module.exports = React.createClass({
     },
     statics: {
         fetchData: function(token, params, query) {
-            return api.get('/api/v1/genres?q=', token).then(function(data){
+            return api.get('/genres?q=', token).then(function(data){
                 return Array.prototype.slice.call(data.rows, 0, data.rows.length);
             }).then(null , function(){
                 return {error: true};

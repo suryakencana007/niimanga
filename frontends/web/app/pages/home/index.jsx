@@ -9,6 +9,10 @@ var LatestIndex = require('pages/mobiles/latest');
 var Popular = require('pages/home/popular');
 var PopularIndex = require('pages/mobiles/popular');
 
+var Twitter = require('components/socials/Twitter');
+var Facebook = require('components/socials/Facebook');
+var GooglePlus = require('components/socials/GooglePlus');
+
 var isMobile = require('utils/ismobile');
 
 var Homepage = React.createClass({
@@ -86,7 +90,7 @@ var Homepage = React.createClass({
     },
 
     componentDidMount(){
-        this.socmedPlugin();
+        // this.socmedPlugin();
         this.setState({
             head: {
                 title: "Niimanga - The only manga reader page you'll ever need",
@@ -100,9 +104,9 @@ var Homepage = React.createClass({
 
     componentWillUnmount(){
         this.setState({initLoaded: false});
-        var d = document.getElementById('facebook-jssdk');
-        var parent = d.parentNode;
-        parent.removeChild(d);
+        // var d = document.getElementById('facebook-jssdk');
+        // var parent = d.parentNode;
+        // parent.removeChild(d);
     },
 
     render: function() {
@@ -130,38 +134,21 @@ var Homepage = React.createClass({
                 </Tabs>
                 </span>): ( <Latest {...this.props}/>)}
 
-                <div className="title-green">Social Media Page</div>
-               
-                <div className="socmed col-xs-12">
-                    <div className="col-md-5 col-xs-12">
-                        <div className="g-page" 
-                        data-width="215" 
-                        data-href="//plus.google.com/u/0/109363191390818524400" 
-                        data-rel="publisher">
-                        </div>
-                    </div>
-                    <div className="col-md-7 col-xs-12">
-                        <div className="fb-page" 
-                            data-href="https://www.facebook.com/niimanga" 
-                            data-small-header="false" 
-                            data-adapt-container-width="true" 
-                            data-hide-cover="false" 
-                            data-show-facepile="true" 
-                            data-show-posts="false">
-                        <div className="fb-xfbml-parse-ignore">
-                        <blockquote cite="https://www.facebook.com/niimanga">
-                        <a href="https://www.facebook.com/niimanga">Niimanga</a></blockquote>
-                        </div>
-                    </div>
-                </div>
-                </div>
+                <div className="title-green"><br /></div>
             </div>
 
             <div className="col-xs-12 col-md-3">
-
+                <div className="g-page" 
+                        data-width={!isMobile()? "225": "275" } 
+                        data-href="//plus.google.com/u/0/109363191390818524400" 
+                        data-rel="publisher">
+                </div>
                 {!isMobile()?<Popular {...this.props}/>: null }
                 
                 <div className="title-green">Social Media Share</div>
+                <Twitter type="share" url="http://www.niimanga.net" text="Easy for read manga #niimanga #manga @niimanga"/>
+                <Facebook type="share" cleanup={true} url="http://www.niimanga.net" text="Easy for read manga #niimanga #manga @niimanga"/>
+                <GooglePlus type="share" url="http://www.niimanga.net" text="Easy for read manga #niimanga #manga @niimanga"/>
                 
                 <div className="socmed col-xs-6">
                     <div className="socmed col-xs-6 fb-like" 
@@ -180,7 +167,23 @@ var Homepage = React.createClass({
                     <a className="twitter-timeline card-content" 
                     href="https://twitter.com/niimanga"
                     data-widget-id="625868171711393792">Tweets by @niimanga</a>
-                 </div>
+                </div>
+
+                <div className="socmed">
+                    <div className="fb-page"
+                            data-width ={!isMobile()? "225": "275" }
+                            data-href="https://www.facebook.com/niimanga" 
+                            data-small-header="false" 
+                            data-adapt-container-width="true" 
+                            data-hide-cover="false" 
+                            data-show-facepile="true" 
+                            data-show-posts="true">
+                        <div className="fb-xfbml-parse-ignore">
+                        <blockquote cite="https://www.facebook.com/niimanga">
+                        <a href="https://www.facebook.com/niimanga">Niimanga</a></blockquote>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -20,12 +20,12 @@ module.exports = React.createClass({
           clearTimeout(timeout);
           timeout = setTimeout(() => {
             this.setState({ loading: true });
-        }, 250);
-      });
+          }, 250);
+        });
         this.props.loadingEvents.on('end', () => {
           clearTimeout(timeout);
           this.setState({ loading: false });
-      });
+        });
     },
 
     componentWillUnmount: function() {

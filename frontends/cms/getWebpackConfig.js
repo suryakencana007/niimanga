@@ -12,7 +12,7 @@ module.exports = function(options) {
     ],
     output: {
       path: options.environment === 'prod' ? path.resolve(__dirname, '../../niimanga/public') : path.resolve(__dirname, './dist'),
-      filename: 'bmain.js',
+      filename: 'back-main.js',
       publicPath: options.environment === 'prod' ? '/static/' : '',
     },
     module: {
@@ -60,22 +60,23 @@ module.exports = function(options) {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
     ];
+    config.module.loaders[0].loaders.unshift('react-hot');
   }
 
   if (options.environment === 'prod') {
     config.plugins = [
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin(),
     new webpack.DefinePlugin({
       'process.env': {NODE_ENV: '"production"'}
-    }),
-    new webpack.optimize.UglifyJsPlugin(),
-    new webpack.optimize.DedupePlugin()
+    })
     ]
   }
 
-  // config.module.loaders.unshift({
-  //   test: require.resolve("react"),
-  //   loader: "expose?React"
-  // });
+  config.module.loaders.unshift({
+    test: require.resolve("react"),
+    loader: "expose?React"
+  });
 
-return config;
+  return config;
 };

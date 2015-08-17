@@ -3,8 +3,8 @@ var axios = require('axios');
 var cache = require('./cache');
 
 // var HOST = 'http://addressbook-api.herokuapp.com';
-// var HOST = 'http://localhost:5000';
 var HOST = '';
+HOST = HOST+'/api/1.0';
 
 exports.get = (url, token) => {
   var cached = cache.get(token, url);
@@ -12,14 +12,16 @@ exports.get = (url, token) => {
   Promise.resolve(cached) :
   axios({
     url: HOST+url,
-    headers: { 'Authorization': token }
+    headers: [
+    { 'Authorization': token }
+    ]
   }).then(function(res) {
     cache.set(token, url, res.data);
     return res.data;
   }).catch(function (response) {
-    if (response instanceof Error) {     
+    if (response instanceof Error) {
       console.log('Error', response.message);
-    } else {     
+    } else {
       console.log(response.data);
       console.log(response.status);
       console.log(response.headers);
@@ -35,7 +37,9 @@ exports.post = (url, data, token) => {
     method: 'post',
     data: data,
     url: HOST+url,
-    headers: { 'Authorization': token }
+    headers: [
+    { 'Authorization': token }
+    ]
   }).then(function(res) {
     return res.data;
   });

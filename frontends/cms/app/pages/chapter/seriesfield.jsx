@@ -1,24 +1,27 @@
-var React = require("react"),
-    Select = require('components/selectfield/Select');
+import React from "react";
+import {Component, PropTypes} from "react/addons";
+import Select from'components/selectfield/Select';
+import api from 'utils/api';
 
-module.exports = React.createClass({
-    getDefaultProps: function () {
-        return {
-            searchable: false
-        };
-    },
+class SeriesField extends Component {
+    static propTypes = {
+        searchable: PropTypes.bool,
+        onChange: PropTypes.func,
+        name: PropTypes.string,
+        value: PropTypes.object
+    };
 
-    getInitialState: function() {
-        return {
-            value: null
-        };
-    },
+    static defaultProps = {
+        searchable: false,
+        name: "",
+        value: null
+    };   
 
-    _onChange: function(newValue) {
-        if(this.props.onChange)this.props.onChange(newValue);
-    },
+    _onChange = (newValue) => {
+        this.props.onChange && this.props.onChange(newValue);
+    };
 
-    render: function () {
+    render(): any {
         return (
             <Select
                 asyncOptions={this.fetchSeries}
@@ -28,28 +31,30 @@ module.exports = React.createClass({
                 value={this.props.value}
                 onChange={this._onChange} />
         );
-    },
+    };
 
-    fetchSeries: function (input, callback) {
+    fetchSeries = (input, callback) => {
         input = input.toLowerCase();
         if(input.length > 1) {
-            $.get('cms/series/search?q=' + input, function (result) {
-                console.log(result);
+            var url = '/series/end/search?q=' + input;
+            var result = api.post(url, this.props.token).then((data) => {
+                cache.expire(this.props.token, url);
                 var opts = {}
-                if (result.rows.length > 0) {
+                if (data.rows.length > 0) {
                     opts = {
-                        options: result.rows,
+                        options: data.rows,
                         complete: true
                     };
                     console.log('search');
                 } else {
                     opts.complete = false;
                 }
-
                 callback(null, opts);
                 return;
             });
         }
         callback(null, {complete: false});
-    }
-});
+    };
+}
+
+module.exports = SeriesField;

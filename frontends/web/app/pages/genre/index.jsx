@@ -31,7 +31,7 @@ var genre = React.createClass({
     },
     statics: {
         fetchData: function(token, params, query) {
-            var url = '/api/v1/genre?q=' + params.q;
+            var url = '/genre?q=' + params.q;
             return api.get(url, token).then((data) => {
                 // cache.expire(token, url);
                 return data;

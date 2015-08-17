@@ -108,3 +108,16 @@ React.renderComponent(<InfiniteList/>,
             <i className="fa fa-fire fa-fw"></i>Hot Manga</Link>
             </li>            
             </ul>
+
+https://www.facebook.com/sharer/sharer.php?u=http://www.niimanga.net&display=popup&ref=plugin&src=share_button&app_id=113869198637480
+
+https://twitter.com/intent/tweet?text="Monster No Iru Nichijou Release Update Chapter"&url=http://www.niimanga.net/chapter/bt-monster-musume-no-iru-nichijou/bt-monster-musume-no-iru-nichijou-ch-35-read-online%2F&&via=niimanga
+
+https://twitter.com/intent/tweet/complete?text="awesome%20read%20manga%20online%20free"&url=http%3A%2F%2Fwww.niimanga.net%2F&via=niimanga%2F&latest_status_id=631397333624721408
+
+
+#toolbarSensor {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); /* IE 7 and olders */
+  opacity:0;
+}

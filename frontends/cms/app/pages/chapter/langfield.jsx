@@ -33,7 +33,7 @@ module.exports = React.createClass({
     fetchLangs: function (input, callback) {
         input = input.toLowerCase();
         if(input.length > 0) {
-            $.get('cms/chapter/lang', function (result) {
+            $.get('/chapter/end/lang', function (result) {
                 console.log(result);
                 var opts = {}
                 if (result.rows.length > 0) {

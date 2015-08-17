@@ -25,7 +25,7 @@ var popular = React.createClass({
         this.setState(newState);
 
         var self = this;
-        var url = '/api/v1/popular?page=' + newState.offset + '&cards=' + newState.limit;
+        var url = '/popular?page=' + newState.offset + '&cards=' + newState.limit;
         var result = api.post(url, this.props.token).then((data) => {
            cache.expire(this.props.token, url);
            self.updateCardsData(data);

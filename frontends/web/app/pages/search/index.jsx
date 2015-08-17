@@ -27,7 +27,7 @@ var CardList = React.createClass({
 var search = React.createClass({
     statics: {
         fetchData: function(token, params, query) {
-            var url = '/api/v1/search?q=' + params.q;
+            var url = '/search?q=' + params.q;
             return api.get(url, token).then((data)=> {
                 // cache.expire(token, url);
                 return data;
