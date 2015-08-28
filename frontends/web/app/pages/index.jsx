@@ -11,7 +11,11 @@ var ScrollToTopBtn = require('components/ScrollToTop');
 var Spinner = require('components/Spinner');
 var Sidebar = require('pages/layouts/Sidebar');
 
+var injectTapEventPlugin = require('react-tap-event-plugin');
+var SideBarUI = require('components/SideBar');
 var isMobile = require('utils/ismobile');
+
+injectTapEventPlugin();
 
 module.exports = React.createClass({
     mixins: [HeadRender],
@@ -31,10 +35,30 @@ module.exports = React.createClass({
     getInitialState: function() {
         return {
             isLoading: false,
-            genres: undefined
+            genres: undefined,
+            docked: false,
+            open: false,
+            transitions: true,
+            touch: true,
+            touchHandleWidth: 20,
+            dragToggleDistance: 30,
+            ismobile: false
         };
     },
 
+    onSetOpen(open) {
+        this.setState({open: open});
+    },
+
+    menuButtonClick(ev) {
+        ev.preventDefault();
+        this.onSetOpen(!this.state.open);
+    },
+
+    componentWillMount: function() {
+      this.setState({ismobile: isMobile() });
+    },
+    
     componentDidMount: function() {
         var timeout;
         this.props.loadingEvents.on('start', () => {
@@ -55,14 +79,30 @@ module.exports = React.createClass({
 
     render: function () {
         var data = this.props.data.root;
-        return (
-            <span>
-             {!isMobile() ? null: <Sidebar />}
-            <div className={!isMobile() ? 'body-container': 'content-wrapper-mobile'}>
-            {this.state.loading ? <Spinner /> : null}
-            <Navbar genres={data}/>
+        var sidebar = <Sidebar />;
+        var sidebarProps = {
+          sidebar: sidebar,
+          docked: this.state.docked,
+          open: this.state.open,
+          touch: this.state.touch,
+          touchHandleWidth: this.state.touchHandleWidth,
+          dragToggleDistance: this.state.dragToggleDistance,
+          transitions: this.state.transitions,
+          onSetOpen: this.onSetOpen,
+        };
+         var contentHeader = (
+          <span>
+            {!this.state.docked &&
+             <a className="menu-trigger" onClick={this.menuButtonClick} href="#"> <i className="fa fa-bars fa-fw"></i></a>}
+          </span>);
+         
 
-            <div className="content-wrapper" style={isMobile()? {padding: 0}: null}>
+        var body = (
+            <div className={!this.state.ismobile ? 'body-container': 'content-wrapper-mobile'}>
+            {this.state.loading ? <Spinner /> : null}
+            <Navbar genres={data} menuBar={contentHeader}/>
+
+            <div className="content-wrapper" style={this.state.ismobile? {padding: 0}: null}>
             <GoogleAnalytics id="UA-65629589-1" />
             <TransitionGroup transitionName="tcontent">
             <RouteHandler key={name} {...this.props}/>
@@ -71,7 +111,15 @@ module.exports = React.createClass({
             <Footer />
             <ScrollToTopBtn />
             </div>
-            </span>
+            );
+
+        body = this.state.ismobile ? (
+            <SideBarUI {...sidebarProps}>
+                {body}
+            </SideBarUI>
+            ): (body);
+        return (
+            <span>{body}</span>
             );
     }
 });

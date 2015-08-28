@@ -39,4 +39,7 @@ frontends/web/node_modules
 frontends/cms/.sass-cache
 frontends/cms/bower_components
 frontends/cms/node_modules
+frontends/xcms/.sass-cache
+frontends/xcms/bower_components
+frontends/xcms/node_modules
 celerybeat-schedule

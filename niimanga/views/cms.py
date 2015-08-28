@@ -18,6 +18,7 @@
 """
 import logging
 import shutil
+from niimanga.libs.crawend import CrawlEnd
 from niimanga.libs.ziputils import extract_zip
 from os import path, walk, makedirs
 
@@ -37,6 +38,7 @@ LOG = logging.getLogger(__name__)
 class CMSMain(ZHandler):
     @view_config(route_name='cms_main',
                  renderer="layouts/cms.html")
+    @CrawlEnd()
     def index(self):
         _ = self.R
 

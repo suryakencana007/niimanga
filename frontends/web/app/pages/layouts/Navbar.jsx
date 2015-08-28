@@ -12,7 +12,8 @@ module.exports = React.createClass({
 
     getInitialState: function() {
         return {
-            query: ''
+            query: '',
+            ismobile: false
         };
     },
 
@@ -22,19 +23,8 @@ module.exports = React.createClass({
         }
     },
 
-    _onSearchClick: function() {
-
-    },
-
-    _onMenuTrigger: function() {
-        var $body = document.body;
-        if($body.className == 'menu-active'){
-           $body.className = '';
-            this.setState({leftMenu: false});
-        } else {
-           $body.className = 'menu-active';
-           this.setState({leftMenu: true});
-       }
+    componentWillMount: function() {
+        this.setState({ismobile: isMobile()});
     },
 
     handleSearch: function (query) {
@@ -67,13 +57,13 @@ module.exports = React.createClass({
             var genres_th = this.getGenres(this.props.genres, 20, 30);
             var genres_fo = this.getGenres(this.props.genres, 30, 40);
         }
-        var navbar = (isMobile()? 'navbar': 'navbar navbar-fixed-top');
+        var navbar = (this.state.ismobile? 'navbar': 'navbar navbar-fixed-top');
 
         return (
             <header className={navbar} style={{borderWidth:' 0 0 1px', marginBottom: '0'}}>
                 <div className="navbar-inner">
                     <div className="container clearfix">
-                    { !isMobile()? ( <span>
+                    { !this.state.ismobile? ( <span>
                         <div className="nav-logo">
                             <Link to="/" >Niimanga<span className="site-logo"></span></Link>
                         </div>
@@ -119,8 +109,7 @@ module.exports = React.createClass({
                                 </li>
                             </ul>
                         </div>
-                        </span>): <div className="menu-trigger" onClick={this._onMenuTrigger} >
-    <i className="fa fa-bars fa-fw"></i></div> }
+                        </span>): (this.props.menuBar) }
                         <SearchBox
                         onQueryChange={this.handleChange}
                         onQuerySubmit={this.handleSearch}

@@ -27,70 +27,9 @@ var Homepage = React.createClass({
         };
     },
 
-    componentDidUpdate(){
-        /*if(!this.state.initLoaded && typeof FB !== 'undefined') {
-            this.setState({initLoaded: true});
-            // make the API call
-            FB.init({
-                appId: '844212729007674',
-                cookie: true,
-                xfbml: true,
-                version: 'v2.4'
-            });
-        }*/
-    },
-
-    socmedPlugin: function() {
-        /*(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); 
-          js.id = id;
-          // js.async = true;
-          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=844212729007674";
-          fjs.parentNode.insertBefore(js, fjs);
-      })(document, 'script', 'facebook-jssdk');*/
-        window.fbAsyncInit = function() {
-            FB.init({
-              appId      : '844212729007674',
-              xfbml      : true,
-              version    : 'v2.4'
-          });
-        };
-
-        (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=844212729007674";
-         fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-        (function(id) {
-            if(document.getElementById(id)) return;
-            var po = document.createElement('script'); 
-            po.id=id;
-            po.type = 'text/javascript';
-            po.async = true;
-            po.src = 'https://apis.google.com/js/platform.js';
-            var s = document.getElementsByTagName('script')[0]; 
-            s.parentNode.insertBefore(po, s);
-        }("google-pjs"));
-        (function(d,s,id){
-            var js,fjs=d.getElementsByTagName(s)[0],
-            p=/^http:/.test(d.location)?'http':'https';
-            if(d.getElementById(id)) return;
-            js=d.createElement(s);
-            js.id=id;
-            js.type = 'text/javascript';
-            js.async = true;
-            js.src=p+"://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js,fjs);
-            
-        }(document,"script","twitter-wjs"));
-    },
+    componentDidUpdate(){},
 
     componentDidMount(){
-        // this.socmedPlugin();
         this.setState({
             head: {
                 title: "Niimanga - The only manga reader page you'll ever need",
@@ -104,13 +43,11 @@ var Homepage = React.createClass({
 
     componentWillUnmount(){
         this.setState({initLoaded: false});
-        // var d = document.getElementById('facebook-jssdk');
-        // var parent = d.parentNode;
-        // parent.removeChild(d);
     },
 
     render: function() {
-        return (
+        return (<span>
+            { isMobile()? (<center><Banner /></center>): null}
             <div className="container header-wrapper">
             {this.renderHead()}
             { isMobile()? null: (<span>
@@ -118,12 +55,11 @@ var Homepage = React.createClass({
             <a ref="ad-right" href="#"><div style={styles.right}></div></a>
             </span>)
             }
+
             <div className="row">
             <div className="col-xs-12 col-md-9">
-
-                <Banner />
-                {isMobile()? (<span>
-                <div className="title-green"><br /></div>
+                
+                {isMobile()? (
                 <Tabs>
                     <Tabs.Panel className="btn btn-play" title='Hot'>
                       <PopularIndex {...this.props} />
@@ -131,18 +67,17 @@ var Homepage = React.createClass({
                     <Tabs.Panel title='Release'>
                       <LatestIndex {...this.props} />
                     </Tabs.Panel>
-                </Tabs>
-                </span>): ( <Latest {...this.props}/>)}
-
-                <div className="title-green"><br /></div>
+                </Tabs>): (<span><Banner/><Latest {...this.props}/></span>)}
             </div>
 
             <div className="col-xs-12 col-md-3">
+                <center>
                 <div className="g-page" 
                         data-width={!isMobile()? "225": "275" } 
                         data-href="//plus.google.com/u/0/109363191390818524400" 
                         data-rel="publisher">
                 </div>
+
                 {!isMobile()?<Popular {...this.props}/>: null }
                 
                 <div className="title-green">Social Media Share</div>
@@ -184,10 +119,11 @@ var Homepage = React.createClass({
                         </div>
                     </div>
                 </div>
+                </center>
             </div>
         </div>
     </div>
-            );
+           </span> );
 }
 });
 

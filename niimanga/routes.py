@@ -20,7 +20,7 @@ from niimanga.libs.utils import URI_API
 
 
 def includeme(config):
-    config.add_route('home', '/')
+
     config.add_route('hum', '/hum')
     config.add_route('logout', 'logout')
     config.add_route("reset", "{username}/reset/{reset_key}")
@@ -58,6 +58,28 @@ def includeme(config):
     config.add_route('upload', '/upload')
     config.add_route('download', '/download')
 
+
+
+    """
+        api front ends cms
+    """
+    # cms main '{URI}/search'.format(URI=URI_API)
+
+    # cms chapter
+    config.add_route('cms_chapter', '{URI}/chapter/end/{action}'.format(URI=URI_API, action='{action}'))
+    # cms series
+    config.add_route('cms_series', '{URI}/series/end/{action}'.format(URI=URI_API, action='{action}'))
+    # cms menu
+    config.add_route('cms_menu', '{URI}/menu/end/{action}'.format(URI=URI_API, action='{action}'))
+    # cms group
+    config.add_route('cms_group', '{URI}/group/end/{action}'.format(URI=URI_API, action='{action}'))
+    # cms season
+    config.add_route('cms_season', '{URI}/season/end/{action}'.format(URI=URI_API, action='{action}'))
+    # cms slider image
+    config.add_route('cms_slider', '{URI}/slider/end/{action}'.format(URI=URI_API, action='{action}'))
+    # cms slider image detail
+    config.add_route('cms_slider_detail', '{URI}/slimage/end/{action}'.format(URI=URI_API, action='{action}'))
+
     """
         api front ends manga
     """
@@ -82,28 +104,9 @@ def includeme(config):
     config.add_route('list_genres', '{URI}/genres'.format(URI=URI_API))
 
     """
-        api front ends cms
-    """
-    # cms main '{URI}/search'.format(URI=URI_API)
-    config.add_route('cms_main', '/cms')
-    # cms chapter
-    config.add_route('cms_chapter', '{URI}/chapter/end/{action}'.format(URI=URI_API, action='{action}'))
-    # cms series
-    config.add_route('cms_series', '{URI}/series/end/{action}'.format(URI=URI_API, action='{action}'))
-    # cms menu
-    config.add_route('cms_menu', '{URI}/menu/end/{action}'.format(URI=URI_API, action='{action}'))
-    # cms group
-    config.add_route('cms_group', '{URI}/group/end/{action}'.format(URI=URI_API, action='{action}'))
-    # cms season
-    config.add_route('cms_season', '{URI}/season/end/{action}'.format(URI=URI_API, action='{action}'))
-    # cms slider image
-    config.add_route('cms_slider', '{URI}/slider/end/{action}'.format(URI=URI_API, action='{action}'))
-    # cms slider image detail
-    config.add_route('cms_slider_detail', '{URI}/slimage/end/{action}'.format(URI=URI_API, action='{action}'))
-
-    """
         route front ends
     """
+    config.add_route('home', '/')
     config.add_route('url_popular', '/popular')
     config.add_route('url_latest', '/latest')
     config.add_route('url_series', '/manga/{seriesSlug}')
@@ -116,4 +119,6 @@ def includeme(config):
         route front ends cms
     """
     # config.add_route('url_popular', '/popular')
+    config.add_route('cms_main', '/cms')
+
 

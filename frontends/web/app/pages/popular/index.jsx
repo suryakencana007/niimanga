@@ -64,7 +64,9 @@ var popular = React.createClass({
                         onRequestMoreItems={this._onRequestMoreItems}
                         threshold={250}
                         style={styles.messagesList}>
+                        <center>
                         {this.state.cards.map(this.renderCard)}
+                        </center>
                         </InfiniteScroll>
                     }
                 </div>

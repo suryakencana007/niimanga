@@ -37,6 +37,7 @@
     "bootstrap-table": "~1.8.1",
     "react": "~0.13.3",
     "react-router": "~0.13.3",
+    "react-tap-event-plugin": "^0.1.7",
     "X-editable": "git://github.com/suryakencana/x-editable",
     "moment": "~2.10.3",
     "radium": "~0.12.2",

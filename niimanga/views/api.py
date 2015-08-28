@@ -37,7 +37,6 @@ from niimanga.models.auth import UserMgr
 from niimanga.configs.view import ZHandler
 from sqlalchemy import desc, and_
 
-
 LOG = logging.getLogger(__name__)
 
 
@@ -91,7 +90,6 @@ class ApiView(ZHandler):
 
 
 class MangaApi(ZHandler):
-
     @staticmethod
     def _card_fill(_, cards):
         lt = arrow.utcnow()
@@ -172,23 +170,26 @@ class MangaApi(ZHandler):
             name = manga.title
             status = manga.status
             stags = manga.get_genre_tostr()
-            tags = [dict(label=tag, value=slugist(tag))for tag in stags.split(',')]
+            tags = [dict(label=tag, value=slugist(tag)) for tag in stags.split(',')]
             time = arrow.get(manga.chapter_updated.replace(tzinfo=tz.tzlocal())).humanize(present)
             origin = manga.origin
             last = Manga.last_chapter(manga.id)
-            last_chapter = ' '.join([str(last.chapter), last.title])
-            last_url = '/'.join([manga.slug, last.slug])
-
-            manga.updated_viewed()
 
             results = []
-            chapters = Chapter.query.filter_by(tb_manga_id=manga.id).order_by(desc(Chapter.sortorder)).all()
-            for chapter in chapters:
-                results.append(dict(
-                    name=' '.join(['Ch.', str(chapter.chapter).replace('.0', ''), chapter.title]),
-                    url='/'.join([manga.slug, chapter.slug]),
-                    time=arrow.get(chapter.updated.replace(tzinfo=tz.tzlocal())).humanize(present)
-                ))
+            last_chapter = ''
+            last_url = ''
+            if last is not None:
+                last_chapter = ' '.join([str(last.chapter), last.title])
+                last_url = '/'.join([manga.slug, last.slug])
+
+                manga.updated_viewed()
+                chapters = Chapter.query.filter_by(tb_manga_id=manga.id).order_by(desc(Chapter.sortorder)).all()
+                for chapter in chapters:
+                    results.append(dict(
+                        name=' '.join(['Ch.', str(chapter.chapter).replace('.0', ''), chapter.title]),
+                        url='/'.join([manga.slug, chapter.slug]),
+                        time=arrow.get(chapter.updated.replace(tzinfo=tz.tzlocal())).humanize(present)
+                    ))
 
             return dict(
                 origin=origin,
@@ -260,9 +261,9 @@ class MangaApi(ZHandler):
     @view_config(route_name='search_series', renderer='json')
     def search_series(self):
         _ = self.R
-        q = _.params.get('q', '')
+        q = _.params.get('q', ' ')
         qry = Manga.query
-        results = qry.filter(and_(Manga.title.ilike('%{q}%'.format(q=q)), Manga.chapter_count > 0)) \
+        results = qry.filter(and_(Manga.title.ilike(u'%{q}%'.format(q=q)), Manga.chapter_count > 0)) \
             .order_by(desc(Manga.chapter_updated)) \
             .all()
         if results:
@@ -296,7 +297,7 @@ class MangaApi(ZHandler):
             code, status = ResponseHTTP.BAD_REQUEST
             q = _.params.get('q', None)
             if q is not None:
-                genres = Genre.query.filter(Genre.name.ilike('%{0}%'.format(q))).all()
+                genres = Genre.query.filter(Genre.name.ilike(u'%{q}%'.format(q=q))).all()
                 for gen in genres:
                     rows.append(dict(
                         label=str(gen.name).capitalize(),
@@ -316,4 +317,5 @@ class MangaApi(ZHandler):
         results = qry.filter(Manga.chapter_count > 0) \
             .join(Manga.genres).filter(Genre.slug == q) \
             .all()
+
         return MangaApi._card_fill(_, results)

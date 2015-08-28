@@ -12,7 +12,7 @@ class SideBar extends Component {
 
     render() {
         return (
-            <nav id="slide-menu">
+            <nav style={styles.baseNav}>
             <div className="nav-logo" style={{float: 'none', padding: ' 5px 20px'}}>
             <Link to="/" >Niimanga<span className="site-logo"></span></Link>
             </div>
@@ -38,8 +38,10 @@ var styles = {
         position: 'relative',
         paddingLeft: '10px',
         width: '100%',
-        maxWidth: '225px',
-        height: '564px',
+        maxWidth: '225px'
+    },
+    baseNav: {
+        width: '250px'
     }
 };
 module.exports = SideBar;
